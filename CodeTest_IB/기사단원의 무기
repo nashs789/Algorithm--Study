@@ -1,0 +1,28 @@
+class Solution {
+    public int solution(int number, int limit, int power) {
+        int weight = 0;
+
+        int[] nightsArr = new int[number];
+
+        for(int idx = 0; idx < nightsArr.length; idx++){
+            weight += getDivisor(idx + 1, limit, power);
+        }
+
+        return weight;
+    }
+
+    public static int getDivisor(int num, int limit, int power){
+        int sqrt = (int) Math.sqrt(num);
+        int count = 0;
+
+        for(int idx = 1; idx <= sqrt; idx++){
+            if(num % idx == 0){
+                count++;
+                if(num / idx != idx){
+                    count++;
+                }
+            }
+        }
+        return count > limit ? power : count;
+    }
+}
