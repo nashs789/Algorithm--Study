@@ -14,7 +14,7 @@
  *                           10       20      20     100     100
  *  발표점수    10      10     10       20      20     100     100
  *
- *  명예의 전당 목록의 점수의 개수 k, 1일부터 마지막 날까지 출연한 가수들의 점수인 score가 주어졌을 때, 매일 발표된 명예의 전당의 최하위 점수를 return하는 solution 함수를 완성해주세요.
+ *  명예의 전당 목록의 점수의 개수 k, 1일부터 마지막 날까지 출연한 가수들의 점수인 score 가 주어졌을 때, 매일 발표된 명예의 전당의 최하위 점수를 return하는 solution 함수를 완성해주세요.
  *
  * [ 제한사항 ]
  * 3 ≤ k ≤ 100
@@ -27,7 +27,7 @@
  * 4	[0, 300, 40, 300, 20, 70, 150, 50, 500, 1000]	    [0, 0, 0, 0, 20, 40, 70, 70, 150, 300]
  *
  * [ 입출력 예 #1 ]
- * 아래와 같이, [0, 0, 0, 0, 20, 40, 70, 70, 150, 300]을 return합니다.
+ * 아래와 같이, [0, 0, 0, 0, 20, 40, 70, 70, 150, 300]을 return 합니다.
  *
  *  일차        1      2       3       4       5       6       7      8       9       10
  *  score     0     300      40      300     20      70      150    50      500     1000
@@ -40,5 +40,30 @@
 
 package Lv1;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
+
 public class Q2_TheHallOfFame {
+    public static void main(String[] args) {
+        // 0, 300, 40, 300, 20, 70, 150, 50, 500, 1000
+        int[] scoreArr = {10, 100, 20, 150, 1, 100, 200};
+        int[] returnArr = new int[scoreArr.length];
+        List<Integer> hall = new ArrayList();
+        int k = 3;
+
+        for(int idx = 0; idx < scoreArr.length; idx++){
+            if(k > idx){
+                hall.add(scoreArr[idx]);
+                hall.sort(Comparator.naturalOrder());
+            } else {
+                hall.add(scoreArr[idx]);
+                hall.sort(Comparator.naturalOrder());
+                hall.remove(0);
+            }
+
+            returnArr[idx] = hall.get(0);
+        }
+    }
 }
