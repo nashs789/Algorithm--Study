@@ -54,16 +54,15 @@ public class Q2_TheHallOfFame {
         int k = 3;
 
         for(int idx = 0; idx < scoreArr.length; idx++){
-            if(k > idx){
-                hall.add(scoreArr[idx]);
-                hall.sort(Comparator.naturalOrder());
-            } else {
-                hall.add(scoreArr[idx]);
-                hall.sort(Comparator.naturalOrder());
+            hall.add(scoreArr[idx]);
+            hall.sort(Comparator.naturalOrder());
+
+            if(k <= idx) {
                 hall.remove(0);
             }
 
             returnArr[idx] = hall.get(0);
         }
+        Arrays.stream(returnArr).forEach(x -> System.out.print(x + " "));
     }
 }
