@@ -28,6 +28,7 @@
  * [ 입출력 예 #3 ]
  * s="aaabbaccccabba"인 경우 aaabbacc - ccab - ba와 같이 분해됩니다.
  */
+
 package Lv1;
 
 import java.util.HashMap;
@@ -38,20 +39,59 @@ public class Q3_DivideString {
         String s = "aaabbaccccabba";
         int sLength = s.length();
 
-        Map<Character, Integer> map = new HashMap<>();
-        Character first = ' ';
-        Character preValue = ' ';
-        int cnt = 0;
+        char first = ' ';
+        int firstCnt = 0;
+        int secondCnt = 0;
         int result = 0;
-        boolean diff = false;
 
-        for(int idx = 0; idx < sLength; idx++){
+        for(int idx = 0; idx < sLength; idx++) {
             char curLetter = s.charAt(idx);
-            
+
             if(first == ' '){
                 first = curLetter;
             }
-            
+
+            if(first == curLetter){
+                firstCnt++;
+            } else {
+                secondCnt++;
+            }
+
+            if(firstCnt == secondCnt){
+                result++;
+                firstCnt = 0;
+                secondCnt = 0;
+                first = ' ';
+            }
+        }
+
+        if(firstCnt != 0){
+            result++;
+        }
+
+        System.out.println("result = " + result);
+    }
+}
+
+/*public class Q3_DivideString {
+    public static void main(String[] args) {
+        String s = "aaabbaccccabba";
+        int sLength = s.length();
+
+        Map<Character, Integer> map = new HashMap<>();
+        char first = ' ';           // 첫 글자
+        char preValue = ' ';        // 이전 글자
+        int cnt = 0;                // 첫 글자 연속 갯수
+        int result = 0;             // 결과
+        boolean diff = false;       // 중간 부터 들어오는 first와 같은 알파벳
+
+        for(int idx = 0; idx < sLength; idx++){
+            char curLetter = s.charAt(idx);
+
+            if(first == ' '){
+                first = curLetter;
+            }
+
             if(first == curLetter){
                 if(!diff){
                     cnt++;
@@ -63,6 +103,8 @@ public class Q3_DivideString {
 
             if(map.containsValue(cnt) || (first != ' ' && idx == sLength - 1)){
                 result++;
+                System.out.println("first = " + first + "        cnt = " + cnt);
+                System.out.println("map = " + map);
                 map.clear();
                 first = ' ';
                 diff = false;
@@ -74,5 +116,7 @@ public class Q3_DivideString {
 
             preValue = curLetter;
         }
+
+        System.out.println("result = " + result);
     }
-}
+}*/
