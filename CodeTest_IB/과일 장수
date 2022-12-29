@@ -1,0 +1,15 @@
+import java.util.Arrays;
+class Solution {
+    public int solution(int k, int m, int[] score) {
+        int result = 0;
+        int rest = score.length % m;
+
+        Arrays.sort(score);
+
+        for(int idx = 0 + rest; idx < score.length; idx+=m){
+            result += score[idx] * m;
+        }
+
+        return result;
+    }
+}
