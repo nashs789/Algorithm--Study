@@ -1,0 +1,19 @@
+class Solution {
+    public int solution(String t, String p) {
+        int answer = 0;
+
+        int maxIdx = t.length() - p.length();
+        int pLen = p.length();
+
+        for(int idx = 0; idx <= maxIdx; idx++){
+            String num = t.substring(idx, idx + pLen);
+            int result = num.compareTo(p);
+
+            if(result < 0 || result == 0){
+                answer++;
+            }
+        }
+
+        return answer;
+    }
+}
