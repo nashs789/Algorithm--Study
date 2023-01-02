@@ -47,7 +47,6 @@ public class Q5_FruitSeller {
         for(int idx = 0 + rest; idx < score.length; idx+=m){
             result += score[idx] * m;
         }
-
         System.out.println("result = " + result);
     }
 }
