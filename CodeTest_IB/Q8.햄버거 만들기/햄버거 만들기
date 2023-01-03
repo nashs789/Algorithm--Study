@@ -1,0 +1,33 @@
+import java.util.Arrays;
+import java.util.Stack;
+
+class Solution {
+    public int solution(int[] ingredient) {
+        String hamburger = "1321";
+        int answer = 0;
+
+        Integer[] newIngredient = Arrays.stream(ingredient).boxed().toArray(Integer[]::new);
+        Stack<Integer> stack = new Stack<>();
+
+        for(int idx = 0; idx < newIngredient.length; idx++){
+            stack.push(newIngredient[idx]);
+
+            if(idx > 2 && stack.size() > 3){
+                String hamburgerStack = "";
+
+                for(int idx2 = stack.size() - 1; idx2 > stack.size() - 5; idx2--){
+                    hamburgerStack += Integer.toString(stack.get(idx2));
+                }
+
+                if(hamburgerStack.equals(hamburger)){
+                    answer++;
+                    for(int idx3 = 0; idx3 < 4; idx3++){
+                        stack.pop();
+                    }
+                }
+            }
+        }
+
+        return answer;
+    }
+}
