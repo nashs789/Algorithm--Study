@@ -52,14 +52,12 @@
 
  int[] ingredient = {1, 1, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1};
  int answer = 0;
-
+ 
  Integer[] newIngredient = Arrays.stream(ingredient).boxed().toArray(Integer[]::new);
  String strIngredient = Arrays.toString(newIngredient).replaceAll("[, \\[\\]]", "");
 
  while(strIngredient.indexOf("1231") != -1){
      int locationStr = strIngredient.indexOf("1231");
-
-     System.out.println(strIngredient.substring(0, locationStr) + " \'1234\' " + strIngredient.substring(locationStr + 4));
      strIngredient = strIngredient.substring(0, locationStr) + strIngredient.substring(locationStr + 4);
      answer++;
  }
