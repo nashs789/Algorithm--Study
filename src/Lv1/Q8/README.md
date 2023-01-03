@@ -50,19 +50,19 @@
     - 로직에 문제가 있다고 판단 후 코드를 새로 짜기로 마음 먹음 
     
 
-    int[] ingredient = {1, 1, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1};
-    int answer = 0;
+ int[] ingredient = {1, 1, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1};
+ int answer = 0;
 
-    Integer[] newIngredient = Arrays.stream(ingredient).boxed().toArray(Integer[]::new);
-    String strIngredient = Arrays.toString(newIngredient).replaceAll("[, \\[\\]]", "");
+ Integer[] newIngredient = Arrays.stream(ingredient).boxed().toArray(Integer[]::new);
+ String strIngredient = Arrays.toString(newIngredient).replaceAll("[, \\[\\]]", "");
 
-    while(strIngredient.indexOf("1231") != -1){
-        int locationStr = strIngredient.indexOf("1231");
+ while(strIngredient.indexOf("1231") != -1){
+     int locationStr = strIngredient.indexOf("1231");
 
-        System.out.println(strIngredient.substring(0, locationStr) + " \'1234\' " + strIngredient.substring(locationStr + 4));
-        strIngredient = strIngredient.substring(0, locationStr) + strIngredient.substring(locationStr + 4);
-        answer++;
-    }
+     System.out.println(strIngredient.substring(0, locationStr) + " \'1234\' " + strIngredient.substring(locationStr + 4));
+     strIngredient = strIngredient.substring(0, locationStr) + strIngredient.substring(locationStr + 4);
+     answer++;
+ }
 
 - 2차: 문자열로 변경 후 16 / 18 => 시간초과 2문제 (테스트5, 12)
     - 추정되는 문제점: 문자열 연산이 빈번하게 일어나서 배열의 길이가 길어지면 시간을 초과 하게됨
