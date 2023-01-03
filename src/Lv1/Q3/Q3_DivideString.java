@@ -29,7 +29,7 @@
  * s="aaabbaccccabba"인 경우 aaabbacc - ccab - ba와 같이 분해됩니다.
  */
 
-package Lv1;
+package Lv1.Q3;
 
 import java.util.HashMap;
 import java.util.Map;

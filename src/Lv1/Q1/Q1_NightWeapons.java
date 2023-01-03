@@ -37,7 +37,7 @@
  * 따라서 해당 수들의 합인 21을 return 합니다.
  */
 
-package Lv1;
+package Lv1.Q1;
 
 import java.util.Arrays;
 

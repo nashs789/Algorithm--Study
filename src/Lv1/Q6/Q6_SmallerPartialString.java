@@ -27,7 +27,7 @@
  * "02"와 "03"은 각각 2, 3에 해당한다는 점에 주의하세요.
  */
 
-package Lv1;
+package Lv1.Q6;
 
 public class Q6_SmallerPartialString {
     public static void main(String[] args) {

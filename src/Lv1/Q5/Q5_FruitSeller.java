@@ -30,7 +30,7 @@
  * 따라서 (1 x 3 x 1) + (2 x 3 x 1) + (4 x 3 x 2) = 33을 return합니다.
  */
 
-package Lv1;
+package Lv1.Q5;
 
 import java.util.Arrays;
 

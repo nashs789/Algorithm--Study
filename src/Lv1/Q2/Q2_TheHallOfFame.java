@@ -38,7 +38,7 @@
  *  발표점수    0       0       0        0     20      40        70    70     150       300
  */
 
-package Lv1;
+package Lv1.Q2;
 
 import java.util.ArrayList;
 import java.util.Arrays;

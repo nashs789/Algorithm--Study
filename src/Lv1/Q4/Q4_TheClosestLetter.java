@@ -20,7 +20,7 @@
  *  "foobar"	  [-1, -1, 1, -1, -1, -1]
  */
 
-package Lv1;
+package Lv1.Q4;
 
 import java.util.HashMap;
 import java.util.Map;
