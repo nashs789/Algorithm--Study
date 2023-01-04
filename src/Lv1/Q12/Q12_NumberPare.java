@@ -48,11 +48,11 @@ import java.util.stream.Stream;
 
 public class Q12_NumberPare {
     public static void main(String[] args) {
-        String X = "12321";
-        String Y = "42531";
+        String X = "12321347689734896982374589623456234785623478";
+        String Y = "42531213462938759012380948901237509237849082319047901237509";
         String answer = "";
-        int[] xCntArr = {0, 0, 0, 0, 0, 0, 0, 0, 0};
-        int[] yCntArr = {0, 0, 0, 0, 0, 0, 0, 0, 0};
+        int[] xCntArr = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+        int[] yCntArr = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
         
         int[] xIntArr = getStringArrayToIntegerArr(X);
         int[] yIntArr = getStringArrayToIntegerArr(Y);
@@ -69,7 +69,7 @@ public class Q12_NumberPare {
     private static List<Integer> getCommonNumList(int[] xCntArr, int[] yCntArr) {
         List<Integer> list = new ArrayList<>();
 
-        for(int idx = 0; idx < 9; idx++){
+        for(int idx = 0; idx < 10; idx++){
             int len = xCntArr[idx] <= yCntArr[idx] ? xCntArr[idx] : yCntArr[idx];
 
             for(int idx2 = 0; idx2 < len; idx2++){
