@@ -51,9 +51,6 @@
            Map<String, Integer> reportCntMap = getStrArrToMap(id_list);
            Map<String, String> reportInfoMap = setReportMap(report, reportCntMap);
    
-           System.out.println("reportCntMap = " + reportCntMap);
-           System.out.println("reportInfoMap = " + reportInfoMap);
-   
            for(String reportedName : reportCntMap.keySet()){
                if(reportCntMap.get(reportedName) >= k){    // 신고 누적 횟수가 max인 사람
                    for(String reporterName : reportInfoMap.keySet()){
