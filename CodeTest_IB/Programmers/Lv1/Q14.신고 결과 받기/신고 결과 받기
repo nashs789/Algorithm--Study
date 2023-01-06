@@ -1,0 +1,61 @@
+import java.util.*;
+
+class Solution {
+    public int[] solution(String[] id_list, String[] report, int k) {
+        int[] answer = new int[id_list.length];
+
+        HashMap<String, HashSet<String>> reportInfo = setReportInfo(report);
+        HashMap<String, Integer> reportTotal = setReportTotal(reportInfo, k);
+
+        for(int idx = 0; idx < id_list.length; idx++){
+            Integer messageCnt = reportTotal.get(id_list[idx]);
+
+            if(messageCnt != null){
+                answer[idx] = messageCnt;
+            }
+        }
+
+        return answer;
+    }
+
+    private static HashMap<String, Integer> setReportTotal(HashMap<String, HashSet<String>> reportInfo, int k) {
+        HashMap<String, Integer> reportTotal = new HashMap<>();
+
+        for(String key : reportInfo.keySet()){
+            if(reportInfo.get(key).size() >= k){
+                for(String reporter : reportInfo.get(key)){
+                    if(reportTotal.get(reporter) == null){
+                        reportTotal.put(reporter, 1);
+                    } else {
+                        reportTotal.put(reporter, reportTotal.get(reporter) + 1);
+                    }
+                }
+            }
+        }
+
+        return reportTotal;
+    }
+
+    private static HashMap<String, HashSet<String>> setReportInfo(String[] report) {
+        HashMap<String, HashSet<String>> reportInfo = new HashMap<>(); // 중복 신고 제외 HashSet
+
+        for(int idx = 0; idx < report.length; idx++){
+            int boudary = report[idx].indexOf(" ");
+            String reporter = report[idx].substring(0, boudary);
+            String reportedMan = report[idx].substring(boudary + 1);
+
+            if(!reporter.equals(reportedMan)){ // 본인 자진신고 제외
+                if(reportInfo.get(reportedMan) == null){
+                    HashSet<String> hashSet = new HashSet();
+                    hashSet.add(reporter);
+
+                    reportInfo.put(reportedMan, hashSet);
+                } else {
+                    reportInfo.get(reportedMan).add(reporter);
+                }
+            }
+        }
+        return reportInfo;
+    }
+}
+

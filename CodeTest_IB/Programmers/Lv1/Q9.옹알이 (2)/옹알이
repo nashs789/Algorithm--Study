@@ -1,0 +1,44 @@
+import java.util.ArrayList;
+import java.util.List;
+
+class Solution {
+    public int solution(String[] babbling) {
+        String[] can = {"aya", "ye", "woo", "ma"};
+        List<Integer> removeList = new ArrayList<>();
+        int answer = 0;
+
+        for(int idx = 0; idx < babbling.length; idx++){
+            if(isSequential(babbling[idx], can)){
+                continue;
+            }
+
+            for(int idx2 = 0; idx2 < can.length; idx2++){
+                if(babbling[idx].indexOf(can[idx2]) != -1){
+                    removeList.add(idx2);
+                }
+            }
+
+            for(Integer idx3 : removeList){
+                babbling[idx] = babbling[idx].replaceAll(can[idx3], " ");
+            }
+
+            removeList.clear();
+
+            if(babbling[idx].replaceAll("\\s", "").equals("")){
+                answer++;
+            }
+        }
+
+        return answer;
+    }
+
+    private static boolean isSequential(String babbling, String[] can) {
+        for(int idx = 0; idx < can.length; idx++){
+            if(babbling.indexOf(can[idx] + can[idx]) != -1){
+                return true;
+            }
+        }
+
+        return false;
+    }
+}

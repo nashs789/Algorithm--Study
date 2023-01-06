@@ -1,0 +1,16 @@
+import java.util.regex.Pattern;
+
+class Solution {
+    public int solution(String s) {
+        String onlyNumber = "[0-9]*";
+        String[] word = {"zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
+
+        if(!Pattern.matches(onlyNumber, s)){
+            for(int idx = 0; idx < word.length; idx++){
+                s = s.replace(word[idx], Integer.toString(idx));
+            }
+        }
+
+        return Integer.parseInt(s);
+    }
+}
