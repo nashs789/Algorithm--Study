@@ -50,11 +50,11 @@
     - 로직에 문제가 있다고 판단 후 코드를 새로 짜기로 마음 먹음
 
 
-        int[] ingredient = {1, 1, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1};
-        int answer = 0;
-
-        Integer[] newIngredient = Arrays.stream(ingredient).boxed().toArray(Integer[]::new);
-        String strIngredient = Arrays.toString(newIngredient).replaceAll("[, \\[\\]]", "");
+            int[] ingredient = {1, 1, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1};
+            int answer = 0;
+    
+            Integer[] newIngredient = Arrays.stream(ingredient).boxed().toArray(Integer[]::new);
+            String strIngredient = Arrays.toString(newIngredient).replaceAll("[, \\[\\]]", "");
 
         while(strIngredient.indexOf("1231") != -1){
             int locationStr = strIngredient.indexOf("1231");
