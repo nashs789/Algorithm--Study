@@ -24,7 +24,7 @@
  * It is guaranteed that the list represents a number that does not have leading zeros.
  */
 
-package ReetCode.Medium;
+package ReetCode.Medium.Q2;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
