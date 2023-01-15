@@ -7,4 +7,6 @@
 
 # **[ 문제점 ]**
 별 어려움 없었음
-         
+
+# **[ 결과 ]**
+<img width="427" alt="스크린샷 2023-01-15 오전 11 13 37" src="https://user-images.githubusercontent.com/59809278/212519329-3f55b94f-5dfb-4e1d-a07a-d5ac3083965c.png">
