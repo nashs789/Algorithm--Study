@@ -11,3 +11,6 @@
 - a = 2 / b = 1 / n = 20
 - a = 3 / b = 1 / n = 20
 - a = 3 / b = 2 / n = 20
+
+# **[ 결과 ]**
+<img width="427" alt="스크린샷 2023-01-15 오전 11 24 38" src="https://user-images.githubusercontent.com/59809278/212519731-08956138-1ef2-4fcb-bcd7-907c361ab5f9.png">
