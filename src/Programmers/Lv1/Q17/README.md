@@ -10,3 +10,6 @@
 # **[ 문제점 ]**
 문제가 어렵지는 않았으나 Stream 과 Math.max 를 통해서 간결하게 처리할 수 있음을
 다른 사람들의 코드로 확인했다.
+
+# **[ 결과 ]**
+<img width="427" alt="스크린샷 2023-01-15 오전 11 17 39" src="https://user-images.githubusercontent.com/59809278/212519522-7a2dee54-6c20-423d-b309-0e657f0cd9bc.png">
