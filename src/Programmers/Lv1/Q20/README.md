@@ -14,5 +14,6 @@
 
 
 # **[ 문제점 ]**
-
          
+# **[ 결과 ]**
+<img width="427" alt="스크린샷 2023-01-15 오전 11 15 20" src="https://user-images.githubusercontent.com/59809278/212519458-0612a907-695f-44ac-906a-ab979fa90521.png">
