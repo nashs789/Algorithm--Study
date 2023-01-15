@@ -18,5 +18,6 @@
 # **[ 새로 알게된 사실 ]**
 - Integer.parseInt 에 진법 변환에 관한 기능이 있다.
 
-
-         
+# **[ 결과 ]**
+<img width="427" alt="스크린샷 2023-01-15 오전 11 10 20" src="https://user-images.githubusercontent.com/59809278/212518036-0ba28f71-fa77-4bb5-9180-9c838c5fc03c.png">
+        
