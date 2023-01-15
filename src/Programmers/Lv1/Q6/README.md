@@ -12,3 +12,7 @@
 2. 문제점 원인: 원인은 모르겠음... 에러를 야기할만한 코드가 이것 밖에 없어서 수정해봄
 3. 해결 방법: Integer.parseInt() 제거 후 compareTo를 이용해서 대소비교
   (String 타입의 숫자들을 int 형태로 파싱해서 비교 하던 코드를 compareTo로 변경)
+
+# **[ 결과 ]**
+<img width="427" alt="스크린샷 2023-01-15 오전 11 27 51" src="https://user-images.githubusercontent.com/59809278/212519872-1b5396da-cdfc-4b57-afff-ce63cb862dc2.png">
+<img width="427" alt="스크린샷 2023-01-15 오전 11 28 04" src="https://user-images.githubusercontent.com/59809278/212519874-70ffed17-6836-4d44-acc1-d7b688d5b25e.png">
