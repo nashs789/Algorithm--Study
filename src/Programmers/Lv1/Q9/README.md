@@ -52,3 +52,7 @@
                     answer++;
                 }
           }
+          
+
+# **[ 결과 ]**
+<img width="427" alt="스크린샷 2023-01-15 오전 11 25 14" src="https://user-images.githubusercontent.com/59809278/212519777-1d9ef6c2-9385-4b9d-bbb4-72e3f8666cc5.png">
