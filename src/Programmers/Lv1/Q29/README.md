@@ -1,67 +1,31 @@
 # **[ 정보 ]**
-1. 소요 시간: 08:40 - 09:33 (53분) 
+1. 소요 시간: 60분 초과
 2. 날짜: 2023.01.15(일)
 3. 저자: 이 인복
 
 # **[ 접근 순서 ]**
-**1. prefix 구하기**
-    - prefix 를 단 한번의 반복으로는 구할 수 없었음
+**1. 자료구조 잡기**
+- 각 스테이지별 실패율이 담긴 배열
+- 실패울과 스테이지가 매핑된 맵
+    - 형태: failRateMap = {1=0.125, 2=0.42857142857, 3=0.5, 4=0.5, 5=0.0}
 
-**2. 예외 처리**
-    - test case 에서 많은 예외가 발생 되었음
+**2. 실패율 구하기**
+- 소수점 자릿 수
+- 실패율이 동일할 때 처리
+
+**3. 스테이지 내림차순**
 
 # **[ 문제점 ]**
-**1. 첫 번쨰**
-- 1차: 49 / 124 ===> input: "a" / output: "" / expected: "a"
-  - 1개의 모음만 들어왔을 경우
-
-- 2차: 50 / 124 ===> input: "ab", "a" / output: "" / expected: "a"
-  - prefix의 기준을 잘못 잡은 것 같음... 코드 갈아 엎어야 할듯
- 
-   
-    [ 문제의 초기 코드 ]
-    public class Q14_LongestCommonPrefix {
-      public static void main(String[] args) {
-      String[] strs = {"flower", "flow", "flight"};
-      // if(strs.length == 1) return "";
+- 1차: 실패 24/27 ===> 런타임 에러:  3/27
+    - 코드 갈아엎기로 마음 먹음
     
-            String[] vowels = {"a", "e", "i", "o", "u"};
-            int min = getMin(strs[0], vowels);
-            String prefix = strs[0].substring(0, min);
+- 2차: 21 / 26 ===> 실패 6
+- 3차: 24 / 26 ===> 실패 2
+    - 2차와 3차 테스트 후 실패하는 테스트 케이스는 소수점 자리수에 따라서 달라짐
+        - 소수점 자리수가 너무 많으면 정밀도가 문제에서 요구하는 것보다 높아져서 문제가 일어남
     
-            for(int idx = 0; idx < strs.length; idx++){
-                if(!strs[idx].startsWith(prefix)){
-                    System.out.println("nothing");
-                    // return "";
-                }
-            }
-    
-            System.out.println("prefix = " + prefix);
-            // return prefix
-      }
-
-      private static int getMin(String str, String[] vowels) {
-            int min = 201;
-    
-            for(int idx = 0; idx < vowels.length; idx++){
-                int loc = str.indexOf(vowels[idx]);
-    
-                if(loc != -1 && min > loc){
-                    min = loc;
-                }
-            }
-    
-            return min == 201 ? 0 : min;
-      }
-    }
-
-**2. 두 번째**
-- 1차: 81 / 124 ===> input: "cir", "car" / output: "" / expected: "c"
-  - prefix 초기화 부분 변경 (기존에는 초기 값 설정이 안되는 케이스가 존재 했었음)
-
-- 2차: 121 / 214 ===> input: "reflower", "flow", "flight" / output: "fl" / expected: ""
-  - min 값이 고정되어 있는 부분 변경, 재할당이 안되고 있었음 (in = prefix.length(); 이 부분이 없었음)
-  - prefix 값 초기화 하는 부분에서 index 값 초기화가 제대로 안되고 있었음 (배열 요소 0번 부터 탐색해야 하는데 1번 부터 했음)
-
 # **[ 새로 알게된 사실 ]**
+- Comparator 의 compare @Override 하는것
+- HashMap 에서 Entry 접근하는것 && Entry 에 정리된 함수가 있다는 것
+- Math.round() 쓸 때 소수점 원하는 자리수 만들기
          
