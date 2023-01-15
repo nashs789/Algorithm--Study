@@ -37,4 +37,8 @@
       System.out.println("endDate = " + testDate2.plusMonths(6));
     
       System.out.println("after = " + testDate1.isAfter(testDate2.plusMonths(6)));
-      System.out.println("before = " + testDate1.isBefore(testDate2.plusMonths(6)));         
+      System.out.println("before = " + testDate1.isBefore(testDate2.plusMonths(6)));   
+      
+
+# **[ 결과 ]**
+<img width="379" alt="스크린샷 2023-01-15 오전 10 46 54" src="https://user-images.githubusercontent.com/59809278/212509669-7b733def-81c0-42ad-9309-42d312099ae5.png">
