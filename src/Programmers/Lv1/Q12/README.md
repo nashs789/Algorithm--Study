@@ -76,3 +76,7 @@
               private static Integer[] getStringArrayToIntegerArr(String strArr){
                   return Stream.of(strArr.split("")).mapToInt(Integer::parseInt).boxed().toArray(Integer[]::new);
               }
+              
+              
+# **[ 결과 ]**
+<img width="427" alt="스크린샷 2023-01-15 오전 11 22 24" src="https://user-images.githubusercontent.com/59809278/212519683-330acdf1-0f8a-4d3b-b9e6-eeb1718b7f7e.png">
