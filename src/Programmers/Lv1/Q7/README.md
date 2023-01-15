@@ -30,3 +30,6 @@
             answer = idx + answer + idx;
         }
     }
+    
+# **[ 결과 ]**
+<img width="427" alt="스크린샷 2023-01-15 오전 11 26 43" src="https://user-images.githubusercontent.com/59809278/212519801-c0725d06-aed7-4a59-a3fa-48b02572bd28.png">
