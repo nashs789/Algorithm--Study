@@ -17,6 +17,7 @@
   (다른 사람들 풀이 보면서 알게 되었다.)
 
 # **[ 결과 ]**
+![KakaoTalk_Photo_2023-01-16-21-06-56](https://user-images.githubusercontent.com/59809278/212675600-05be3958-34b7-4821-9001-74b3832bdffc.png)
 
 
          
