@@ -5,5 +5,9 @@
     - String.join(delimiter, String 배열);
     - ex) String.join("", new String[]{"a", "b", "c"}); ===> "abc"
 
+2. List<Integer> -> int[] (2023.01.17 추가)
+    - list.stream().mapToInt(i -> i).toArray()
+    
+    
 # **[ Stream ]**
 
