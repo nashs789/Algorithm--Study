@@ -98,6 +98,7 @@ public class Q28_CrainClawMachine {
                 bucket.add(picked);
             }
         }
+
         return answer;
     }
 
