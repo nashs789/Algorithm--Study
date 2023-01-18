@@ -14,7 +14,6 @@
     - list.stream().mapToInt(i -> i).toArray()
 
 # **[ 결과 ]**
-
-
+<img width="427" alt="스크린샷 2023-01-17 오전 12 40 44" src="https://user-images.githubusercontent.com/59809278/212718288-8eb696d6-200f-4c41-89c8-826e7131ba9e.png">
 
          
