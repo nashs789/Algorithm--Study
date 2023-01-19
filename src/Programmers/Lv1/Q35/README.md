@@ -19,6 +19,7 @@
         ex) Integer.toBinaryString(arr1[idx]| arr2[idx]); ===> 이런 식으로 (예시는 or 연산)
 
 # **[ 결과 ]**
+![KakaoTalk_Photo_2023-01-19-20-06-02](https://user-images.githubusercontent.com/59809278/213428058-ec1b909d-24f8-4540-ae54-c4e71a0706ff.png)
 
 
 
