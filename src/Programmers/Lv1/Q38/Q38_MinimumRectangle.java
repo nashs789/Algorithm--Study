@@ -1,4 +1,4 @@
-package Programmers.Lv1;
+package Programmers.Lv1.Q38;
 
 public class Q38_MinimumRectangle {
     public static void main(String[] args) {
