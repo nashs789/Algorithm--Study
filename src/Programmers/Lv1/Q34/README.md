@@ -20,6 +20,9 @@
 # **[ 새로 알게된 사실 ]**
 
 # **[ 결과 ]**
+![KakaoTalk_Photo_2023-01-19-19-57-28](https://user-images.githubusercontent.com/59809278/213426440-3fbcf105-0d18-42ad-8043-9d6996cc7a43.png)
+![KakaoTalk_Photo_2023-01-19-19-57-32](https://user-images.githubusercontent.com/59809278/213426427-b57d496e-798f-48aa-b8b4-ad995933ccd5.png)
+
 
 
 
