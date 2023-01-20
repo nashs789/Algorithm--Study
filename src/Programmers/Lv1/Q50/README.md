@@ -10,6 +10,7 @@
 # **[ 새로 알게된 사실 ]**
 
 # **[ 결과 ]**
+<img width="427" alt="스크린샷 2023-01-21 오전 1 35 57" src="https://user-images.githubusercontent.com/59809278/213753657-f7aec840-125a-4cff-92a0-8596944d8955.png">
 
 
 
