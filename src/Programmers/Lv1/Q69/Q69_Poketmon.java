@@ -59,5 +59,3 @@ public class Q69_Poketmon {
         System.out.println(maxCapacity < pocket.size() ? maxCapacity : pocket.size());
     }
 }
-
-// 21:28 -
