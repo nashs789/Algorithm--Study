@@ -17,3 +17,4 @@
     - 내부 반복으로 앞 글자부터 반복함
 
 # **[ 결과 ]**       
+<img width="418" alt="스크린샷 2023-01-22 오후 11 13 54" src="https://user-images.githubusercontent.com/59809278/213922150-307c3e69-f7cb-4129-8417-c9e56f1d1b95.png">
