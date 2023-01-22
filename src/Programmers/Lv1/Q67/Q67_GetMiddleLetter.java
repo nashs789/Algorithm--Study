@@ -15,10 +15,10 @@ package Programmers.Lv1.Q67;
 
 public class Q67_GetMiddleLetter {
     public static void main(String[] args) {
-        String s = "abcde";
+        String s = "abcdef";
         int len = s.length();
         int halfLen = s.length() / 2;
 
-        System.out.println(    len % 2 == 0 ? s.substring(halfLen - 1, halfLen + 1) : s.substring(halfLen, halfLen + 1)     );
+        System.out.println(    s.substring(halfLen + (len % 2 == 0 ? -1 : 0), halfLen + 1)    );
     }
 }
