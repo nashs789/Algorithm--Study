@@ -10,6 +10,7 @@
 # **[ 문제점 ]**
 - 문제는 간단해서 로직 짜는데는 15분정도 걸렸다. (근데 통과가 안됨)
 
+      [ 초기 문제의 코드 ]
       public static void main(String[] args) throws IOException {
           BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
   
@@ -28,32 +29,33 @@
           System.out.println(answer);
       }
 
-- BufferedReader 를 사용해서 입력 받다가 Scanner 로 변경하고 통과했음. (아직 이유는 못 찾았다.)
+- BufferedReader 를 사용해서 입력 받다가 Scanner 로 변경하고 통과했음.
+    - String[] 을 이용할 경우 문자열 기준으로 오름차순 정렬하기 때문에 100이 12보다 빠르다고 판단하는 케이스가 나온다.
 
 
-    [ 수정된 코드 ]
-    public static void main(String[] args) throws IOException {
-        Scanner sc = new Scanner(System.in);
-
-        int cnt = sc.nextInt(); 
-        int[] eachTimes = new int[cnt];
-
-        for(int idx = 0; idx < cnt; idx++){
-            eachTimes[idx] = sc.nextInt();
+        [ Scanner 이용 코드 ]
+        public static void main(String[] args) throws IOException {
+            Scanner sc = new Scanner(System.in);
+    
+            int cnt = sc.nextInt(); 
+            int[] eachTimes = new int[cnt];
+    
+            for(int idx = 0; idx < cnt; idx++){
+                eachTimes[idx] = sc.nextInt();
+            }
+    
+            int accTime = 0;
+            int answer = 0;
+    
+            Arrays.sort(eachTimes);
+    
+            for(int idx = 0; idx < cnt; idx++){
+                accTime += eachTimes[idx]; 
+                answer += accTime;
+            }
+    
+            System.out.println(answer);
         }
-
-        int accTime = 0;
-        int answer = 0;
-
-        Arrays.sort(eachTimes);
-
-        for(int idx = 0; idx < cnt; idx++){
-            accTime += eachTimes[idx]; 
-            answer += accTime;
-        }
-
-        System.out.println(answer);
-    }
 
 # **[ 새로 알게된 사실 ]**
 

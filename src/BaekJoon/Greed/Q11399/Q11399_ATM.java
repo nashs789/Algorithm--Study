@@ -38,19 +38,13 @@ package BaekJoon.Greed.Q11399;
 
 import java.io.*;
 import java.util.Arrays;
-import java.util.Scanner;
 
 public class Q11399_ATM {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        Scanner sc = new Scanner(System.in);
 
-        int cnt = sc.nextInt(); // Integer.parseInt(br.readLine());
-        int[] eachTimes = new int[cnt];// String[] eachTimes = br.readLine().split(" ");
-
-        for(int idx = 0; idx < cnt; idx++){
-            eachTimes[idx] = sc.nextInt();
-        }
+        int cnt = Integer.parseInt(br.readLine());
+        int[] eachTimes = Arrays.stream(br.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
 
         int accTime = 0;
         int answer = 0;
@@ -58,7 +52,7 @@ public class Q11399_ATM {
         Arrays.sort(eachTimes);
 
         for(int idx = 0; idx < cnt; idx++){
-            accTime += eachTimes[idx]; // Integer.parseInt(eachTimes[idx]);
+            accTime += eachTimes[idx];
             answer += accTime;
         }
 
