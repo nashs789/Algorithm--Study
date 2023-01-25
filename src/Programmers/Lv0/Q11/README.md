@@ -10,5 +10,6 @@
 # **[ 새로 알게된 사실 ]**
 
 # **[ 결과 ]**
+![KakaoTalk_Photo_2023-01-25-21-54-04](https://user-images.githubusercontent.com/59809278/214571317-00787726-1e90-4f8c-8768-48b7dd38495e.png)
 
          
