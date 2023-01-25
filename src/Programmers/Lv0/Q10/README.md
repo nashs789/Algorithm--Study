@@ -12,5 +12,6 @@
     - 해당 클래스의 메소드를 통해서 범위값 배열을 생성할 수 있음
     
 # **[ 결과 ]**
+![KakaoTalk_Photo_2023-01-25-21-45-27](https://user-images.githubusercontent.com/59809278/214567326-45f19efa-0201-454a-96ce-c45cd7265974.png)
 
          
