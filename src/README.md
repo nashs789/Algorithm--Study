@@ -28,3 +28,9 @@
 1. List<Integer> -> int[] (2023.01.17 추가)
 - list.stream().mapToInt(i -> i).toArray()
 
+[ IntStream ]
+1. 특정한 범위의 숫자를 순차적으로 생성
+- IntStream.range(str, end): 마지막 인자를 범위에 포함
+- IntStream.rangeClosed(str, end): 마지막 인자를 범위에 미포함
+    - ex) IntStream.rangeClosed(1, 5).map(e -> e * 2).filter(e -> e > 5).count();
+
