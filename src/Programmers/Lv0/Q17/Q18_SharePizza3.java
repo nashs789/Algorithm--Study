@@ -20,9 +20,9 @@
  * 12명이 4조각으로 자른 피자를 한 조각 이상씩 먹으려면 최소 3판을 시켜야 합니다.
  */
 
-package Programmers.Lv0.Q16;
+package Programmers.Lv0.Q17;
 
-public class Q16_SharePizza3 {
+public class Q18_SharePizza3 {
     public static void main(String[] args) {
         int slice = 7;
         int n = 10;

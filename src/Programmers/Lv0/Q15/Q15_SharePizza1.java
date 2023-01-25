@@ -22,9 +22,9 @@
  * 15명이 최소 한 조각씩 먹기 위해서 최소 3판이 필요합니다.
  */
 
-package Programmers.Lv0.Q14;
+package Programmers.Lv0.Q15;
 
-public class Q14_SharePizza1 {
+public class Q15_SharePizza1 {
     public static void main(String[] args) {
         int n = 15;
         int pizza = 1;

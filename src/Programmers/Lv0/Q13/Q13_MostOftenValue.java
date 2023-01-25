@@ -24,9 +24,9 @@
  * [1]에는 1만 있으므로 최빈값은 1입니다.
  */
 
-package Programmers.Lv0.Q12;
+package Programmers.Lv0.Q13;
 
-public class Q12_MostOftenValue {
+public class Q13_MostOftenValue {
     public static void main(String[] args) {
         int[] array = { 1, 2, 3, 3, 3, 4};
         int[] cntArray = new int[1000];

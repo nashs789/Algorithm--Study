@@ -1,15 +1,16 @@
 # **[ 정보 ]**
-1. 소요 시간: 17:09 - 17:13 (4분)
+1. 소요 시간: 16:19 - 16:49 (30분)
 2. 날짜: 2023.01.25(수)
 3. 저자: 이 인복
 
 # **[ 접근 순서 ]**
 
 # **[ 문제점 ]**
+- 런타임 에러 찾는라 오래걸림 index 문제
 
 # **[ 새로 알게된 사실 ]**
 
 # **[ 결과 ]**
-![KakaoTalk_Photo_2023-01-25-22-10-28](https://user-images.githubusercontent.com/59809278/214572147-0a2c33f7-5fe9-48c6-b227-7ac52f2bedf7.png)
+![KakaoTalk_Photo_2023-01-25-22-08-45](https://user-images.githubusercontent.com/59809278/214571754-854944fd-62a7-45d0-93ca-5e329ccdef32.png)
 
          

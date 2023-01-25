@@ -17,11 +17,11 @@
  * 9, -1, 0을 오름차순 정렬하면 -1, 0, 9이고 가장 중앙에 위치하는 값은 0입니다.
  */
 
-package Programmers.Lv0.Q11;
+package Programmers.Lv0.Q12;
 
 import java.util.Arrays;
 
-public class Q11_MiddleOfValues {
+public class Q12_MiddleOfValues {
     public static void main(String[] args) {
         int[] array = {1, 2, 7, 10, 11};
 

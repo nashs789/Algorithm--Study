@@ -17,11 +17,11 @@
  * 15 이하의 홀수가 담긴 배열 [1, 3, 5, 7, 9, 11, 13, 15]를 return합니다.
  */
 
-package Programmers.Lv0.Q13;
+package Programmers.Lv0.Q14;
 
 import java.util.Arrays;
 
-public class Q13_HateEvenNumber {
+public class Q14_HateEvenNumber {
     public static void main(String[] args) {
         int n = 15;
         int arrayIdx = 0;
