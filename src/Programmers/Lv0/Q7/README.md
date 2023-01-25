@@ -10,6 +10,7 @@
 # **[ 새로 알게된 사실 ]**
 
 # **[ 결과 ]**
-![Uploading 스크린샷 2023-01-25 오후 9.36.05.png…]()
+<img width="409" alt="스크린샷 2023-01-25 오후 9 36 05" src="https://user-images.githubusercontent.com/59809278/214565892-0b94448b-edf0-4dde-ab1e-da8e09c75829.png">
+
 
          
