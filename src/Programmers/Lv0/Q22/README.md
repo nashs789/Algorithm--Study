@@ -13,5 +13,4 @@
 - StringBuilder 에 reverse 함수 있음
 
 # **[ 결과 ]**
-
-         
+<img width="383" alt="스크린샷 2023-01-26 오후 11 24 09" src="https://user-images.githubusercontent.com/59809278/214867912-64a0e59c-5461-41e4-a4d0-2e8b61efab50.png">
