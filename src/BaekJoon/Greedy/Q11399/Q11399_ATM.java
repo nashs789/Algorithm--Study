@@ -34,7 +34,7 @@
  *
  */
 
-package BaekJoon.Greed.Q11399;
+package BaekJoon.Greedy.Q11399;
 
 import java.io.*;
 import java.util.Arrays;

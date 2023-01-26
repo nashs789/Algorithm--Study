@@ -36,7 +36,7 @@
  * 10000
  * 50000
  */
-package BaekJoon.Greed.Q11047;
+package BaekJoon.Greedy.Q11047;
 
 import java.io.*;
 

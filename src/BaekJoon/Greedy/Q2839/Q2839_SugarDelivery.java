@@ -25,7 +25,7 @@
  *     11                 3
  */
 
-package BaekJoon.Greed.Q2839;
+package BaekJoon.Greedy.Q2839;
 
 import java.util.Comparator;
 import java.util.HashSet;
