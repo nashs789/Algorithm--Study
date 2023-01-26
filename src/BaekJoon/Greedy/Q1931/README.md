@@ -15,11 +15,15 @@
 
 # **[ 문제점 ]**
 - 알고리즘 이해가 안가서 구글링함(코드 참조 x)
+![11](https://user-images.githubusercontent.com/59809278/214848554-e7410d72-b36b-488d-8784-6fa9d39148d4.png)
+
+![1](https://user-images.githubusercontent.com/59809278/214848488-eae6b234-5c51-451f-bb50-a4c64c68a17e.png)
 
 # **[ 새로 알게된 사실 ]**
 - 2차원 배열 정렬할 때 처음 써본 익명객체 오버라이딩 
 
 # **[ 결과 ]**
+![KakaoTalk_Photo_2023-01-26-22-33-34](https://user-images.githubusercontent.com/59809278/214848463-3dd45a83-4fc3-4607-9983-9c3e9dcced76.png)
 
 
 
