@@ -13,6 +13,7 @@
 
 # **[ 결과 ]**
 - 같은 종류의 문제를 여러번 풀었더니 어려움 없이 풀 수 있었음
+![KakaoTalk_Photo_2023-01-28-21-53-42](https://user-images.githubusercontent.com/59809278/215267698-78b7282d-8b50-4887-95f8-4378e06a0ef7.png)
 
 
 
