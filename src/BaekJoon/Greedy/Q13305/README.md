@@ -13,6 +13,17 @@
 # **[ 문제점 ]**
 - 로직 변경 (시간 vs 메모리, 코드 라인) ===> 차이는 정말 작음 신경 안써도됨
 
+[ 1번 로직 ]
+<img width="458" alt="스크린샷 2023-01-30 오후 10 11 36" src="https://user-images.githubusercontent.com/59809278/215488076-4cceb960-5800-4943-8448-944a5dc7ec37.png">
+
+[ 2번 로직 ]
+<img width="458" alt="스크린샷 2023-01-30 오후 10 11 45" src="https://user-images.githubusercontent.com/59809278/215488108-35ac4354-15b1-48f0-89c2-d4e815f82795.png">
+
 # **[ 새로 알게된 사실 ]**
 
 # **[ 결과 ]**
+[ 1번 로직 ]
+<img width="1117" alt="스크린샷 2023-01-30 오후 10 15 37" src="https://user-images.githubusercontent.com/59809278/215487751-c820eac1-b51d-4c4f-be63-a9f92602d8ce.png">
+
+[ 2번 로직 ]
+<img width="1117" alt="스크린샷 2023-01-30 오후 10 12 15" src="https://user-images.githubusercontent.com/59809278/215487651-b905bfb8-d5b9-4879-9df0-e5ca3fa37bec.png">
