@@ -10,6 +10,12 @@
 - 주유 가격이 낮은 도시에서 높은 도시의 충전량까지 미리 주유한다.
 - 다음 충전 도시는 현재 도시보다 주유 가격이 낮은 도시로 한다.
 
+
+![스케치](https://user-images.githubusercontent.com/59809278/215488704-cd7075a3-bb8a-4cb7-87e8-de8b21ca07a6.png)
+
+![start](https://user-images.githubusercontent.com/59809278/215488723-eac67acd-3b91-4d25-803c-83f37f0312e9.png)
+
+
 # **[ 문제점 ]**
 - 로직 변경 (시간 vs 메모리, 코드 라인) ===> 차이는 정말 작음 신경 안써도됨
 
