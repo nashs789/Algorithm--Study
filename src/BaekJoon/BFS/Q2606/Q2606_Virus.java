@@ -32,7 +32,7 @@
  * 4 7
  */
 
-package BaekJoon.Greedy.Q2606;
+package BaekJoon.BFS.Q2606;
 
 import java.io.BufferedReader;
 import java.io.IOException;
