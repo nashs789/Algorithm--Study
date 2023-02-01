@@ -30,6 +30,7 @@
 - 최단거리 로직 구현 방법
 
 # **[ 결과 ]**
+<img width="1143" alt="스크린샷 2023-02-02 오전 12 06 09" src="https://user-images.githubusercontent.com/59809278/216084498-d01e0622-b058-4460-ab07-4b258a855d3a.png">
 
 
 
