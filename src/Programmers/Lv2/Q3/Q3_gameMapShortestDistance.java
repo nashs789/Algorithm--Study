@@ -127,5 +127,3 @@ class Node{
         this.distance = distance;
     }
 }
-
-// 16:14 - 16:47 (33분)
