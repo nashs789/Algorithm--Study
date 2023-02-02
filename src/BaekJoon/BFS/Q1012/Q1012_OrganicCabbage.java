@@ -127,4 +127,3 @@ class Node{
         return empty;
     }
 }
-// 22:40 - 23:58 (1시간 18분)
