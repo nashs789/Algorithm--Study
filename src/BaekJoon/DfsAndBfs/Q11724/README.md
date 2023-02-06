@@ -5,6 +5,9 @@
 4. 문제: 연결 요소의 개수
 
 # **[ 문제 설명 ]**
+
+<img width="1157" alt="스크린샷 2023-02-06 오후 10 34 36" src="https://user-images.githubusercontent.com/59809278/216985236-560d8b93-0462-4e7f-8ff4-537f32f69b32.png">
+
 방향 없는 그래프가 주어졌을 때, 연결 요소 (Connected Component)의 개수를 구하는 프로그램을 작성하시오.
 
 # **[ 입력 ]**
@@ -51,6 +54,7 @@
 # **[ 새로 알게된 사실 ]**
 
 # **[ 결과 ]**
+<img width="1157" alt="스크린샷 2023-02-06 오후 10 34 46" src="https://user-images.githubusercontent.com/59809278/216985255-87b5af56-b2a0-447b-88aa-f9ccdf4b197b.png">
 
 
 
