@@ -48,7 +48,7 @@
  * 1111111
  */
 
-package BaekJoon.BFS.Q2178;
+package BaekJoon.DfsAndBfs.Q2178;
 
 import java.io.BufferedReader;
 import java.io.IOException;
