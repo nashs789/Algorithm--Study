@@ -58,6 +58,41 @@ V부터 방문된 점을 순서대로 출력하면 된다.
 1. 기본 DFS && 기본 BFS
 
 # **[ 문제점 ]**
+- DFS 로직 변경 
+    - 이유: 기존 코드는 stack 에서 idx 를 가지고 요소를 조작하기 때문에 요소를 재구성 하는데 
+           코스트 소모가 될거라고 생각했다. 
+
+
+      [ 변경 전 로직]
+      void DFS(int start){
+          boolean[] visited = new boolean[this.nodeCnt];
+          Stack<Integer> stack = new Stack<>();
+    
+            visited[start] = true;
+            stack.push(start);
+    
+            while(!stack.isEmpty()){
+                int curNode = stack.pop();
+                System.out.print(curNode + " ");
+    
+                adj[curNode].sort(Comparator.reverseOrder());
+                Iterator<Integer> it = adj[curNode].listIterator();
+    
+                while(it.hasNext()){
+                    int linkedNode = it.next();
+    
+                    if(stack.contains(linkedNode)){
+                        stack.remove(stack.size() - stack.search(linkedNode));
+                        stack.push(linkedNode);
+                    }
+    
+                    if(!visited[linkedNode]){
+                        visited[linkedNode] = true;
+                        stack.push(linkedNode);
+                    }
+                }
+            }
+      }
 
 # **[ 새로 알게된 사실 ]**
 

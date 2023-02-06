@@ -49,11 +49,16 @@ class Graph{
         boolean[] visited = new boolean[this.nodeCnt];
         Stack<Integer> stack = new Stack<>();
 
-        visited[start] = true;
         stack.push(start);
 
         while(!stack.isEmpty()){
             int curNode = stack.pop();
+
+            if(visited[curNode]){
+                continue;
+            }
+
+            visited[curNode] = true;
             System.out.print(curNode + " ");
 
             adj[curNode].sort(Comparator.reverseOrder());
@@ -62,13 +67,7 @@ class Graph{
             while(it.hasNext()){
                 int linkedNode = it.next();
 
-                if(stack.contains(linkedNode)){
-                    stack.remove(stack.size() - stack.search(linkedNode));
-                    stack.push(linkedNode);
-                }
-
                 if(!visited[linkedNode]){
-                    visited[linkedNode] = true;
                     stack.push(linkedNode);
                 }
             }
