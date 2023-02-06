@@ -63,6 +63,9 @@ V부터 방문된 점을 순서대로 출력하면 된다.
            코스트 소모가 될거라고 생각했다. 
 
 
+<img width="1157" alt="스크린샷 2023-02-06 오후 10 27 18" src="https://user-images.githubusercontent.com/59809278/216983549-85ae3158-cd89-4829-aede-aa6c927486c9.png">
+
+
       [ 변경 전 로직]
       void DFS(int start){
           boolean[] visited = new boolean[this.nodeCnt];
