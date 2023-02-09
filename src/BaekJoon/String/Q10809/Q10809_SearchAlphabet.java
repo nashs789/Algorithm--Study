@@ -27,8 +27,3 @@ public class Q10809_SearchAlphabet {
         }
     }
 }
-
-//10:22
-// IOException 은 java.io 에 있다
-// 세미콜론(;) 빼먹지 말자
-// String 의 length 는 메소드다
