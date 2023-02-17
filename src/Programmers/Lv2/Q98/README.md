@@ -40,13 +40,19 @@
 # **[ 입출력 예 #1 ]**
 주어진 문자열은 다음과 같은 미로이며
 
+<img width="843" alt="스크린샷 2023-02-17 오후 11 16 20" src="https://user-images.githubusercontent.com/59809278/219679485-4e3be84b-8abb-46d8-81be-52c295d2010d.png">
+
 다음과 같이 이동하면 가장 빠른 시간에 탈출할 수 있습니다.
+
+<img width="846" alt="스크린샷 2023-02-17 오후 11 16 28" src="https://user-images.githubusercontent.com/59809278/219679504-21c98fc3-9be1-423c-9d65-cf030d64c591.png">
 
 4번 이동하여 레버를 당기고 출구까지 이동하면 총 16초의 시간이 걸립니다.  
 따라서 16을 반환합니다.
 
 # **[ 입출력 예 #2 ]**
 주어진 문자열은 다음과 같은 미로입니다.
+
+<img width="846" alt="스크린샷 2023-02-17 오후 11 16 33" src="https://user-images.githubusercontent.com/59809278/219679539-76665d56-20e5-4e84-8fb7-4b24ba9aa84c.png">
 
 시작 지점에서 이동할 수 있는 공간이 없어서 탈출할 수 없습니다.  
 따라서 -1을 반환합니다.
@@ -81,4 +87,4 @@
           OOOOO
 
 # **[ 결과 ]**
-
+<img width="358" alt="스크린샷 2023-02-17 오후 11 16 04" src="https://user-images.githubusercontent.com/59809278/219679555-5780ebdd-418e-42d5-9793-0bb03448fd48.png">
