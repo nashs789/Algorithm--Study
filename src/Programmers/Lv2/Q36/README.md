@@ -60,3 +60,4 @@ face에 해당하는 의상이 crow_mask, blue_sunglasses, smoky_makeup이므로
 # **[ 새로 알게된 사실 ]**
 
 # **[ 결과 ]**
+<img width="348" alt="스크린샷 2023-02-21 오후 11 54 06" src="https://user-images.githubusercontent.com/59809278/220380705-fc3337da-b334-4e88-961b-b8a570f60704.png">
