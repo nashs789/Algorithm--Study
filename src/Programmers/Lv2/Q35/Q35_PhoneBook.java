@@ -5,7 +5,7 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Q35 {
+public class Q35_PhoneBook {
     public static void main(String[] args) {
         //String[] phone_book = {"12", "123", "1235", "567", "88"};
         //String[] phone_book = {"123", "456", "789"};
