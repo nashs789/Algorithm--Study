@@ -14,8 +14,6 @@ public class Q2941_CroatiaAlphabet {
             str = str.replace(croatia_alpha[idx], "0");
         }
 
-        str = str.replaceAll("[A-Za-z]", "0");
-
         System.out.println(str.length());
     }
 }
