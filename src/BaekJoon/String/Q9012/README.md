@@ -7,6 +7,9 @@
 6. 문제: 괄호
 
 # **[ 문제 설명 ]**
+
+<img width="1147" alt="스크린샷 2023-02-22 오후 11 28 41" src="https://user-images.githubusercontent.com/59809278/220653760-994343fb-fa2c-4519-8162-31ddf9fad415.png">
+
 괄호 문자열(Parenthesis String, PS)은 두 개의 괄호 기호인 ‘(’ 와 ‘)’ 만으로 구성되어 있는 문자열이다.  
 그 중에서 괄호의 모양이 바르게 구성된 문자열을 올바른 괄호 문자열(Valid PS, VPS)이라고 부른다.  
 한 쌍의 괄호 기호로 된 “( )” 문자열은 기본 VPS 이라고 부른다.  
@@ -66,3 +69,4 @@
 # **[ 새로 알게된 사실 ]**
 
 # **[ 결과 ]**
+<img width="1147" alt="스크린샷 2023-02-22 오후 11 28 48" src="https://user-images.githubusercontent.com/59809278/220653815-87c6f30f-43e6-4f3d-b2e7-efb8ff4f2ef7.png">
