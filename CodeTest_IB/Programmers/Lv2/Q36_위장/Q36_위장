@@ -1,0 +1,19 @@
+import java.util.HashMap;
+import java.util.Map;
+
+class Solution {
+    public int solution(String[][] clothes) {
+        int answer = 1;
+        Map<String, Integer> map = new HashMap<>();
+
+        for(int idx = 0; idx < clothes.length; idx++){
+            map.put(clothes[idx][1], map.getOrDefault(clothes[idx][1], 1) + 1);
+        }
+
+        for(String key : map.keySet()){
+            answer *= map.get(key);
+        }
+
+        return answer - 1;
+    }
+}
