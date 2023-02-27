@@ -20,6 +20,3 @@ public class Q36_Camouflage {
         System.out.println(answer - 1);
     }
 }
-
-// 1시간 10분 -> 생각
-// 10:55
