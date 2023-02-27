@@ -1,4 +1,4 @@
-package BaekJoon.DfsAndBfs.Q1753;
+package BaekJoon.Dijkstra.Q1753;
 
 import java.io.BufferedReader;
 import java.io.IOException;
