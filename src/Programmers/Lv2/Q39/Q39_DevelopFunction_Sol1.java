@@ -31,5 +31,3 @@ public class Q39_DevelopFunction_Sol1 {
         // answer.stream().mapToInt(Integer::intValue).toArray();
     }
 }
-
-// 10:47
