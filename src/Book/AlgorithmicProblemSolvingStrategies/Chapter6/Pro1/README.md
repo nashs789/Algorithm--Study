@@ -75,3 +75,7 @@
 
 # **[ 결과 ]**
 <img width="358" alt="스크린샷 2023-03-14 오전 12 45 14" src="https://user-images.githubusercontent.com/59809278/224754367-e53814f1-11b4-4c1c-9a63-3eedb990afab.png">
+
+[ 정상동작 하는지 궁금해서 10명의 친구가 전부 친구일 때 케이스로 시험 해봄 ]
+<img width="1801" alt="스크린샷 2023-03-15 오후 11 56 36" src="https://user-images.githubusercontent.com/59809278/225349326-1ea72d4c-507d-4ce4-93f7-33df614cbf2d.png">
+
