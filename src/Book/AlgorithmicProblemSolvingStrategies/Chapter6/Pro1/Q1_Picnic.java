@@ -1,5 +1,7 @@
 package Book.AlgorithmicProblemSolvingStrategies.Chapter6.Pro1;
 
+import Common.EstimateCode;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -15,6 +17,9 @@ public class Q1_Picnic {
     private static LinkedList<Integer>[] adj;
 
     public static void main(String[] args) throws IOException {
+        EstimateCode estimateCode = new EstimateCode();
+        estimateCode.start();
+
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int c = Integer.parseInt(br.readLine());
 
@@ -41,6 +46,8 @@ public class Q1_Picnic {
             System.out.println(cnt);
             cnt = 0;
         }
+
+        estimateCode.end();
     }
 
     private static void getCount(int idx, boolean[] pairs, HashSet<String> pairSet, String key) {
