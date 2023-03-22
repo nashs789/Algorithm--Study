@@ -7,6 +7,8 @@
 6. 문제: 약수 구하기
 
 # **[ 문제 설명 ]**
+<img width="1148" alt="스크린샷 2023-03-23 오전 1 00 08" src="https://user-images.githubusercontent.com/59809278/226967596-de3730c7-e9ce-494a-b8a7-87798931cc0b.png">
+
 어떤 자연수 p와 q가 있을 때, 만일 p를 q로 나누었을 때 나머지가 0이면 q는 p의 약수이다.
 
 6을 예로 들면
@@ -55,3 +57,5 @@ K는 1 이상 N 이하이다.
 # **[ 새로 알게된 사실 ]**
 
 # **[ 결과 ]**
+<img width="1141" alt="스크린샷 2023-03-23 오전 12 59 58" src="https://user-images.githubusercontent.com/59809278/226967635-96c5c967-bfd2-49df-ba6a-23902313cf45.png">
+
