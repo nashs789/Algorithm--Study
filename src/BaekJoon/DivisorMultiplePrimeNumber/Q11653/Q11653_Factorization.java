@@ -10,6 +10,7 @@ import java.util.List;
 public class Q11653_Factorization {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringBuilder sb = new StringBuilder();
         List<Integer> list = new ArrayList<>();
         int num = Integer.parseInt(br.readLine());
 
@@ -34,7 +35,8 @@ public class Q11653_Factorization {
 
         list.sort(Comparator.naturalOrder());
         for(int n : list){
-            System.out.println(n);
+            sb.append(n).append("\n");
         }
+        System.out.println(sb);
     }
 }

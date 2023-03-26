@@ -29,11 +29,7 @@ public class Q44_SearchPrimeNumber {
         System.out.println(cnt);
     }
 
-    /**
-     * 제곱근을 이용한 소수 판별 함수
-     * @param num
-     * @return
-     */
+    // 제곱근을 이용한 소수 판별 함수
     private static boolean isPrimeNumber(int num){
         if(num <= 1){
             return false;
@@ -73,11 +69,7 @@ public class Q44_SearchPrimeNumber {
         }
     }
 
-    /**
-     * 모든 숫자를 조합에 사용했는지 확인하는 함수(재귀함수 탈출 조건)
-     * @param done
-     * @return
-     */
+    // 모든 숫자를 조합에 사용했는지 확인하는 함수(재귀함수 탈출 조건)
     private static boolean isAllTrue(boolean[] done){
         for(int idx = 0; idx < done.length; idx++){
             if(!done[idx]){
