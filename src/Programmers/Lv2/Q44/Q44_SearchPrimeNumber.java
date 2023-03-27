@@ -11,7 +11,7 @@ public class Q44_SearchPrimeNumber {
     private static int cnt = 0;
 
     public static void main(String[] args) {
-        String numbers = "143";
+        String numbers = "123";
         nums = numbers.split("");
 
         for(int i = 0; i < nums.length; i++){
