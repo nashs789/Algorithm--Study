@@ -55,8 +55,8 @@
     - 내가 짠 소스코드보다 효율이 적게는 2배에서 많게는 4배까지 확인 해봤음 ===> input 의 사이즈에 따라서 비례하는 것 같음
 
 # **[ 결과 ]**
-<img width="800" height="300" alt="스크린샷 2023-03-22 오후 11 39 59" src="https://user-images.githubusercontent.com/59809278/226948325-dedbb8cf-1ddf-4475-8e81-c23b0e6c8632.png">  
+<img width="600" height="300" alt="스크린샷 2023-03-22 오후 11 39 59" src="https://user-images.githubusercontent.com/59809278/226948325-dedbb8cf-1ddf-4475-8e81-c23b0e6c8632.png">  
 
-<img width="800" height="300" alt="스크린샷 2023-04-04 오후 9 05 08" src="https://user-images.githubusercontent.com/59809278/229787944-7a6789fa-35c4-4535-b1d7-9ff103473563.png">  
+<img width="600" height="300" alt="스크린샷 2023-04-04 오후 9 05 08" src="https://user-images.githubusercontent.com/59809278/229787944-7a6789fa-35c4-4535-b1d7-9ff103473563.png">  
   
 [2023.04.04 추가된 새로운 로직의 결과]
