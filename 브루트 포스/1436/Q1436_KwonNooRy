@@ -32,7 +32,7 @@ public class Main {
 				} else {
 					B = Ns.get(j);
 
-                    if (A+B > M) {
+		                         if (A+B > M) {
 						continue;
 						
 					} else {
