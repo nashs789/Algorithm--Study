@@ -12,11 +12,11 @@ public class Q2798_HongHuipyo {
         int M = Arrays.stream(scanner.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray()[1];
         int[] array = Arrays.stream(scanner.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
 
-        dfs(array, 0, M);
+        backTracking(array, 0, M);
         System.out.println(answer);
     }
 
-    static void dfs(int[] array, int index, int M) {
+    static void backTracking(int[] array, int index, int M) {
         if (indices.size() > 3)
             return;
         for (int i = index; i < array.length; i++) {
@@ -26,7 +26,7 @@ public class Q2798_HongHuipyo {
             if (indices.size() == 3 && indices.stream().mapToInt(Integer::intValue).sum() <= M)
                 answer = Math.max(answer, indices.stream().mapToInt(Integer::intValue).sum());
             else
-                dfs(array, i, M);
+                backTracking(array, i, M);
             indices.pop();
         }
     }
