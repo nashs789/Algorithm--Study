@@ -1,3 +1,8 @@
+/**
+ *  [ 메모리 ]         [ 시간 ]
+ *   16724KB          176ms
+ */
+
 package BaekJoon.BruteForce.Q19532;
 
 import java.io.BufferedReader;

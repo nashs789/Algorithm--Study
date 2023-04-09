@@ -1,3 +1,13 @@
+/**
+ * 두 가지로 풀이 방식으로 풀었는데 3개의 수가 정해져있기 때문에 단순 반복문이 가장 빠른 방법인듯 싶다.
+ * 재귀함수 호출로 인한 메모리 사용량은 알겠는데 시간도 많이 걸릴거라고는 생각 못했는데..
+ * 시간이 더 들어간 이유는 정확히 모르겠다.
+ *
+ *                      [ 메모리 ]         [ 시간 ]
+ *  sol1_backTracking   14340KB           123ms
+ *  sol2_Roop           105346KB          336ms
+ */
+
 package BaekJoon.BruteForce.Q2798;
 
 import java.io.BufferedReader;
