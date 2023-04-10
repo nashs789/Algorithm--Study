@@ -24,12 +24,12 @@ public class Q2798_Blackjack_BackTracking {
         nums = Arrays.stream(br.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         visited = new boolean[N];
 
-        dfs(0);
+        backTracking(0);
 
         System.out.println(max);
     }
 
-    public static void dfs(int idx){
+    public static void backTracking(int idx){
         if(idx > 2){
             int sum = Arrays.stream(comb).sum();
 
@@ -43,7 +43,7 @@ public class Q2798_Blackjack_BackTracking {
             if(!visited[i]){
                 visited[i] = true;
                 comb[idx] = nums[i];
-                dfs(++idx);
+                backTracking(++idx);
                 idx--;
                 visited[i] = false;
             }
