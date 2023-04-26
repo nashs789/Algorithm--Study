@@ -78,3 +78,4 @@ ex) 완성해야 하는 이름이 세 글자면 AAA, 네 글자면 AAAA
 # **[ 새로 알게된 사실 ]**
 
 # **[ 결과 ]**
+<img width="417" alt="스크린샷 2023-04-27 오전 12 09 43" src="https://user-images.githubusercontent.com/59809278/234620209-471f6c21-085d-4848-a142-2e98ff7cca44.png">
