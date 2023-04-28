@@ -31,13 +31,10 @@ public class Q2231_DivideAndSum {
         for(int idx = 0; idx < num; idx++){
             int tempSum = idx;
             int tempNum = idx;
-            int divisor = 1000000;  // 입력받을 수 있는 자연수의 최대 값
 
-            // divisor: 1000000, 100000, 10000.... 10, 1
-            while(divisor != 1){
-                tempSum += tempNum / divisor;
-                tempNum %= divisor;
-                divisor /= 10;
+            while(tempNum != 0){
+                tempSum += tempNum % 10;
+                tempNum /= 10;
             }
 
             tempSum += tempNum;
