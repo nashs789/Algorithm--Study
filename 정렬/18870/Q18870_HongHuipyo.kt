@@ -1,23 +1,16 @@
 /**
  *  [ 효율성 ]
- *  - 메모리: 300084KB
- *  - 시간 : 1576ms
+ *  - 메모리: 464224KB
+ *  - 시간 : 3320ms
  */
 
 package BaekJoon.Sorting.Q18870
 
 fun main() {
-    val br = System.`in`.bufferedReader()
-    val bw = System.out.bufferedWriter()
-    val n = br.readLine().toInt()
-    val arr = IntArray(10001)
+    val n = readln()
+    val input = readln().split(" ").map(String::toInt)
+    val sortedSet = input.toSortedSet()
+    val dictionary = sortedSet.zip(sortedSet.indices).toMap()
 
-    repeat(n) {
-        arr[br.readLine().toInt()]++
-    }
-    br.close()
-    repeat(arr.size) {
-        bw.write("$it\n".repeat(arr[it]))
-    }
-    bw.close()
+    println(input.map { dictionary[it] }.joinToString(" "))
 }
