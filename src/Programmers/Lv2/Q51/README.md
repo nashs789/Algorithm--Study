@@ -41,3 +41,4 @@ n개의 음이 아닌 정수들이 있습니다.
 # **[ 새로 알게된 사실 ]**
 
 # **[ 결과 ]**
+<img width="385" alt="스크린샷 2023-04-30 오전 12 20 53" src="https://user-images.githubusercontent.com/59809278/235310412-84bbf808-52cb-4246-981b-ecc8b4f8648d.png">
