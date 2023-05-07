@@ -1,3 +1,8 @@
+/**
+ *  [ 효율성 ]
+ *  - 메모리: 94260KB
+ *  - 시간 : 776ms
+ */
 package BaekJoon.Sorting.Q2751;
 
 import java.io.BufferedReader;

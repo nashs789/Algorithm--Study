@@ -1,3 +1,8 @@
+/**
+ *  [ 효율성 ]
+ *  - 메모리: 14552KB
+ *  - 시간 : 132ms
+ */
 package BaekJoon.String.Q1427;
 
 import java.io.BufferedReader;
