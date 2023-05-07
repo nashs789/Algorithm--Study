@@ -20,7 +20,7 @@ package BaekJoon.BruteForce.Q2839;
 import java.util.*;
 import java.util.stream.*;
 
-public class Q2839_HongHuipyo {
+public class Q2839_HuipyoHong {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int input = sc.nextInt();
