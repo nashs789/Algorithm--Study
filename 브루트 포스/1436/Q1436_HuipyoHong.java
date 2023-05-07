@@ -3,7 +3,7 @@ package BaekJoon.BruteForce.Q1436;
 import java.util.Scanner;
 import java.util.stream.IntStream;
 
-public class Q1436_HongHuipyo {
+public class Q1436_HuipyoHong {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
