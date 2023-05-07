@@ -18,7 +18,7 @@ package BaekJoon.BruteForce.Q2231;
 import java.util.*;
 import java.util.stream.*;
 
-public class Q2231_HongHuipyo {
+public class Q2231_HuipyoHong {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int number = scanner.nextInt();
