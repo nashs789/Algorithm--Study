@@ -8,7 +8,7 @@ package BaekJoon.BruteForce.Q1018;
 
 import java.util.*;
 
-public class Q1018_HongHuipyo {
+public class Q1018_HuipyoHong {
     private static int LIMIT = 8;
 
     public static void main(String[] args) {
