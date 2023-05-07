@@ -2,7 +2,7 @@ package BaekJoon.BruteForce.Q2798;
 
 import java.util.*;
 
-public class Q2798_HongHuipyo {
+public class Q2798_HuipyoHong {
     private static final Stack<Integer> indices = new Stack<>();
 
     private static int answer;
