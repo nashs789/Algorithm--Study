@@ -1,4 +1,4 @@
-package Programmers.Lv3.Q;
+package Programmers.Lv3.Q31;
 
 public class Q31_Immigration2 {
     public static void main(String[] args) {

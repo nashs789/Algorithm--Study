@@ -1,4 +1,4 @@
-package Programmers.Lv3.Q;
+package Programmers.Lv3.Q31;
 
 import java.util.Arrays;
 
