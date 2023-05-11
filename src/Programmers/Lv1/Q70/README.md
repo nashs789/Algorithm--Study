@@ -45,3 +45,4 @@ skip에 있는 알파벳은 제외하고 건너뜁니다.
 # **[ 새로 알게된 사실 ]**
 
 # **[ 결과 ]**
+<img width="422" alt="스크린샷 2023-05-12 오전 12 43 35" src="https://github.com/nashs789/CodeTest/assets/59809278/1bb7fd63-c45a-48c9-b89d-4d88e54b255a">
