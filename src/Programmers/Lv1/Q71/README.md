@@ -50,3 +50,4 @@ cards1에서 "i"를 사용하고 cards2에서 "want"와 "to"를 사용하여 "i 
 # **[ 새로 알게된 사실 ]**
 
 # **[ 결과 ]**
+<img width="372" alt="스크린샷 2023-05-13 오전 1 04 14" src="https://github.com/nashs789/CodeTest/assets/59809278/e2ddd668-13c5-419b-9bd1-710b78c76f6c">
