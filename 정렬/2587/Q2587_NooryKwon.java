@@ -1,3 +1,5 @@
+// 메모리 17756KB, 시간 204ms
+
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.Scanner;
