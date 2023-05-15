@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
 
-public class Q15649_NAndM_1_sol2 {
+public class Q15649_NAndM1_sol2 {
 
     private static StringBuilder sb = new StringBuilder();
     private static boolean[] visited;
