@@ -21,6 +21,7 @@ public class Q1269 {
             int num = Integer.parseInt(st.nextToken());
             result.add(num);
         }
+      
         st = new StringTokenizer(br.readLine()," ");
         for (int i= 0; i<B; i++) {
             int num = Integer.parseInt(st.nextToken());
@@ -30,7 +31,7 @@ public class Q1269 {
                 result.add(num);
             };
         }
-        System.out.println(result.size());
+      
         br.close();
     }
 }
