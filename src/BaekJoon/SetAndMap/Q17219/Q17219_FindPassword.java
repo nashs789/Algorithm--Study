@@ -30,5 +30,3 @@ public class Q17219_FindPassword {
         System.out.println(sb);
     }
 }
-
-// 23:07
