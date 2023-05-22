@@ -9,7 +9,6 @@ import java.util.Set;
 public class Q11478_CountOfDifference2 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringBuilder sb = new StringBuilder();
         String str = br.readLine();
         int len = str.length();
         Set<String> set = new HashSet<>();
