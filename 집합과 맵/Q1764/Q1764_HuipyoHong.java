@@ -12,7 +12,11 @@ public class Q1764_HuipyoHong {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt(), m = scanner.nextInt();
-        Set<String> mutableSet = new HashSet<>() { { for (int i = 0; i < n; i++) add(scanner.next()); } };
+        Set<String> mutableSet = new HashSet<>() { 
+            { 
+                for (int i = 0; i < n; i++) add(scanner.next()); 
+            } 
+        };
         List<String> result = new ArrayList<>() {
             {
                 for (int j = 0; j < m; j++) {
