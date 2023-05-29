@@ -5,6 +5,12 @@
 //  Created by 홍희표 on 2023/05/29.
 //
 
+/**
+ *  [ 효율성 ]
+ *  - 메모리: 69104KB
+ *  - 시간 : 12ms
+ */
+
 import Foundation
 
 guard let count = readLine() else {
