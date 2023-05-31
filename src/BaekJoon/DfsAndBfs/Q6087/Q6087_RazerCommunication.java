@@ -68,7 +68,7 @@ public class Q6087_RazerCommunication {
 
                     Node linkedNode;
                     // idx = 0, 1, 2, 3 (상, 하, 좌, 우)
-                    // if, else if 는 합쳐도 무방
+                    // if, else if 는 합쳐도 무방(조건이 너무 길어져서 두 개로 나눴음)
                     if((curNode.dir == 0 || curNode.dir == 1) && (idx == 2 || idx == 3)){   // 현재 진행 방향은 '상', '하' 지만 움직이고자 하는 방향은 '좌', '우'인 케이스
                         linkedNode = new Node(newX, newY, curNode.mirror + 1, idx);
                     } else if((curNode.dir == 2 || curNode.dir == 3) && (idx == 0 || idx == 1)){    // 현재 진행 방향은 '좌', '우' 지만 움직이고자 하는 방향은 '상', '하'인 케이스
