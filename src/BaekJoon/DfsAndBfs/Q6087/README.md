@@ -11,6 +11,9 @@
 6. 문제: 레이저 통신
 
 # **[ 문제 설명 ]**
+
+<img width="1153" alt="스크린샷 2023-05-31 오전 12 29 56" src="https://github.com/nashs789/CodeTest/assets/59809278/6c131f63-ea32-4da7-a472-ae6d8ae57873">
+
 크기가 1×1인 정사각형으로 나누어진 W×H 크기의 지도가 있다.   
 지도의 각 칸은 빈 칸이거나 벽이며, 두 칸은 'C'로 표시되어 있는 칸이다.
 
@@ -77,3 +80,4 @@
    - https://bingorithm.tistory.com/2
    
 # **[ 결과 ]**
+<img width="1153" alt="스크린샷 2023-05-31 오전 12 30 04" src="https://github.com/nashs789/CodeTest/assets/59809278/ec0aed12-322f-4b45-89b6-37baad77c0e8">
