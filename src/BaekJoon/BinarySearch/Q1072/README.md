@@ -9,7 +9,7 @@
 
 # **[ 문제 설명 ]**
 
-<img width="1153" alt="스크린샷 2023-05-31 오후 11 03 11" src="https://github.com/nashs789/CodeTest/assets/59809278/d47a0e8e-3eff-4579-b691-d5c12b956642">
+<img width="1153" alt="스크린샷 2023-06-01 오전 12 39 50" src="https://github.com/nashs789/CodeTest/assets/59809278/e139ce10-620f-47ba-a3fb-df2c209c0657">
 
 김형택은 지금 몰래 Spider Solitaire(스파이더 카드놀이)를 하고 있다. 형택이는 이 게임을 이길 때도 있었지만, 질 때도 있었다.   
 누군가의 시선이 느껴진 형택이는 게임을 중단하고 코딩을 하기 시작했다. 의심을 피했다고 생각한 형택이는 다시 게임을 켰다.  
@@ -78,4 +78,4 @@ X와 Y가 주어졌을 때, 형택이가 게임을 최소 몇 번 더 해야 Z�
 # **[ 새로 알게된 사실 ]**
    
 # **[ 결과 ]**
-<img width="1153" alt="스크린샷 2023-05-31 오후 11 03 21" src="https://github.com/nashs789/CodeTest/assets/59809278/9afc9cba-4cbc-4865-ad94-ecdb915b2c4a">
+<img width="1153" alt="스크린샷 2023-06-01 오전 12 40 00" src="https://github.com/nashs789/CodeTest/assets/59809278/43e98e9e-a467-49c9-91a9-3fc05c39af7f">
