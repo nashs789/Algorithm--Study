@@ -7,6 +7,7 @@
 3. 저자: 이 인복
 4. 난이도: BaekJoon (Gold 2)
 5. 분류: Dijkstra
+   - Graph Theory
 6. 문제: 미확인 도착지
 
 # **[ 문제 설명 ]**
