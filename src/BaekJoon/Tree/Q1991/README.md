@@ -48,8 +48,28 @@
       DBEGFCA
 
 # **[ 접근 순서 ]**
+1. 트리를 구성
+   - 루트 노드(Root Node)를 베이스로 재귀함수를 통해 트리를 구성한다.
+      - 루트 노드 케이스: left, right 에 바로 삽입
+      - 로트 노드 x 케이스: 현재 노드에서 left 와 right 를 베이스로 계속해서 탐색해서 해당 노드가 나올때까지 반복
+   
+2. 전위 순회 (Preorder Traversal)
+   - 항상 루트노드를 먼저 탐색하며 left, right 탐색 이전에 parent 노드를 탐색한다
+   - parent(root) -> left -> right
+   
+3. 중위 순회 (InOrder Traversal)
+   - left 노드가 항상 먼저 이며 후에 parent 노드를 탐색한다.
+   - left -> parent(root) -> right
+   
+3. 후위 순회 (PostOrder Traversal)
+   - left 노드가 항상 먼저이며 후에 right 노드를 탐색한다.
+   - left -> right -> parent(root)
+
+# **[ 문제점 & 주의점 ]**
 
 # **[ 새로 알게된 사실 ]**
+1. 트리 구현하는 알고리즘 문제는 이번에 접한게 처음이라 다른 사람의 코드를 참고해서 풀었다.
+   - 여러번 풀어야 내 것으로 만드는게 가능할듯... (순회 자체는 쉬우나 트리 구성이 쉽지 않았음 -> 첨이라)
 
 # **[ 결과 ]**
 <img width="1148" alt="스크린샷 2023-06-07 오전 12 53 57" src="https://github.com/nashs789/CodeTest/assets/59809278/7af1e908-4510-429b-b890-a730773e0a04">
