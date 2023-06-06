@@ -8,8 +8,12 @@
 6. 문제: 트리 순회
 
 # **[ 문제 설명 ]**
+
+<img width="1148" alt="스크린샷 2023-06-07 오전 12 53 47" src="https://github.com/nashs789/CodeTest/assets/59809278/ee2c75b3-27df-4047-ae90-f21170a6c201">
+
 이진 트리를 입력받아 전위 순회(preorder traversal), 중위 순회(inorder traversal), 후위 순회(postorder traversal)한 결과를 출력하는 프로그램을 작성하시오.
 
+<img width="1148" alt="스크린샷 2023-06-07 오전 12 53 50" src="https://github.com/nashs789/CodeTest/assets/59809278/5236a0e1-489d-433f-8db9-715cb70013b4">
 
 예를 들어 위와 같은 이진 트리가 입력되면,
 
@@ -48,3 +52,4 @@
 # **[ 새로 알게된 사실 ]**
 
 # **[ 결과 ]**
+<img width="1148" alt="스크린샷 2023-06-07 오전 12 53 57" src="https://github.com/nashs789/CodeTest/assets/59809278/7af1e908-4510-429b-b890-a730773e0a04">
