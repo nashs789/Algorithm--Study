@@ -12,13 +12,11 @@ public class Q3_gameMapShortestDistance_sol2 {
     public static int[][] move = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
 
     public static void main(String[] args) {
-        // maps = new int[][]{{1, 0, 1, 1, 1}, {1, 0, 1, 0, 1}, {1, 0, 1, 1, 1}, {1, 1, 1, 0, 1}, {0, 0, 0, 0, 1}};
-        maps = new int[][]{{1, 0, 0}, {1, 1, 1}};
+        maps = new int[][]{{1, 0, 1, 1, 1}, {1, 0, 1, 0, 1}, {1, 0, 1, 1, 1}, {1, 1, 1, 0, 1}, {0, 0, 0, 0, 1}};
         n = maps.length;
         m = maps[0].length;
         visited = new boolean[n][m];
 
-        System.out.println("n = " + n + "   m = " + m);
         System.out.println(bfs());
     }
 
