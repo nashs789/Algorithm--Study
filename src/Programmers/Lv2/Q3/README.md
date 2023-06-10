@@ -80,3 +80,6 @@ ROR 게임은 두 팀으로 나누어서 진행하며, 상대 팀 진영을 먼�
 
 # **[ 결과 ]**
 ![KakaoTalk_Photo_2023-02-02-21-46-40](https://user-images.githubusercontent.com/59809278/216334419-73a58f92-aaa4-4a3e-b6d4-00f2ff76e0aa.png)
+
+[ sol2 ]
+<img width="345" alt="스크린샷 2023-06-10 오후 4 22 04" src="https://github.com/nashs789/CodeTest/assets/59809278/5d6ed614-026f-4b6c-928d-40d35df2bb70">
