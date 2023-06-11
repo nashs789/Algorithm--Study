@@ -36,10 +36,8 @@ public class Q17103_GoldBach {
                     cnt++;
                 }
             }
-
             sb.append(cnt).append('\n');
         }
-
         System.out.println(sb);
     }
 
