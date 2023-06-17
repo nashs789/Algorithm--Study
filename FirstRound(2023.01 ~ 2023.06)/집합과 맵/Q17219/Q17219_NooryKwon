@@ -1,0 +1,29 @@
+// 152052KB , 1264ms
+
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) throws IOException {
+		Scanner sc = new Scanner(System.in);
+		StringBuilder stringBuilder = new StringBuilder();
+
+        int pwds = sc.nextInt();
+		int sites = sc.nextInt();
+
+		Map<String, String> sitesAndpwds = new HashMap<String, String>();
+
+		for (int i = 0; i < pwds; i++) {
+			sitesAndpwds.put(sc.next(), sc.next());
+		}
+
+		for (int i = 0; i < sites; i++) {
+			String searchSite = sc.next();
+			stringBuilder.append(sitesAndpwds.get(searchSite) +"\n");
+		}
+		
+		System.out.println(stringBuilder.toString());
+	}
+}

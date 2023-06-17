@@ -1,0 +1,34 @@
+// 239944KB, 928ms
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) throws IOException {
+		Scanner sc = new Scanner(System.in);
+		StringBuilder stringBuilder = new StringBuilder();
+
+		String s = sc.next();
+		String word;
+
+		Map<String, Integer> map = new HashMap<String, Integer>();
+		int cnt = 0;
+		
+		for (int i=0; i<s.length(); i++) {
+			for (int j=0; j<s.length()-(i); j++) {
+				 word = s.substring(j, j+i+1);
+				 
+				 if (!map.containsKey(word)) {
+					 cnt++;
+					 map.put(word, cnt);
+				 }
+			}
+		}
+		
+		System.out.println(cnt);
+	}
+}
