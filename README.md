@@ -61,7 +61,7 @@
 
 - url: https://github.com/nashs789/GuroStudySecondRound/tree/main/SecondRound(2023.07)/1%EC%A3%BC%EC%B0%A8_%EC%8A%A4%ED%83%9D(2023.07.02)
 
-###[ 2주차 ]
+### [ 2주차 ]
 - 분류:
     - 큐(Queue)
     - 데크(Deque) 
@@ -80,37 +80,37 @@
 
 - url:
   
-###[ 3주차 - DFS ]
+### [ 3주차 - DFS ]
 - 분류:
     - DFS(Depth First Search)
     - 백트래킹(BackTracking)
 
-###[ 4주차 ]
+### [ 4주차 ]
 - 분류: BFS(Breadth First Search)
 
-###[ 5주차 ]
+### [ 5주차 ]
 - 분류: DP(Dynamic Programming)
 
-###[ 6주차 ]
+### [ 6주차 ]
 - 분류: 누적합(Prefix Sum) 
 
-###[ 7주차 ]
+### [ 7주차 ]
 - 분류: 그리디(Greedy)
 
-###[ 8주차 ]
+### [ 8주차 ]
 - 분류: 이분탐색(Binary Search)
 
-###[ 9주차 ]
+### [ 9주차 ]
 - 분류: 투 포인터(Two Pointer)
 
-###[ 10주차 ]
+### [ 10주차 ]
 - 분류: 분할정복(Divide And Conquer) 
 
-###[ 11주차 ]
+### [ 11주차 ]
 - 분류: 그래프와 순회(Graph And Traversal)
 
-###[ 12주차 ]
+### [ 12주차 ]
 - 분류: 다익스트라(Dijkstra)
 
-###[ 13주차 ]
+### [ 13주차 ]
 - 분류: 유니온파인(Union-Find)
