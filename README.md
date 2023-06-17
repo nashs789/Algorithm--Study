@@ -65,7 +65,21 @@
 - 분류:
     - 큐(Queue)
     - 데크(Deque) 
+- 문제: 
+    - Q18258_큐2(Silver 4)
+    - Q2164_카드2(Silver 4)
+    - Q11866_요세푸스 문제 0(Silver 5)
+    - Q1996_프린터 큐(Silver 3)
+    - Q10866_덱(Silver4)
+    - Q1021_회전하는 큐(Silver 3)
+    - Q5430_AC(Gold 5)
+    - 
+    
+- 심화문제(Optional):
+    - 
 
+- url:
+  
 ###[ 3주차 - DFS ]
 - 분류:
     - DFS(Depth First Search)
