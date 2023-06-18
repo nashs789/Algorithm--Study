@@ -75,7 +75,6 @@
     - Q10866_덱(Silver4)
     - Q1021_회전하는 큐(Silver 3)
     - Q5430_AC(Gold 5)
-    - 
     
 - 심화문제(Optional):
     - 미정
