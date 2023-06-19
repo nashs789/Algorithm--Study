@@ -60,8 +60,6 @@
     
 - 심화문제(Optional):
     - Q2493_탑(Gold 5)
-
-- url: https://github.com/nashs789/GuroStudySecondRound/tree/main/SecondRound(2023.07)/1%EC%A3%BC%EC%B0%A8_%EC%8A%A4%ED%83%9D(2023.07.02)
 -----------------------------------
 ### [ 2주차 ]
 - 분류:
@@ -78,8 +76,6 @@
     
 - 심화문제(Optional):
     - 미정
-
-- url:
 -----------------------------------
 ### [ 3주차 - DFS ]
 - 분류:
