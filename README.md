@@ -77,7 +77,7 @@
 - 심화문제(Optional):
     - 미정
 -----------------------------------
-### [ 3주차 - DFS ]
+### [ 3주차 ]
 - 분류:
     - DFS(Depth First Search)
     - 백트래킹(BackTracking)
