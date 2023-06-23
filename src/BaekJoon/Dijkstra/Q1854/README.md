@@ -67,7 +67,9 @@
 2. Priority Queue 의 size
    - k 보다 작은 케이스: k 번째 최단거리는 존재하지 않는다.
    - k 와 같은 케이스: peek 호출 시 k 번쨰 최단거리가 나온다.(내림차순으로 설정했기 때문)
-   
+
+![Example)](https://github.com/nashs789/CodeTest/assets/59809278/2dacda2c-f0d9-411c-b13b-d163c42348ef)
+
 # **[ 문제점 & 주의점 ]**
 1. i번째 노드에서 i번째 노드로 이동하는 케이스도 신경 써줘야 한다.
 
