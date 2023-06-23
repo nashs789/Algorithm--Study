@@ -96,9 +96,3 @@ class Node{
         this.dist = dist;
     }
 }
-
-// 30 min           30m
-// 10:54 - 12:00    1h 6m
-// 12:33 - 01:12    49m
-
-// 2h 25m
