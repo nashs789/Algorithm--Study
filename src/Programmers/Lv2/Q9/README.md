@@ -36,3 +36,4 @@
    - true 인 비트의 개수를 반환
 
 # **[ 결과 ]**
+<img width="368" alt="스크린샷 2023-06-26 오후 11 07 05" src="https://github.com/nashs789/CodeTest/assets/59809278/78aa3fdd-e2d2-4c39-bc1c-9af31640b133">
