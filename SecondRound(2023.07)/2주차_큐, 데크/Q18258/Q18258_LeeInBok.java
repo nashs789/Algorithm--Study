@@ -4,12 +4,12 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Q18258_Queue2 {
+public class Q18258_Queue2_sol2 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder sb = new StringBuilder();
         int cnt = Integer.parseInt(br.readLine());
-        Queue queue = new Queue();
+        myQueue queue = new myQueue();
 
         for(int idx = 0; idx < cnt; idx++){
             String[] reg = br.readLine().split(" ");
@@ -19,19 +19,19 @@ public class Q18258_Queue2 {
                     queue.push(Integer.parseInt(reg[1]));
                     break;
                 case "pop":
-                    sb.append(queue.pop()).append('\n');
+                    sb.append(queue.pop().getData()).append('\n');
                     break;
                 case "size":
                     sb.append(queue.size()).append('\n');
                     break;
                 case "empty":
-                    sb.append(queue.empty()).append('\n');
+                    sb.append(queue.isEmpty()).append('\n');
                     break;
                 case "front":
-                    sb.append(queue.front()).append('\n');
+                    sb.append(queue.front().getData()).append('\n');
                     break;
                 case "back":
-                    sb.append(queue.back()).append('\n');
+                    sb.append(queue.back().getData()).append('\n');
                     break;
             }
         }
@@ -40,66 +40,82 @@ public class Q18258_Queue2 {
     }
 }
 
-class Queue{
-    private int[] arr;
-    private int front;
-    private int back;
+class myQueue<T>{
+    private Node<T> first;
+    private Node<T> last;
+    int size = 0;
 
-    public Queue() {
-        this.arr = new int[100000000];
-        this.front = this.arr.length - 1;
-        this.back = this.arr.length - 1;
-    }
+    class Node<T>{
+        private T data;
+        private Node<T> next;
 
-    void push(int n){
-        if(this.back == -1 || this.front == -1){
-            int[] newArr = new int[this.arr.length * 2];
-            int newIdx = newArr.length - 1;
-
-            for(int idx = this.front; idx <= this.back; idx--){
-                newArr[newIdx--] = this.arr[idx];
-            }
-
-            this.front = newArr.length - 1;
-            this.back = ++newIdx;
+        public Node(T data) {
+            this.data = data;
         }
 
-        this.arr[this.back--] = n;
+        public T getData(){
+            return this.data;
+        }
     }
 
-    int pop(){
-        if(this.empty() == 1){
-            return -1;
+    public void push(T data){
+        Node<T> node = new Node<>(data);
+
+        if(this.last != null){
+            this.last.next = node;
         }
 
-        return arr[this.front--];
-    }
+        this.last = node;
 
-    int size(){
-        return this.front - this.back;
-    }
-
-    int empty(){
-        if(this.size() == 0){
-            return 1;
+        if(this.first == null){
+            this.first = node;
         }
 
-        return 0;
+        size++;
     }
 
-    int front(){
-        if(this.size() == 0){
-            return -1;
+    // 반환을 -1 해야해서 반환 타입을 Node<T>로 함
+    public Node<T> pop(){
+        if(this.first == null){
+            return getNegNode();
         }
 
-        return arr[this.front];
+        Node<T> temp = this.first;
+        this.first = this.first.next;
+
+        if(this.first == null){
+            this.last = null;
+        }
+
+        size--;
+        return temp;
     }
 
-    int back(){
-        if(this.size() == 0){
-            return -1;
+    public Node<T> front(){
+        if(this.first == null){
+            return getNegNode();
         }
 
-        return arr[this.back + 1];
+        return this.first;
+    }
+
+    public int isEmpty(){
+        return this.first == null ? 1 : 0;
+    }
+
+    public Node<T> back(){
+        if(this.last == null){
+            return getNegNode();
+        }
+
+        return this.last;
+    }
+
+    public Node<T> getNegNode(){
+        return new Node(-1);
+    }
+
+    public int size(){
+        return this.size;
     }
 }
