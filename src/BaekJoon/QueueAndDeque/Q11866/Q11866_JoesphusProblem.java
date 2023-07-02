@@ -83,6 +83,3 @@ class Node{
         this.nextNode = nextNode;
     }
 }
-
-// 15
-// 11:12

@@ -47,7 +47,7 @@ class MyStack{
     int curPoint;
 
     public MyStack() {
-        this.arr = new int[3];
+        this.arr = new int[8];
         this.curPoint = -1;
     }
 
