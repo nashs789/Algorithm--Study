@@ -19,12 +19,12 @@ fun main() {
         when (command[0]) {
             "push_front" -> deque.addFirst(command[1].toInt())
             "push_back" -> deque.addLast(command[1].toInt())
-            "pop_front" -> sb.append(if (deque.size > 0) deque.pollFirst() as Int else -1).append("\n")
-            "pop_back" -> sb.append(if (deque.size > 0) deque.pollLast() as Int else -1).append("\n")
+            "pop_front" -> sb.append(if (deque.size > 0) deque.pollFirst() else -1).append("\n")
+            "pop_back" -> sb.append(if (deque.size > 0) deque.pollLast() else -1).append("\n")
             "size" -> sb.append(deque.size).append("\n")
             "empty" -> sb.append(if (deque.isEmpty()) 1 else 0).append("\n")
-            "front" -> sb.append(if (deque.size > 0) deque.first as Int else -1).append("\n")
-            "back" -> sb.append(if (deque.size > 0) deque.last as Int else -1).append("\n")
+            "front" -> sb.append(if (deque.size > 0) deque.first else -1).append("\n")
+            "back" -> sb.append(if (deque.size > 0) deque.last else -1).append("\n")
         }
     }
     br.close()
