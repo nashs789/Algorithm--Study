@@ -277,3 +277,53 @@ public class Main {
 3, 3, 3, 3
 count: 16
 ```
+
+그래프에서의 DFS
+
+4개의 노드가 있고 
+아래와 같이 간선이 연결되있을때,
+1: 2, 3, 4
+2: 1, 4
+3: 1, 4
+4: 1, 2, 3
+
+``` Java
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Map<Integer, List<Integer>> nodes = new HashMap<>() {
+            {
+                put(1, List.of(2, 3, 4));
+                put(2, List.of(1, 4));
+                put(3, List.of(1, 4));
+                put(4, List.of(1, 2, 3));
+            }
+        };
+        int start = 1;
+
+        dfs(nodes, start, new Stack<>(), new HashSet<>(List.of(start)));
+    }
+
+    private static void dfs(Map<Integer, List<Integer>> edgeMap, int v, Stack<Integer> stack, Set<Integer> visited) {
+        System.out.println(v); // 탐색순서
+        for (int next : edgeMap.get(v)) {
+            if (visited.contains(next)) continue;
+            stack.push(next);
+            visited.add(next);
+            if (!stack.isEmpty()) {
+                dfs(edgeMap, next, stack, visited);
+            }
+            stack.pop();
+        }
+    }
+}
+```
+
+탐색순서는 아래와 같이 출력된다.
+``` C
+1
+2
+4
+3
+```
