@@ -193,3 +193,87 @@ public class Main {
     }
 }
 ```
+
+실행 결과: 
+``` C
+1, 2, 3, 4
+1, 2, 4, 3
+1, 3, 2, 4
+1, 3, 4, 2
+1, 4, 2, 3
+1, 4, 3, 2
+2, 1, 3, 4
+2, 1, 4, 3
+2, 3, 1, 4
+2, 3, 4, 1
+2, 4, 1, 3
+2, 4, 3, 1
+3, 1, 2, 4
+3, 1, 4, 2
+3, 2, 1, 4
+3, 2, 4, 1
+3, 4, 1, 2
+3, 4, 2, 1
+4, 1, 2, 3
+4, 1, 3, 2
+4, 2, 1, 3
+4, 2, 3, 1
+4, 3, 1, 2
+4, 3, 2, 1
+count: 24
+```
+
+즉 코드에서 dfs와의 차이는 if문의 여부로 확인할수 있음 
+아래 코드는 중복을 허용하되, 홀수개만 탐색하는 백트래킹 코드
+
+``` Java
+import java.util.*;
+import java.util.stream.Collectors;
+
+public class Main {
+    static int count = 0;
+
+    public static void main(String[] args) {
+        List<Integer> list = Arrays.asList(1, 2, 3, 4);
+        Stack<Integer> stack = new Stack<>();
+
+        backTracking(list, stack);
+        System.out.println("count: " + count);
+    }
+
+    private static void backTracking(List<Integer> list, Stack<Integer> stack) {
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i) % 2 == 0) continue;
+            stack.push(list.get(i));
+            if (stack.size() == list.size()) {
+                count++;
+                System.out.println(stack.stream().map(String::valueOf).collect(Collectors.joining(", ")));
+            } else {
+                backTracking(list, stack);
+            }
+            stack.pop();
+        }
+    }
+}
+```
+
+실행 결과: 
+``` C
+1, 1, 1, 1
+1, 1, 1, 3
+1, 1, 3, 1
+1, 1, 3, 3
+1, 3, 1, 1
+1, 3, 1, 3
+1, 3, 3, 1
+1, 3, 3, 3
+3, 1, 1, 1
+3, 1, 1, 3
+3, 1, 3, 1
+3, 1, 3, 3
+3, 3, 1, 1
+3, 3, 1, 3
+3, 3, 3, 1
+3, 3, 3, 3
+count: 16
+```
