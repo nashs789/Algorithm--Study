@@ -25,6 +25,7 @@ public class Main {
 ```
 
 실행 결과: 
+``` C
 1, 1, 1, 1
 1, 1, 1, 2
 1, 1, 1, 3
@@ -42,5 +43,6 @@ public class Main {
 4, 4, 4, 3
 4, 4, 4, 4
 count: 256
+```
 
 Process finished with exit code 0
