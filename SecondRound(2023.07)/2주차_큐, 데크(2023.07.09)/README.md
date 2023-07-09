@@ -30,6 +30,8 @@
     - 코딩노예
     - 중꺽마
 
+<img src="https://github.com/nashs789/GuroStudySecondRound/blob/main/SecondRound(2023.07)/1%EC%A3%BC%EC%B0%A8_%EC%8A%A4%ED%83%9D(2023.07.02)/study_team_names.jpg"  width="640" height="480">
+
 4. 코드 리뷰, 추가 질문이 필요한 경우 Github Discussion 이용
     - https://github.com/nashs789/GuroStudySecondRound/discussions
       
