@@ -28,21 +28,19 @@ public class Q5430_AC {
                                       .mapToInt(Integer::parseInt)
                                       .boxed()
                                       .collect(Collectors.toList());
-            LinkedList<Integer> deque = new LinkedList<>();
-            boolean isReverse = false;
+            LinkedList<Integer> deque = new LinkedList<>(seq);
+            boolean isReversed = false;
             boolean error = false;
-
-            deque.addAll(seq);
 
             loop:
             for(char r : regs){
                 if(r == 'R'){
-                    isReverse = !isReverse;
+                    isReversed = !isReversed;
                 } else {
                     // 큐가 비어있는지 체크 후 false 케이스는 error
                     if(!deque.isEmpty()){
-                        // isReverse: ture ===> 역방향
-                        if(isReverse){
+                        // isReversed: ture ===> 역방향
+                        if(isReversed){
                             deque.pollLast();
                         } else {
                             deque.pollFirst();
@@ -60,7 +58,7 @@ public class Q5430_AC {
                 Iterator<Integer> it;
 
                 // 정방향, 역방향 확인 후 iterator 출력 방향 결정
-                if(isReverse){
+                if(isReversed){
                     it = deque.descendingIterator();
                 } else {
                     it = deque.iterator();
