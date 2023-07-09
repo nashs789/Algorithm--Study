@@ -5,7 +5,8 @@
 
 # ** [ To - DO ] **
 - 과제: DFS, Backtracking(TODO)
-    - url: todo
+    - url:
+      1. https://www.acmicpc.net/problem/14888
     
 
 - 공부한 것 세미발표로 스터디원들과 공유하기
