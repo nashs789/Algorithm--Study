@@ -58,92 +58,90 @@
    - dfs 알고리즘은 오랜만이라...
    - 이거 때문에 같은 노드를 방문하면서 시간이 더 길어진 걸로 보임
 
-
-
-      import java.io.BufferedReader;
-      import java.io.IOException;
-      import java.io.InputStreamReader;
-      import java.util.ArrayList;
-      import java.util.LinkedList;
-      import java.util.List;
-      import java.util.PriorityQueue;
-      import java.util.StringTokenizer;
-      
-      public class Main {
-          static int N; // 컴퓨터의 수
-          static int M; // 신뢰하는 관계의 수
-          static List<Integer>[] adj;
-          static PriorityQueue<Result> results;
-      
-          public static void main(String[] args) throws IOException {
-              BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-              StringTokenizer st = new StringTokenizer(br.readLine());
-      
-              N = Integer.parseInt(st.nextToken());
-              M = Integer.parseInt(st.nextToken());
-              adj = new List[N + 1];
-      
-              for (int i = 1; i <= N; i++) {
-                  adj[i] = new ArrayList<>();
-              }
-      
-              for (int i = 0; i < M; i++) {
-                  st = new StringTokenizer(br.readLine());
-                  int A = Integer.parseInt(st.nextToken());
-                  int B = Integer.parseInt(st.nextToken());
-                  adj[B].add(A);
-              }
-      
-              results = new PriorityQueue<>();
-      
-              for (int i = 1; i <= N; i++) {
-                  results.add(dfs(i));
-              }
-      
-              int max = results.peek().com;
-      
-              StringBuilder sb = new StringBuilder();
-              while (!results.isEmpty() && results.peek().com == max) {
-                  Result r = results.poll();
-                  sb.append(r.num).append(' ');
-              }
-      
-              System.out.println(sb);
-          }
-      
-          public static Result dfs(int num) {
-              boolean[] visited = new boolean[N + 1];
-              visited[num] = true;
-              int com = 0;
-      
-              for (int next : adj[num]) {
-                  if (!visited[next]) {
-                      visited[next] = true;
-                      com += dfs(next).com;
-                  }
-              }
-      
-              return new Result(num, com + 1);
-          }
-      }
-      
-      class Result implements Comparable<Result> {
-      int num; // 컴퓨터의 번호
-      int com; // 해킹한 컴퓨터의 개수
-      
-          public Result(int num, int com) {
-              this.num = num;
-              this.com = com;
-          }
-      
-          @Override
-          public int compareTo(Result other) {
-              if (this.com == other.com) {
-                  return Integer.compare(this.num, other.num);
-              }
-              return Integer.compare(other.com, this.com);
-          }
-      }
+         import java.io.BufferedReader;
+         import java.io.IOException;
+         import java.io.InputStreamReader;
+         import java.util.ArrayList;
+         import java.util.LinkedList;
+         import java.util.List;
+         import java.util.PriorityQueue;
+         import java.util.StringTokenizer;
+         
+         public class Main {
+             static int N; // 컴퓨터의 수
+             static int M; // 신뢰하는 관계의 수
+             static List<Integer>[] adj;
+             static PriorityQueue<Result> results;
+         
+             public static void main(String[] args) throws IOException {
+                 BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+                 StringTokenizer st = new StringTokenizer(br.readLine());
+         
+                 N = Integer.parseInt(st.nextToken());
+                 M = Integer.parseInt(st.nextToken());
+                 adj = new List[N + 1];
+         
+                 for (int i = 1; i <= N; i++) {
+                     adj[i] = new ArrayList<>();
+                 }
+         
+                 for (int i = 0; i < M; i++) {
+                     st = new StringTokenizer(br.readLine());
+                     int A = Integer.parseInt(st.nextToken());
+                     int B = Integer.parseInt(st.nextToken());
+                     adj[B].add(A);
+                 }
+         
+                 results = new PriorityQueue<>();
+         
+                 for (int i = 1; i <= N; i++) {
+                     results.add(dfs(i));
+                 }
+         
+                 int max = results.peek().com;
+         
+                 StringBuilder sb = new StringBuilder();
+                 while (!results.isEmpty() && results.peek().com == max) {
+                     Result r = results.poll();
+                     sb.append(r.num).append(' ');
+                 }
+         
+                 System.out.println(sb);
+             }
+         
+             public static Result dfs(int num) {
+                 boolean[] visited = new boolean[N + 1];
+                 visited[num] = true;
+                 int com = 0;
+         
+                 for (int next : adj[num]) {
+                     if (!visited[next]) {
+                         visited[next] = true;
+                         com += dfs(next).com;
+                     }
+                 }
+         
+                 return new Result(num, com + 1);
+             }
+         }
+         
+         class Result implements Comparable<Result> {
+         int num; // 컴퓨터의 번호
+         int com; // 해킹한 컴퓨터의 개수
+         
+             public Result(int num, int com) {
+                 this.num = num;
+                 this.com = com;
+             }
+         
+             @Override
+             public int compareTo(Result other) {
+                 if (this.com == other.com) {
+                     return Integer.compare(this.num, other.num);
+                 }
+                 return Integer.compare(other.com, this.com);
+             }
+         }
 
 # **[ 새로 알게된 사실 ]**
 
