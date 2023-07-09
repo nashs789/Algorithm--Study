@@ -34,6 +34,7 @@
 
 4. 코드 리뷰, 추가 질문이 필요한 경우 Github Discussion 이용
     - https://github.com/nashs789/GuroStudySecondRound/discussions
+    - 예시: https://github.com/noory-kwon/algorithm_study/discussions/8 참조
       
 # ** [ 스터디 내용 ] **
 1. Queue
