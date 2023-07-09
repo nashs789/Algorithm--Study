@@ -29,7 +29,6 @@ public class Q1966_PrintQueue {
                 dQueue.add(new Node(j, imp));
             }
 
-            // #################### input end ####################
             int seq = 0;
 
             while(true){
