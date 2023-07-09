@@ -7,6 +7,7 @@
 - 과제: DFS, Backtracking(TODO)
     - url:
       1. https://www.acmicpc.net/problem/14888
+      2. https://www.acmicpc.net/problem/2606
     
 
 - 공부한 것 세미발표로 스터디원들과 공유하기
