@@ -81,11 +81,11 @@
     - DFS(Depth First Search)
     - 백트래킹(BackTracking)
 - 문제:
-    - 10974_모든 순열(Silver 3)
-    - 2606_바이러스(Silver 3)
-    - 1182_부분수열의 합(Silver 2)
-    - 14888_연잔사 끼워넣기(Silver 1)
-    - 14889_스타트와 링크(Silver 2)
+    - Q10974_모든 순열(Silver 3)
+    - Q2606_바이러스(Silver 3)
+    - Q1182_부분수열의 합(Silver 2)
+    - Q14888_연잔사 끼워넣기(Silver 1)
+    - Q14889_스타트와 링크(Silver 2)
 -----------------------------------
 ### [ 4주차 ]
 - 분류: BFS(Breadth First Search)
