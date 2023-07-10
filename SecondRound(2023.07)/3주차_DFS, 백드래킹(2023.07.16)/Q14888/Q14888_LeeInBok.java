@@ -4,7 +4,6 @@
  *  - 시간 : 140ms
  */
 
-
 package BaekJoon.BackTracking.Q14888;
 
 import java.io.BufferedReader;
