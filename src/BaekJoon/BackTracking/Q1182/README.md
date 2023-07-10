@@ -37,44 +37,43 @@
        - 세 번째 요소를 포함한 모든 수열을 만들어 낸다.
        - 네 번째 요소를 포함한 모든 수열을 만들어 낸다.
        - 다섯 번째 요소를 포함한 모든 수열을 만들어 낸다.
-    
 
-    T F F F F
-    T T F F F
-    T T T F F
-    T T T T F
-    T T T T T
-    T T T F T
-    T T F T F
-    T T F T T
-    T T F F T
-    T F T F F
-    T F T T F
-    T F T T T
-    T F T F T
-    T F F T F
-    T F F T T
-    T F F F T
-    ========== [ 첫 번째 요소를 포함한 모든 수열 ] ==========
-    F T F F F
-    F T T F F
-    F T T T F
-    F T T T T
-    F T T F T
-    F T F T F
-    F T F T T
-    F T F F T
-    ========== [ 두 번째 요소를 포함한 모든 수열 ] ==========
-    F F T F F
-    F F T T F
-    F F T T T
-    F F T F T
-    ========== [ 세 번째 요소를 포함한 모든 수열 ] ==========
-    F F F T F
-    F F F T T
-    ========== [ 네 번째 요소를 포함한 모든 수열 ] ==========
-    F F F F T
-    ========== [ 다섯 번째 요소를 포함한 모든 수열 ] ==========
+             T F F F F
+             T T F F F
+             T T T F F
+             T T T T F
+             T T T T T
+             T T T F T
+             T T F T F
+             T T F T T
+             T T F F T
+             T F T F F
+             T F T T F
+             T F T T T
+             T F T F T
+             T F F T F
+             T F F T T
+             T F F F T
+             ========== [ 첫 번째 요소를 포함한 모든 수열 ] ==========
+             F T F F F
+             F T T F F
+             F T T T F
+             F T T T T
+             F T T F T
+             F T F T F
+             F T F T T
+             F T F F T
+             ========== [ 두 번째 요소를 포함한 모든 수열 ] ==========
+             F F T F F
+             F F T T F
+             F F T T T
+             F F T F T
+             ========== [ 세 번째 요소를 포함한 모든 수열 ] ==========
+             F F F T F
+             F F F T T
+             ========== [ 네 번째 요소를 포함한 모든 수열 ] ==========
+             F F F F T
+             ========== [ 다섯 번째 요소를 포함한 모든 수열 ] ==========
 
 # **[ 문제점 & 주의점 ]**
 
