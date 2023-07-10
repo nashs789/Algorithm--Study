@@ -8,6 +8,9 @@
 6. 문제: 부분수열의 합
 
 # **[ 문제 설명 ]**
+
+<img width="1148" alt="스크린샷 2023-07-10 오후 1 00 05" src="https://github.com/nashs789/CodeTest/assets/59809278/a6f94ef2-95d7-4260-8eae-2e09831b88ec">
+
 - N개의 정수로 이루어진 수열이 있을 때, 크기가 양수인 부분수열 중에서 그 수열의 원소를 다 더한 값이 S가 되는 경우의 수를 구하는 프로그램을 작성하시오.
 
 # **[ 입력 ]**
@@ -34,47 +37,47 @@
        - 세 번째 요소를 포함한 모든 수열을 만들어 낸다.
        - 네 번째 요소를 포함한 모든 수열을 만들어 낸다.
        - 다섯 번째 요소를 포함한 모든 수열을 만들어 낸다.
-    
 
-    T F F F F
-    T T F F F
-    T T T F F
-    T T T T F
-    T T T T T
-    T T T F T
-    T T F T F
-    T T F T T
-    T T F F T
-    T F T F F
-    T F T T F
-    T F T T T
-    T F T F T
-    T F F T F
-    T F F T T
-    T F F F T
-    ========== [ 첫 번째 요소를 포함한 모든 수열 ] ==========
-    F T F F F
-    F T T F F
-    F T T T F
-    F T T T T
-    F T T F T
-    F T F T F
-    F T F T T
-    F T F F T
-    ========== [ 두 번째 요소를 포함한 모든 수열 ] ==========
-    F F T F F
-    F F T T F
-    F F T T T
-    F F T F T
-    ========== [ 세 번째 요소를 포함한 모든 수열 ] ==========
-    F F F T F
-    F F F T T
-    ========== [ 네 번째 요소를 포함한 모든 수열 ] ==========
-    F F F F T
-    ========== [ 다섯 번째 요소를 포함한 모든 수열 ] ==========
+             T F F F F
+             T T F F F
+             T T T F F
+             T T T T F
+             T T T T T
+             T T T F T
+             T T F T F
+             T T F T T
+             T T F F T
+             T F T F F
+             T F T T F
+             T F T T T
+             T F T F T
+             T F F T F
+             T F F T T
+             T F F F T
+             ========== [ 첫 번째 요소를 포함한 모든 수열 ] ==========
+             F T F F F
+             F T T F F
+             F T T T F
+             F T T T T
+             F T T F T
+             F T F T F
+             F T F T T
+             F T F F T
+             ========== [ 두 번째 요소를 포함한 모든 수열 ] ==========
+             F F T F F
+             F F T T F
+             F F T T T
+             F F T F T
+             ========== [ 세 번째 요소를 포함한 모든 수열 ] ==========
+             F F F T F
+             F F F T T
+             ========== [ 네 번째 요소를 포함한 모든 수열 ] ==========
+             F F F F T
+             ========== [ 다섯 번째 요소를 포함한 모든 수열 ] ==========
 
 # **[ 문제점 & 주의점 ]**
 
 # **[ 새로 알게된 사실 ]**
 
 # **[ 결과 ]**
+<img width="1148" alt="스크린샷 2023-07-10 오후 1 00 11" src="https://github.com/nashs789/CodeTest/assets/59809278/c4a2b33b-1fe0-46a0-9b8b-8398d04a6c6a">
