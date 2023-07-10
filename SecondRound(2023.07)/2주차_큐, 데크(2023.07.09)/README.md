@@ -10,7 +10,7 @@
       2. https://www.acmicpc.net/problem/2606
       3. https://www.acmicpc.net/problem/1182
       4. https://www.acmicpc.net/problem/14888
-      5. https://www.acmicpc.net/problem/14889
+      5. https://www.acmicpc.net/problem/14889 (Optional)
     
 
 - 공부한 것 세미발표로 스터디원들과 공유하기
