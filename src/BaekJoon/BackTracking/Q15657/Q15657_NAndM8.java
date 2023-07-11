@@ -1,4 +1,4 @@
-package BaekJoon.BackTracking.Q15654;
+package BaekJoon.BackTracking.Q15657;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -6,13 +6,12 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class Q15654_NAndM5 {
+public class Q15657_NAndM8 {
 
     public static int N;
     public static int M;
     public static int[] arr;
     public static int[] seq;
-    public static boolean[] visited;
     public static StringBuilder sb = new StringBuilder();
 
     public static void main(String[] args) throws IOException {
@@ -21,14 +20,12 @@ public class Q15654_NAndM5 {
 
         N = Integer.parseInt(st.nextToken());
         M = Integer.parseInt(st.nextToken());
-        visited = new boolean[N];
         arr = Arrays.stream(br.readLine().split(" ")).mapToInt(Integer::parseInt).sorted().toArray();
         seq = new int[M];
 
         backTracking(0);
         System.out.print(sb);
     }
-
     public static void backTracking(int seqIdx){
         if(seqIdx == M){
             for(int num : seq){
@@ -39,12 +36,12 @@ public class Q15654_NAndM5 {
         }
 
         for(int idx = 0; idx < N; idx++){
-            if(!visited[idx]){
-                seq[seqIdx] = arr[idx];
-                visited[idx] = true;
-                backTracking(seqIdx + 1);
-                visited[idx] = false;
+            if(seqIdx > 0 && seq[seqIdx - 1] > arr[idx]){
+                continue;
             }
+
+            seq[seqIdx] = arr[idx];
+            backTracking(seqIdx + 1);
         }
     }
 }
