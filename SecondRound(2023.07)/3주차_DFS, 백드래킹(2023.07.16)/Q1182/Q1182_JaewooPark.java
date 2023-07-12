@@ -1,3 +1,10 @@
+/**
+ *  [ 효율성 ]
+ *  - 메모리: 14172KB
+ *  - 시간 : 148ms
+ */
+
+
 package Baekjoon.July11;
 
 import java.io.BufferedReader;
