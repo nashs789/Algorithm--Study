@@ -9,6 +9,9 @@
 6. 문제: 외판원 순회2
 
 # **[ 문제 설명 ]**
+
+<img width="1140" alt="스크린샷 2023-07-15 오전 1 48 19" src="https://github.com/nashs789/CodeTest/assets/59809278/2fd9f8dd-7186-4090-b5aa-e8baffccfb8c">
+
 외판원 순회 문제는 영어로 Traveling Salesman problem (TSP) 라고 불리는 문제로 computer science 분야에서 가장 중요하게 취급되는 문제 중 하나이다.   
 여러 가지 변종 문제가 있으나, 여기서는 가장 일반적인 형태의 문제를 살펴보자.
 
@@ -63,3 +66,4 @@ N과 비용 행렬이 주어졌을 때, 가장 적은 비용을 들이는 외판
 # **[ 새로 알게된 사실 ]**
 
 # **[ 결과 ]**
+<img width="1140" alt="스크린샷 2023-07-15 오전 1 48 11" src="https://github.com/nashs789/CodeTest/assets/59809278/c1ccdff6-c6f2-4e7e-8fa2-e59056d3ab57">
