@@ -63,6 +63,7 @@ BFS(Breadth First Search)
 (8갈래 -> 8갈래 * 8갈래(64갈래) -> 8갈래 * 8갈래 * 8갈래(512갈래))
 
 # [ 소스 코드 (그래프) - 2606(바이러스)]
+- url: https://www.acmicpc.net/problem/2606
 - linkNode 메소드를 통해서 양방향 그래프 구성
 - 시작점 1 (출발지점)
 
@@ -133,6 +134,7 @@ BFS(Breadth First Search)
       }
 
 # [ 소스 코드 (좌표) - 프로그래머스 Lv2 게임맵 최단거리 ]
+- url: https://school.programmers.co.kr/learn/courses/30/lessons/1844
 - 좌표상에서 상, 하, 좌, 우 움직이는 시뮬레이션 코드
 - 목표 좌표에 도달시 현재까지의 거리 값 리턴
 - 좌표가 유효한 좌표인지 확인 해줘야 배열 인덱스 값을 넘어가지 않음
