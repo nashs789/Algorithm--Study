@@ -56,6 +56,23 @@
     - Q9012_괄호(Silver 4)
     - Q4949_균형잡힌 세상(Silver 4)
     - Q1874_스택 수열(Silver 2)
+
+<table>
+     <thead>
+          <tr align="center">No</tr>
+          <tr align="center">플랫폼</tr>
+          <tr align="center">문제명</tr>
+          <tr align="center">분류</tr>
+          <tr align="center">난이도</tr>
+     </thead>
+     <tbody>
+          <tr align="center">1</tr>
+          <tr align="center">백준</tr>
+          <tr align="center">Q10828_스택</tr>
+          <tr align="center">스택(Stack)</tr>
+          <tr align="center">Silver 4</tr>
+     </tbody>
+</table>
     
 - 심화문제(Optional):
     - Q2493_탑(Gold 5)
