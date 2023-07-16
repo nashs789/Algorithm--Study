@@ -12,10 +12,10 @@
   
 # **[ 👨‍👨‍👧‍👦 ‍멤버 ]**
 
-|Github|[<img src="https://avatars.githubusercontent.com/nashs789" width="130px;" style="max-width: 100%;">](https://github.com/nashs789)|
-|---|:---:|
-|이름|이인복|
-|주력언어|<span><img src ="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|
+|Github|[<img src="https://avatars.githubusercontent.com/nashs789" width="130px;" style="max-width: 100%;">](https://github.com/nashs789)|[<img src="https://avatars.githubusercontent.com/hhp227study" width="130px;" style="max-width: 100%;">](https://github.com/hhp227study)|
+|---|:---:|:---:|
+|이름|이인복|홍희표|
+|주력언어|<span><img src ="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|<span><img src ="https://img.shields.io/badge/Kotlin-7F52FF.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|
 
 # **[ 📑 ‍이력 ]**
 
@@ -24,9 +24,11 @@
 - ❌: 불참(사유: x)
 - :octocat:: 스터디 새 멤버
 
-|일시|이인복|
-|---|---|
-|2023.07.02|✅|
+|일시|이인복|홍희표|
+|---|:---:|:---:|
+|2023.07.02|✅|✅|
+|2023.07.09|✅|✅|
+|2023.07.16|✅|✅|
 
 # **[ 🚫 규칙 ]**
 ### **1. 디렉토리 구조**
