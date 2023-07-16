@@ -11,6 +11,8 @@
 - 시간: 10:00 - 13:00
 
 # **[ 👨‍👨‍👧‍👦 ‍멤버 ]**
+
+|1|2|
 |-----||-----|
 |Github|<img src="https://avatars.githubusercontent.com/nashs789" width="130px;" style="max-width: 100%;">|
 |이름|이인복|
