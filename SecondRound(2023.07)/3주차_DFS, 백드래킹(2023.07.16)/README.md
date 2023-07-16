@@ -12,7 +12,7 @@
       4. https://www.acmicpc.net/problem/
       5. https://www.acmicpc.net/problem/
       6. https://www.acmicpc.net/problem/
-      7. [2636 -치즈] (https://www.acmicpc.net/problem/2636) (Optional)
+      7. [2636-치즈] (https://www.acmicpc.net/problem/2636) (Optional)
     
 
 - 공부한 것 세미발표로 스터디원들과 공유하기
