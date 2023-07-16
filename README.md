@@ -17,6 +17,17 @@
 |이름|이인복|
 |주력언어|<span><img src ="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|
 
+# **[ 📑 ‍이력 ]**
+
+- ✅: 참여
+- ⚠️: 불참(사유: o)
+- ❌: 불참(사유: x)
+- :octocat:: 스터디 새 멤버
+
+|일시|이인복|
+|---|---|
+|2023.07.02|✅|
+
 # **[ 🚫 규칙 ]**
 ### **1. 디렉토리 구조**
 
