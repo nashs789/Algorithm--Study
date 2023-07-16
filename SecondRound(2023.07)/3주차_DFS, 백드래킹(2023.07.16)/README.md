@@ -11,6 +11,7 @@
       3. [2644-촌수계산](https://www.acmicpc.net/problem/2644)
       4. [2636-치즈](https://www.acmicpc.net/problem/2636)
       5. [2667-단지번호붙이기](https://www.acmicpc.net/problem/2667)
+      6. [1260-DFS와 BFS](https://www.acmicpc.net/problem/1260)
     
 
 - 공부한 것 세미발표로 스터디원들과 공유하기
