@@ -16,6 +16,7 @@
 |---|:---:|:---:|
 |이름|이인복|홍희표|
 |주력언어|<span><img src ="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|<span><img src ="https://img.shields.io/badge/Kotlin-7F52FF.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|
+|티어| [![Solved.ac](http://mazassumnida.wtf/api/mini/generate_badge?boj=nashs789)](https://solved.ac/nashs789)
 
 # **[ 📑 ‍이력 ]**
 
@@ -74,7 +75,7 @@
 
 # **[ 🗓 일정 ]**
 ### [ 1주차 ]
-- 분류: 스택(Stack)
+- 분류: [스택(Stack)](https://github.com/nashs789/GuroStudySecondRound/tree/main/SecondRound(2023.07)/1%EC%A3%BC%EC%B0%A8_%EC%8A%A4%ED%83%9D(2023.07.02))
 - 일자: 2023.07.02
 - 문제:
   
@@ -95,7 +96,7 @@
 -----------------------------------
 ### [ 2주차 ]
 - 분류:
-    - 큐(Queue)
+    - [큐(Queue)](https://github.com/nashs789/GuroStudySecondRound/tree/main/SecondRound(2023.07)/2%EC%A3%BC%EC%B0%A8_%ED%81%90%2C%20%EB%8D%B0%ED%81%AC(2023.07.09))
     - 데크(Deque) 
 - 일자: 2023.07.09
 - 문제: 
@@ -119,7 +120,7 @@
 -----------------------------------
 ### [ 3주차 ]
 - 분류:
-    - DFS(Depth First Search)
+    - [DFS(Depth First Search)](https://github.com/nashs789/GuroStudySecondRound/tree/main/SecondRound(2023.07)/3%EC%A3%BC%EC%B0%A8_DFS%2C%20%EB%B0%B1%EB%93%9C%EB%9E%98%ED%82%B9(2023.07.16))
     - 백트래킹(BackTracking)
 - 일자: 2023.07.16
 - 문제:
@@ -136,7 +137,7 @@
 
 -----------------------------------
 ### [ 4주차 ]
-- 분류: BFS(Breadth First Search)
+- 분류: [BFS(Breadth First Search)](https://github.com/nashs789/GuroStudySecondRound/tree/main/SecondRound(2023.07)/4%EC%A3%BC%EC%B0%A8_BFS(2023.07.23))
 - 일자: 2023.07.23
 - 문제:
 
