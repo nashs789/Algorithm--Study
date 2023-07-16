@@ -62,4 +62,143 @@ BFS(Breadth First Search)
 단점: 그림에서는 갈래가 2개이지만 상, 하, 좌, 우 + 대각선 이라면 갈래가 8개로 갈리기 때문에 추적이 거의 불가능하다.  
 (8갈래 -> 8갈래 * 8갈래(64갈래) -> 8갈래 * 8갈래 * 8갈래(512갈래))
 
-# [ 소스 코드 ]
+# [ 소스 코드 (그래프) - 2606(바이러스)]
+- linkNode 메소드를 통해서 양방향 그래프 구성
+- 시작점 1 (출발지점)
+
+
+      public class Q2606_Virus {
+         public static void main(String[] args) throws IOException {
+            BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+            int nodeCnt = Integer.parseInt(br.readLine());
+            int linkedCnt = Integer.parseInt(br.readLine());
+            Graph graph = new Graph(nodeCnt + 1);
+         
+            for(int idx = 0; idx < linkedCnt; idx++){
+                String[] input = br.readLine().split(" ");
+                graph.linkNode(Integer.parseInt(input[0]), Integer.parseInt(input[1]));
+            }
+   
+            graph.BFS(1);
+            System.out.println(graph.getAnswer());
+          }
+      }
+      
+      class Graph{
+      private int nodeCnt;
+      private LinkedList<Integer> adjNodeList[];
+      private int answer = -1;
+      
+          Graph(int cnt){
+              nodeCnt = cnt;
+              adjNodeList = new LinkedList[cnt];
+      
+              for(int idx = 1; idx < cnt; idx++){
+                  adjNodeList[idx] = new LinkedList<>();
+              }
+          }
+      
+          // 양쪽 노드 이어주는 함수
+          void linkNode(int x, int y){
+              adjNodeList[x].offer(y);
+              adjNodeList[y].offer(x);
+          }
+      
+          void BFS(int start){
+              boolean visited[] = new boolean[nodeCnt + 1];
+              Queue<Integer> queue = new LinkedList();
+      
+              visited[start] = true;
+              queue.offer(start);
+      
+              while(queue.size() != 0){
+                  int node = queue.poll();
+                  answer++;
+      
+                  Iterator<Integer> it = adjNodeList[node].listIterator();
+                  while(it.hasNext()){
+                      int linkedNode = it.next();
+      
+                      if(!visited[linkedNode]){
+                          visited[linkedNode] = true;
+                          queue.offer(linkedNode);
+                      }
+                  }
+              }
+          }
+      
+          int getAnswer(){
+              return answer;
+          }
+      }
+
+# [ 소스 코드 (좌표) - 프로그래머스 Lv2 게임맵 최단거리 ]
+- 좌표상에서 상, 하, 좌, 우 움직이는 시뮬레이션 코드
+- 목표 좌표에 도달시 현재까지의 거리 값 리턴
+- 좌표가 유효한 좌표인지 확인 해줘야 배열 인덱스 값을 넘어가지 않음
+
+
+      public class Q3_gameMapShortestDistance_sol2 {
+      
+          public static int n;
+          public static int m;
+          public static boolean[][] visited;
+          public static int[][] maps;
+          public static int[][] move = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
+      
+          public static void main(String[] args) {
+              maps = new int[][]{{1, 0, 1, 1, 1}, {1, 0, 1, 0, 1}, {1, 0, 1, 1, 1}, {1, 1, 1, 0, 1}, {0, 0, 0, 0, 1}};
+              n = maps.length;
+              m = maps[0].length;
+              visited = new boolean[n][m];
+      
+              System.out.println(bfs());
+          }
+      
+          public static int bfs(){
+              Queue<Node2> queue = new LinkedList<>();
+      
+              queue.add(new Node2(0, 0, 1));
+              visited[0][0] = true;
+      
+              while(!queue.isEmpty()){
+                  Node2 curNode = queue.poll();
+      
+                  if(curNode.x == n - 1 && curNode.y == m - 1){
+                      return curNode.dist;
+                  }
+      
+                  for(int moveIdx = 0; moveIdx < 4; moveIdx++){
+                      int newX = curNode.x + move[moveIdx][0];
+                      int newY = curNode.y + move[moveIdx][1];
+      
+                      if(isValidCoord(newX, newY) && maps[newX][newY] == 1 && !visited[newX][newY]){
+                          queue.add(new Node2(newX, newY, curNode.dist + 1));
+                          visited[newX][newY] = true;
+                      }
+                  }
+              }
+      
+              return -1;
+          }
+      
+          public static boolean isValidCoord(int newX, int newY) {
+              if(newX < 0 || newX >= n || newY < 0 || newY >= m){
+                  return false;
+              }
+      
+              return true;
+          }
+      }
+      
+      class Node2{
+      int x;
+      int y;
+      int dist;
+      
+          public Node2(int x, int y, int dist) {
+              this.x = x;
+              this.y = y;
+              this.dist = dist;
+          }
+      }

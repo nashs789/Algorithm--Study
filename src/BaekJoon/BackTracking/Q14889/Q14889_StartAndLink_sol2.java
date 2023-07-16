@@ -36,6 +36,7 @@ public class Q14889_StartAndLink_sol2 {
     public static void backTracking(int idx, int cnt){
         if(cnt == N / 2){
             int[] teamB = getTeamB();
+
             min = Math.min(min, Math.abs(getTeamScore(teamA) - getTeamScore(teamB)));
             return;
         }

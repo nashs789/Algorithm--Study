@@ -11,7 +11,6 @@ public class Q10974_AllSequences {
     public static int[] seq;
     public static int N;
 
-
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         N = Integer.parseInt(br.readLine());
@@ -22,8 +21,8 @@ public class Q10974_AllSequences {
         System.out.println(sb);
     }
 
-    public static void backTracking(int len){
-        if(len == N){
+    public static void backTracking(int seqIdx){
+        if(seqIdx == N){
             for(int n : seq){
                 sb.append(n + " ");
             }
@@ -34,8 +33,8 @@ public class Q10974_AllSequences {
         for(int idx = 1; idx <= N; idx++){
             if(!visited[idx]){
                 visited[idx] = true;
-                seq[len] = idx;
-                backTracking(len + 1);
+                seq[seqIdx] = idx;
+                backTracking(seqIdx + 1);
                 visited[idx] = false;
             }
         }
