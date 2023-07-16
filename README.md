@@ -97,7 +97,7 @@
 ### [ 2주차 ]
 - 분류:
     - [큐(Queue)](https://github.com/nashs789/GuroStudySecondRound/tree/main/SecondRound(2023.07)/2%EC%A3%BC%EC%B0%A8_%ED%81%90%2C%20%EB%8D%B0%ED%81%AC(2023.07.09))
-    - 데크(Deque) 
+    - [데크(Deque)](https://github.com/nashs789/GuroStudySecondRound/tree/main/SecondRound(2023.07)/2%EC%A3%BC%EC%B0%A8_%ED%81%90%2C%20%EB%8D%B0%ED%81%AC(2023.07.09))
 - 일자: 2023.07.09
 - 문제: 
 
