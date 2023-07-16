@@ -9,7 +9,7 @@
       1. [1743-음식물 피하기](https://www.acmicpc.net/problem/1743)
       2. [2178-미로 탐색](https://www.acmicpc.net/problem/2178)
       3. [2644-촌수계산](https://www.acmicpc.net/problem/2644)
-      7. [2636-치즈] (https://www.acmicpc.net/problem/2636)
+      7. [2636-치즈](https://www.acmicpc.net/problem/2636)
     
     
 
