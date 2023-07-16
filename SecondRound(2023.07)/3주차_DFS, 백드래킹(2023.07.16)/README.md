@@ -5,14 +5,14 @@
 
 # ** [ To - DO ] **
 - 과제: DP(TODO)
-    - url: [1743]음식물 피하기 (https://www.acmicpc.net/problem/1743)
-      1. [2178]미로 탐색 (https://www.acmicpc.net/problem/2178)
-      2. [2644]촌수계산 (https://www.acmicpc.net/problem/2644)
+    - url: [1743-음식물 피하기](https://www.acmicpc.net/problem/1743)
+      1. [2178-미로 탐색](https://www.acmicpc.net/problem/2178)
+      2. [2644-촌수계산](https://www.acmicpc.net/problem/2644)
       3. https://www.acmicpc.net/problem/
       4. https://www.acmicpc.net/problem/
       5. https://www.acmicpc.net/problem/
       6. https://www.acmicpc.net/problem/
-      7. https://www.acmicpc.net/problem/2636 (Optional)
+      7. [2636 -치즈] (https://www.acmicpc.net/problem/2636) (Optional)
     
 
 - 공부한 것 세미발표로 스터디원들과 공유하기
