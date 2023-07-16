@@ -13,9 +13,9 @@
 # **[ 👨‍👨‍👧‍👦 ‍멤버 ]**
 |-----||-----|
 |-----||-----|
-|Github|<img src="https://avatars.githubusercontent.com/nashs789" width="130px;" style="max-width: 100%;">|
+|Github|https://avatars.githubusercontent.com/nashs789|
 |이름|이인복|
-|주력언어|<span><img src ="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|
+|주력언어|https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white|
 
 # **[ 🚫 규칙 ]**
 ### **1. 디렉토리 구조**
