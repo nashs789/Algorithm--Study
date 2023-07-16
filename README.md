@@ -146,6 +146,7 @@
 |1|백준|[2178](https://www.acmicpc.net/problem/2178)|미로 탐색|Silver 1|BFS|그래프 이론, 그래프 탐색|
 |2|백준|[2644](https://www.acmicpc.net/problem/2644)|촌수계산|Silver 2|BFS|그래프 이론, 그래프 탐색, DFS|
 |3|백준|[1743](https://www.acmicpc.net/problem/1743)|음식물 피하기|Silver 1|BFS|그래프 이론, 그래프 탐색, DFS|
+|4|백준|[2667](https://www.acmicpc.net/problem/2667)|단지번호붙이기|Silver 1|BFS|그래프 이론, 그래프 탐색, DFS|
 
 - 심화문제(Optional):
 
