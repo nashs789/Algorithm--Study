@@ -14,7 +14,7 @@
 
 |||
 |-|----|
-|Github|<img src="https://avatars.githubusercontent.com/nashs789" width="130px;" style="max-width: 100%;">|
+|Github|<a src="https://avatars.githubusercontent.com/nashs789" width="130px;" style="max-width: 100%;"></a>|
 |이름|이인복|
 |주력언어|<span><img src ="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|
 
