@@ -121,7 +121,7 @@
 ### [ 3주차 ]
 - 분류:
     - [DFS(Depth First Search)](https://github.com/nashs789/GuroStudySecondRound/tree/main/SecondRound(2023.07)/3%EC%A3%BC%EC%B0%A8_DFS%2C%20%EB%B0%B1%EB%93%9C%EB%9E%98%ED%82%B9(2023.07.16))
-    - 백트래킹(BackTracking)
+    - [백트래킹(BackTracking)](https://github.com/nashs789/GuroStudySecondRound/tree/main/SecondRound(2023.07)/3%EC%A3%BC%EC%B0%A8_DFS%2C%20%EB%B0%B1%EB%93%9C%EB%9E%98%ED%82%B9(2023.07.16))
 - 일자: 2023.07.16
 - 문제:
 
