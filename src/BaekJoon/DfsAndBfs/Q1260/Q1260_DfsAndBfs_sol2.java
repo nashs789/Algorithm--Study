@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
 
-public class Q1260_DfsAndBfsNewLogic {
+public class Q1260_DfsAndBfs_sol2 {
 
     private static int N;
     private static int M;
