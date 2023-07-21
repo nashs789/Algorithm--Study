@@ -6,9 +6,12 @@
 5. 분류: Breadth First Search
     - Graph Theory
     - Graph Search
-6. 문제: 숨박꼭질 4
+6. 문제: 숨바꼭질 4
 
 # **[ 문제 설명 ]**
+
+<img width="1141" alt="스크린샷 2023-07-21 오후 4 59 14" src="https://github.com/nashs789/CodeTest/assets/59809278/29c0689f-0af5-4b52-9556-83e12225ffc7">
+
 수빈이는 동생과 숨바꼭질을 하고 있다.   
 수빈이는 현재 점 N(0 ≤ N ≤ 100,000)에 있고, 동생은 점 K(0 ≤ K ≤ 100,000)에 있다.   
 수빈이는 걷거나 순간이동을 할 수 있다.   
@@ -53,3 +56,4 @@
 # **[ 새로 알게된 사실 ]**
 
 # **[ 결과 ]**
+<img width="1141" alt="스크린샷 2023-07-21 오후 4 59 24" src="https://github.com/nashs789/CodeTest/assets/59809278/80c717ce-d511-4bbb-b628-251ec14f4f3f">
