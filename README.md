@@ -13,10 +13,10 @@
   
 # **[ 👨‍👨‍👧‍👦 ‍멤버 ]**
 
-|Github|[<img src="https://avatars.githubusercontent.com/nashs789" width="130px;" style="max-width: 100%;">](https://github.com/nashs789)|[<img src="https://avatars.githubusercontent.com/hhp227study" width="130px;" style="max-width: 100%;">](https://github.com/hhp227study)|
-|---|:---:|:---:|
-|이름|이인복|홍희표|
-|주력언어|<span><img src ="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|<span><img src ="https://img.shields.io/badge/Kotlin-7F52FF.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|
+|Github|[<img src="https://avatars.githubusercontent.com/nashs789" width="130px;" style="max-width: 100%;">](https://github.com/nashs789)|[<img src="https://avatars.githubusercontent.com/hhp227study" width="130px;" style="max-width: 100%;">](https://github.com/hhp227study)|[<img src="https://avatars.githubusercontent.com/jei0486" width="130px;" style="max-width: 100%;">](https://github.com/jei0486)|[<img src="https://avatars.githubusercontent.com/jaewoopk" width="130px;" style="max-width: 100%;">](https://github.com/jaewoopk)|
+|---|:---:|:---:|:---:|:---:|
+|이름|이인복|홍희표|박진슬|박재우|
+|주력언어|<span><img src ="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|<span><img src ="https://img.shields.io/badge/Kotlin-7F52FF.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|<span><img src ="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|<span><img src ="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|
 |티어| [![Solved.ac](http://mazassumnida.wtf/api/mini/generate_badge?boj=nashs789)](https://solved.ac/nashs789)
 
 # **[ 📑 ‍이력 ]**
@@ -26,12 +26,14 @@
 - ❌: 불참(사유: x)
 - :octocat:: 스터디 새 멤버
 
-|일시|이인복|홍희표|
-|---|:---:|:---:|
-|[2023.07.02](https://github.com/nashs789/GuroStudySecondRound/tree/main/SecondRound(2023.07)/1%EC%A3%BC%EC%B0%A8_%EC%8A%A4%ED%83%9D(2023.07.02))|✅|✅|
-|[2023.07.09](https://github.com/nashs789/GuroStudySecondRound/tree/main/SecondRound(2023.07)/2%EC%A3%BC%EC%B0%A8_%ED%81%90%2C%20%EB%8D%B0%ED%81%AC(2023.07.09))|✅|✅|
-|[2023.07.16](https://github.com/nashs789/GuroStudySecondRound/tree/main/SecondRound(2023.07)/3%EC%A3%BC%EC%B0%A8_DFS%2C%20%EB%B0%B1%EB%93%9C%EB%9E%98%ED%82%B9(2023.07.16))|✅|✅|
-|[2023.07.23](https://github.com/nashs789/GuroStudySecondRound/tree/main/SecondRound(2023.07)/4%EC%A3%BC%EC%B0%A8_BFS(2023.07.23))|||
+|일시|이인복|홍희표|박진슬|박재우|
+|---|:---:|:---:|:---:|:---:|
+|[2023.07.02](https://github.com/nashs789/GuroStudySecondRound/tree/main/SecondRound(2023.07)/1%EC%A3%BC%EC%B0%A8_%EC%8A%A4%ED%83%9D(2023.07.02))|✅|✅|:octocat:|:octocat:|
+|[2023.07.09](https://github.com/nashs789/GuroStudySecondRound/tree/main/SecondRound(2023.07)/2%EC%A3%BC%EC%B0%A8_%ED%81%90%2C%20%EB%8D%B0%ED%81%AC(2023.07.09))|✅|✅|✅|⚠️|
+|[2023.07.16](https://github.com/nashs789/GuroStudySecondRound/tree/main/SecondRound(2023.07)/3%EC%A3%BC%EC%B0%A8_DFS%2C%20%EB%B0%B1%EB%93%9C%EB%9E%98%ED%82%B9(2023.07.16))|✅|✅|✅|✅|
+|[2023.07.23](https://github.com/nashs789/GuroStudySecondRound/tree/main/SecondRound(2023.07)/4%EC%A3%BC%EC%B0%A8_BFS(2023.07.23))|✅|✅|✅|✅|
+|[2023.07.30](https://github.com/nashs789/GuroStudySecondRound/tree/main/SecondRound(2023.07)/5주차_DP(2023.07.30))|||||
+
 
 # **[ 🚫 규칙 ]**
 ### **📌 디렉토리 구조**
