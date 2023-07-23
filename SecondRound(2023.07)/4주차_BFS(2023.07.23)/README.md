@@ -12,7 +12,7 @@
 - 과제: DP (Dynamic Programming)
     - URL: 
       1. [9095 - 1,2,3 더하기 Silver 3](https://www.acmicpc.net/problem/9095)
-      2. 
+      2. [2502 - 떡 먹는 호랑이 Silver 1](https://www.acmicpc.net/problem/2502)
       3. 
       4. 
       5. 
