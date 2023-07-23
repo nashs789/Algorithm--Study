@@ -13,7 +13,7 @@
     - URL: 
       1. [9095 - 1,2,3 더하기 Silver 3](https://www.acmicpc.net/problem/9095)
       2. [2502 - 떡 먹는 호랑이 Silver 1](https://www.acmicpc.net/problem/2502)
-      3. 
+      3. [12865 - 평범한 배낭 Gold 5](https://www.acmicpc.net/problem/12865)
       4. 
       5. 
       6. 
