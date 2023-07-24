@@ -171,3 +171,4 @@ public class Fibonacci03 { // 3. 바텀-업 다이나믹 프로그래밍
 * 더 안전한 방식은 바텀-업이다.
 * 톱-다운 방식은 재귀함수의 형태로 구현돼있기 때문에 재귀의 depth 가 깊어질수록 런타임에러가 발생할 수 있다. 
 
+![image](https://raw.githubusercontent.com/jei0486/algorithm-practice/master/images/study-images/23-07-23-dp-presentation.jpg)

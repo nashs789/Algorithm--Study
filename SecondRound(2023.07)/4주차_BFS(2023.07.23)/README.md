@@ -236,4 +236,4 @@ class Node2{
 }
 ```
 
-![image](https://raw.githubusercontent.com/jei0486/algorithm-practice/master/images/study-images/23-07-23-dp-presentation.jpg)
+
