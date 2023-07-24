@@ -11,10 +11,10 @@
 
 - 과제: DP (Dynamic Programming)
     - URL: 
-      1. [9095 - 1,2,3 더하기 Silver 3](https://www.acmicpc.net/problem/9095)
-      2. [2502 - 떡 먹는 호랑이 Silver 1](https://www.acmicpc.net/problem/2502)
-      3. [12865 - 평범한 배낭 Gold 5](https://www.acmicpc.net/problem/12865)
-      4. 
+      1. [Q9095  - 1,2,3 더하기 (Silver 3)](https://www.acmicpc.net/problem/9095)
+      2. [Q2579  - 계단오르기 (Silver 3)](https://www.acmicpc.net/problem/2579)
+      3. [Q2502  - 떡 먹는 호랑이 (Silver 1)](https://www.acmicpc.net/problem/2502)
+      4. [Q12865 - 평범한 배낭 (Gold 5)](https://www.acmicpc.net/problem/12865)
       5. 
       6. 
 
@@ -26,6 +26,7 @@
     - 홍희표님: 8월 첫째주
 
 # ** [ 발표 내용 ] **
+
 # BFS(Breadth First Search)
 
 하나의 정점을 시작으로 차례로 모든 정점을 탐색하는 알고리즘
@@ -234,3 +235,5 @@ class Node2{
     }
 }
 ```
+
+![image](https://raw.githubusercontent.com/jei0486/algorithm-practice/master/images/study-images/23-07-23-dp-presentation.jpg)
