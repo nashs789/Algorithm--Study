@@ -157,6 +157,3 @@ class House{
         return empty;
     }
 }
-
-// 1시간 5분
-// 노드 연결 어떻게?
