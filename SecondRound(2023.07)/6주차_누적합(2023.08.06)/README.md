@@ -24,7 +24,7 @@ public int[] prefixSum(int[] arr) {
 
 ### 누적합 알고리즘 간단 예시
 
-!https://blog.kakaocdn.net/dn/mCKCQ/btrCY7aFHFh/gAepc15LCncEJeGKmxkVL1/img.png
+![누적합 알고리즘 간단 예시](https://blog.kakaocdn.net/dn/mCKCQ/btrCY7aFHFh/gAepc15LCncEJeGKmxkVL1/img.png)
 
 - 누적 합 이란 수열 An에 대해서 각 인덱스까지의 구간의 합을 구하는 것을 누적 합이라고 합니다.
 - 시작점은 항상 첫번째 원소이며, R번째 원소까지의 합을 앞에서부터 쭉 더해오는 패턴입니다.
@@ -44,25 +44,25 @@ public int[] prefixSum(int[] arr) {
 
 ---
 
-!https://velog.velcdn.com/images/pnlkc/post/53a88d86-2ab7-4df2-bf1e-31ab6d587bbb/image.png
+![누적합 알고리즘 과정](https://velog.velcdn.com/images/pnlkc/post/53a88d86-2ab7-4df2-bf1e-31ab6d587bbb/image.png)
 
 **만약 위와 같은 기본 배열 `arr`이 있다면 누적합 배열은 다음과 같은 과정을 통해 만들어집니다.**
 
 **1. `기본 배열 사이즈 + 1`의 누적합 배열 `preSum`을 생성합니다.**
 
-!https://velog.velcdn.com/images/pnlkc/post/c5a5f630-e159-4b6a-a48f-8ae893b269d2/image.png
+![누적합 알고리즘 과정 2](https://velog.velcdn.com/images/pnlkc/post/c5a5f630-e159-4b6a-a48f-8ae893b269d2/image.png)
 
 **2. `arr` 배열을 순서대로 실행하면서, `preSum[i + 1]`를 `preSum[i] + arr[i]`로 변경합니다.**
 
-!https://velog.velcdn.com/images/pnlkc/post/259eb588-91a3-48bc-8520-ea2e18308a45/image.png
+![누적합 알고리즘 과정 3](https://velog.velcdn.com/images/pnlkc/post/259eb588-91a3-48bc-8520-ea2e18308a45/image.png)
 
 **3. `arr`의 `a`번째 요소부터 `b`번째 요소의 구간합은 `preSum[b] - preSum[a - 1]`의 값이 됩니다.**
 
 **예를 들어**, `arr`의 `4`번째 요소부터 `6`번째 요소까지의 합은 `preSum[6] - presum[3]`인 `15`가 됩니다.
 
-!https://velog.velcdn.com/images/pnlkc/post/faf48539-ff4d-4280-b62a-bd59a387b967/image.png
+![누적합 알고리즘 과정 4](https://velog.velcdn.com/images/pnlkc/post/faf48539-ff4d-4280-b62a-bd59a387b967/image.png)
 
-!https://velog.velcdn.com/images/pnlkc/post/f4969653-0491-4058-b14e-75cdabb0febe/image.png
+![누적합 알고리즘 과정 5](https://velog.velcdn.com/images/pnlkc/post/f4969653-0491-4058-b14e-75cdabb0febe/image.png)
 
 ---
 
@@ -73,7 +73,7 @@ public int[] prefixSum(int[] arr) {
 - 구간합은 누적합 구간간의 차이만 빼면 된다.
 - 이를 위해 구간 합을 계산하기 위한 미리 계산된 값들을 사용한다.
 
-!https://blog.kakaocdn.net/dn/ChoXz/btrQD88uIkC/6in1BSQw27hu0jEie9zVh0/img.png
+![누적합 구간합](https://blog.kakaocdn.net/dn/ChoXz/btrQD88uIkC/6in1BSQw27hu0jEie9zVh0/img.png)
 
 누적합 알고리즘은 배열의 특정 부분에 대한 총합을 빠르게 계산하는 데 사용된다. 
 
@@ -81,7 +81,7 @@ public int[] prefixSum(int[] arr) {
 
 구간합의 공식은 x, y(x < y) 라고 가정할 때 prefix_sum[y] - prefix_sum[x-1] 이 된다. 0번째 부터 N 까지 구하면 인덱스 초과가 날수 있기 때문에 맨 앞에 0을 추가하면 좋다.
 
-!https://blog.kakaocdn.net/dn/LXhHv/btrQDO3tAUm/kuv5PKYD3K1KalFAykdeuK/img.png
+![누적합 구간합2](https://blog.kakaocdn.net/dn/LXhHv/btrQDO3tAUm/kuv5PKYD3K1KalFAykdeuK/img.png)
 
 예시) arr배열의 원소들 중 index 3부터 6까지의 합을 구하고 싶다면 원래의 구하는 방식은 다음과 같다.
 
@@ -140,7 +140,7 @@ A)
 
 ### **예시 문제 풀어보기**
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8c126f59-d783-43a7-9775-796ccf98dd27/Untitled.png)
+![2차원 누적합](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8c126f59-d783-43a7-9775-796ccf98dd27/Untitled.png)
 
 ### 1. 이차원 배열의 (1,1)부터 (i,j)까지의 누적합 구하기
 
@@ -164,7 +164,7 @@ PS[x][y] - PS[x][j - 1] - PS[i -1][y] + PS[i -1][j -1]
 
 *정답* 
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6ff85b9c-6639-4b50-af05-969f2abc4349/Untitled.png)
+![2차원 누적합 2](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6ff85b9c-6639-4b50-af05-969f2abc4349/Untitled.png)
 
 예시 문제)
 
