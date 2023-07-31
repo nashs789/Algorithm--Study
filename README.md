@@ -32,7 +32,8 @@
 |[2023.07.09](https://github.com/nashs789/GuroStudySecondRound/tree/main/SecondRound(2023.07)/2%EC%A3%BC%EC%B0%A8_%ED%81%90%2C%20%EB%8D%B0%ED%81%AC(2023.07.09))|✅|✅|✅|⚠️|
 |[2023.07.16](https://github.com/nashs789/GuroStudySecondRound/tree/main/SecondRound(2023.07)/3%EC%A3%BC%EC%B0%A8_DFS%2C%20%EB%B0%B1%EB%93%9C%EB%9E%98%ED%82%B9(2023.07.16))|✅|✅|✅|✅|
 |[2023.07.23](https://github.com/nashs789/GuroStudySecondRound/tree/main/SecondRound(2023.07)/4%EC%A3%BC%EC%B0%A8_BFS(2023.07.23))|✅|✅|✅|✅|
-|[2023.07.30](https://github.com/nashs789/GuroStudySecondRound/tree/main/SecondRound(2023.07)/5주차_DP(2023.07.30))|||||
+|[2023.07.30](https://github.com/nashs789/GuroStudySecondRound/tree/main/SecondRound(2023.07)/5주차_DP(2023.07.30))|✅|✅|⚠️|✅|
+|[2023.08.06](https://github.com/nashs789/GuroStudySecondRound/tree/main/SecondRound(2023.07)/6%EC%A3%BC%EC%B0%A8_%EB%88%84%EC%A0%81%ED%95%A9(2023.08.06))|||||
 
 
 # **[ 🚫 규칙 ]**
