@@ -1,174 +1,173 @@
 누적합 알고리즘 (Prefix Sum Algorithm)
 --------------------------------------------------
+### 누적합
 
-* 하나의 큰 문제를 해결하기 위해서 큰 문제를 작은 문제로 나누어 해결한 후,  작은 문제로부터 계산된 결과값를 이용하여 전체문제를 해결하는 알고리즘
+- 누적합 알고리즘은 배열의 특정 부분에 대한 총합을 빠르게 계산하는데 사용된다.
+- 미리 구간 합을 계산해 놓는 방식으로 여러 쿼리에서의 효율적인 계산을 가능하게 한다.
 
-### 동적계획법을 사용하는 이유:
-* 큰 문제를 풀다보면 중복되는 연산이 발생하게 된다.
-* 이 중복연산을 제거하고 재활용하여 전체적인 코드의 수행 및 연산 효율을 증대시키기 위함이다.
-* 한번 계산한 문제틑 다시 계산하지 않도록 하는 알고리즘
+*Q) 여러 쿼리에서 효율적인 계산을 가능하게 한다는것은?*
 
-### 동적 계획법 원리,구현방식
-1. 큰 문제를 작은 문제로 나눌 수 있어야한다.
-2. 작은 문제들이 반복돼 나타나고 사용되며, 이 작은 문제들의 결과값은 항상 같아야한다.
-3. 모든 작은 문제들은 한번만 계산해 DP 테이블에 저장하며 추후 재사용할 때는 이 DP 테이블을 이용한다.
-  * 메모이제이션(Memoization) 기법이라고 한다.
-4. 톱-다운 방식 (top-down, 하향식) , 바텀-업 방식 (bottom-up, 상향식)  으로 구현할 수 있다.
+A) 배열의 여러 부분들에 대한 합을 여러번 계산해야 하는 경우에 유용
 
-* 메모이제이션(Memoization):
-  * 프로그램 실행시, 중복되는 연산이 2번 수행되지 않도록 이전에 계산한 값을 저장하여 전체적인 연산실행속도를 빠르게 하는 기술
-* 바텀-업 방식 (bottom-up, 상향식) :
-  * 가장 최하위 문제의 답을 구한 후, 이를 이용하여 상위 문제를 풀어나가는 방식
-
-
---------------------------------------------------
-동적 계획법 (Dynamic Programming) vs 분할 정복(Divide & Conquer)
-
-* 하나의 큰 문제를 해결하기 위해, 작은 문제로 나누어 하위문제를 해결하고 다시 병합하여 상위문제의 답을 얻는 방식
-* 동적계획법과 분할정복 의 차이점
-  * 부분문제는 중복되어 상위문제 해결 시 재활용
-  * 분할정복은 하향식 접근법을 사용하고 메모이제이션 기법을 사용하지 않는다
-
-|      | 동적 계획법                      | 분할 정복          |
-|------|-----------------------------|-------------------------|
-| 공통점  | 문제를 잘게 쪼개서 가장 작은 단위로 분할     |
-| 차이점  | 부분문제는 중복 O (상위 문제 해결 시 재활용) | 부분 문제는 서로 중복 X |
-|      | 메모이제이션 사용 O                 | 메모이제이션 사용 X    |
-
--------------------------------------------------------
-### 다이나믹 프로그래밍 문제 푸는 순서
-
-1. 동적 계획법으로 풀 수 있는지 확인 (DP 로 풀 수 있는 문제?)
-* 피보나치 수열 
-  * 작은 문제로 나눌 수 있음
-  * 수얼의 값은 항상 같음
-  
-2. 점화식
-* 이미 있는 공식이 있다면 해당 공식을 사용 (조합,순열) 
-* 전체문제와 부분문제간의 인과관계 파악이 필요
-
-* 피보나치 수열 점화식 (점화식을 사용해 수열의 항이 이어지는 형태를 간결하게 표헌)
-```
-D[i] =  D[i-1] + D[i-2]
-
-단 1,2 번째 피보나치수 = 1
-```
-
-3. 메모이제이션 원리 이해  
-메모이제이션은 부분문제를 풀었을때 이 문제를 DP 테이블에 저장해 놓고 다음에 같은 문제가 나왔을때 재계산하지않고 DP 테이블의 값을 이용하는 것을 말한다.
-
-
-### 1. 피보나치 재귀
-```java
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-
-public class Fibonacci01 { //1. 피보나치 재귀
-
-    // 재귀를 이용했으며, DP 적용 X
-    private static int DFS(int n){
-      if (n == 1 || n == 2){
-          return 1;
-      } else{
-          return DFS(n-2) + DFS(n-1);
-      }
-    }
-
-    public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int N = Integer.parseInt(br.readLine());
-        StringBuilder sb = new StringBuilder();
-    
-        for (int i=1;i<=N;i++){
-          sb.append(DFS(i) + " ");
-        }
-        System.out.println(sb);
-    }
-}
-```
-
-
-### 2. 피보나치 재귀 (메모이제이션, top-down 방식 ,하향식) 
-* 큰 문제를 해결하기 위해 작은문제를 호출 → 탑다운 방식
-* 주로 재귀함수 형태로 코드를 구현
-* 이해하기 편함
+기본적인 예시
 
 ```java
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-
-public class Fibonacci02 { // 2. Top Down 방식 ,하향식 (메모이제이션)
-
-  private static int[] fibo;
-  
-  private static int DFS(int n){
-
-      // 종료 조건(1) : 기존에 계산한 적이 있는 부분의 문제는 재계산하지 않고 리턴
-      if (fibo[n] > 0) {
-          return fibo[n];
-      }
-
-      // 종료 조건(2) : 1 혹은 2일 때 1을 반환
-      if (n == 1 || n == 2) {
-          return fibo[n] = 1;
-      } else{
-          // 메모이제이션 : 구한 값을 바로 리턴하지 않고 DP 테이블에 저장한 후 리턴하도록 로직을 구현
-          return fibo[n] = DFS(n-2) + DFS(n-1);
-      }
-  }
-
-    public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int N = Integer.parseInt(br.readLine());
-        StringBuilder sb = new StringBuilder();
-
-        fibo = new int[N+1];
-
-        DFS(N);
-  
-        for (int i = 1; i <= N; i++){
-          sb.append(fibo[i] + " ");
-        }
-        
-        System.out.println(sb);
+public int[] prefixSum(int[] arr) {
+    int[] prefixSumArr = new int[arr.length + 1];
+    for (int i = 1; i <= arr.length; i++) {
+        prefixSumArr[i] = prefixSumArr[i - 1] + arr[i - 1];
     }
+    return prefixSumArr;
 }
+
 ```
 
+### 누적합 알고리즘 간단 예시
 
-### 3. 피보나치 (바텀-업 , 상향식 구현 방식)
-* 가장 작은 부분 문제부터 문제를 해결하며 점점 큰 문제로 확장해 나가는 방식.
-* 주로 반복문의 형태로 구현
+!https://blog.kakaocdn.net/dn/mCKCQ/btrCY7aFHFh/gAepc15LCncEJeGKmxkVL1/img.png
+
+- 누적 합 이란 수열 An에 대해서 각 인덱스까지의 구간의 합을 구하는 것을 누적 합이라고 합니다.
+- 시작점은 항상 첫번째 원소이며, R번째 원소까지의 합을 앞에서부터 쭉 더해오는 패턴입니다.
+- 모든 구간에 대해서 처음부터 계산하여 단순 반복하는 것이 아니라 이전 인덱스까지의 누적합에 현재 자기 자신 값을 더하여 구현하는 것이 효과적인 방법입니다.
+
+그렇다면 어떠한 경우에 효과적으로 누적합 알고리즘을 적용시킬 수 있을까요?
+
+**=> 배열의 [ A ~ B ] 범위의 구간 합을 구하고자 할 때, 누적합 배열을 구한 후 B 까지의 누적합에서 A-1까지의 누적합을 빼주면 [ A ~ B] 범위의 구간의 합을 구할 수 있습니다.**
+
+## 누적합 알고리즘 과정
+
+---
+
+1. `index`의 값은 `0`부터 시작합니다.
+2. 배열 `array`의 `i`번째 값은 `array[i - 1]`입니다.
+3. 누적합 배열 preSum은 기본 배열 `arr`보다 크기가 `1` 큰 배열입니다.
+
+---
+
+!https://velog.velcdn.com/images/pnlkc/post/53a88d86-2ab7-4df2-bf1e-31ab6d587bbb/image.png
+
+**만약 위와 같은 기본 배열 `arr`이 있다면 누적합 배열은 다음과 같은 과정을 통해 만들어집니다.**
+
+**1. `기본 배열 사이즈 + 1`의 누적합 배열 `preSum`을 생성합니다.**
+
+!https://velog.velcdn.com/images/pnlkc/post/c5a5f630-e159-4b6a-a48f-8ae893b269d2/image.png
+
+**2. `arr` 배열을 순서대로 실행하면서, `preSum[i + 1]`를 `preSum[i] + arr[i]`로 변경합니다.**
+
+!https://velog.velcdn.com/images/pnlkc/post/259eb588-91a3-48bc-8520-ea2e18308a45/image.png
+
+**3. `arr`의 `a`번째 요소부터 `b`번째 요소의 구간합은 `preSum[b] - preSum[a - 1]`의 값이 됩니다.**
+
+**예를 들어**, `arr`의 `4`번째 요소부터 `6`번째 요소까지의 합은 `preSum[6] - presum[3]`인 `15`가 됩니다.
+
+!https://velog.velcdn.com/images/pnlkc/post/faf48539-ff4d-4280-b62a-bd59a387b967/image.png
+
+!https://velog.velcdn.com/images/pnlkc/post/f4969653-0491-4058-b14e-75cdabb0febe/image.png
+
+---
+
+---
+
+### 구간합
+
+- 구간합은 누적합 구간간의 차이만 빼면 된다.
+- 이를 위해 구간 합을 계산하기 위한 미리 계산된 값들을 사용한다.
+
+!https://blog.kakaocdn.net/dn/ChoXz/btrQD88uIkC/6in1BSQw27hu0jEie9zVh0/img.png
+
+누적합 알고리즘은 배열의 특정 부분에 대한 총합을 빠르게 계산하는 데 사용된다. 
+
+이를 통해 여러 쿼리에서 효율적인 계산이 가능해지며, 배열의 여러 부분들에 대한 합을 여러 번 계산해야 하는 경우에 유용하다.
+
+구간합의 공식은 x, y(x < y) 라고 가정할 때 prefix_sum[y] - prefix_sum[x-1] 이 된다. 0번째 부터 N 까지 구하면 인덱스 초과가 날수 있기 때문에 맨 앞에 0을 추가하면 좋다.
+
+!https://blog.kakaocdn.net/dn/LXhHv/btrQDO3tAUm/kuv5PKYD3K1KalFAykdeuK/img.png
+
+예시) arr배열의 원소들 중 index 3부터 6까지의 합을 구하고 싶다면 원래의 구하는 방식은 다음과 같다.
+
+arr[3] + arr[4] + arr[5] + arr[6]
+
+다만, prefix sum이라는 누적합 배열이 있을 경우,
+
+prefix_sum[6] - prefix_sum[3] 을 통해 O(1)의 시간복잡도로 계산할 수 있다.
+
+index n부터 m까지의 합을 구하고 싶은데, n부터 m이 너무 큰 수일 경우, 누적합 알고리즘의 효용이 가장 커지게 된다.
+
+---
+
+---
+
+### 2차원 누적합
+
+- 2차원 누적합은 1차원 누적합을 확장한 개념으로, 행렬에서 특정 영역의 합을 빠르게 계산하는 데 사용된다.
+- 이 알고리즘은 2차원 배열의 각 위치에서 그 위치까지의 누적합을 계산하여 새로운 2차원 배열을 생성한다.
+- 이때 누적합은 (0,0)에서 현재 위치까지의 모든 원소들의 합을 의미한다.
+
+2차원 누적합 알고리즘은 다음과 같은 상황에서 사용합니다 :
+
+- 2차원 배열에서 반복적으로 영역 합을 계산해야 할 경우
+- 영상처리에서 특정 영역의 픽셀 값 합을 빠르게 구해야 하는 경우
+- 2차원 데이터에 대한 빠른 업데이트와 쿼리가 필요한 경우
+
+기본적인 예시)
 
 ```java
-public class Fibonacci03 { // 3. 바텀-업 다이나믹 프로그래밍
+public int[][] prefixSum2D(int[][] matrix) {
+		int rows = matrix.length;
+		int cols = matrix[0].length;
+		int[][] prefixSumMatrix = new int[rows + 1][cols + 1];
 
-  private static int[] d;
-
-  public static void main(String[] args) throws IOException {
-
-
-    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-    int N = Integer.parseInt(br.readLine());  //  N 번째 피보나치 수를 계산
-
-    // 첫 번째와 두 번째 피보나치 수는 1
-    d[1] = 1;
-    d[2] = 1;
-
-
-    // 피보나치 함수(Fibonacci Function) 반복문으로 구현
-    for (int i = 3; i <= N; i++) {
-      d[i] = d[i - 1] + d[i - 2];
-    }
-
-    System.out.println(d[N]);
-  }
+		for (int i = 1; i <= rows; i++) {
+		    for (int j = 1; j <= cols; j++) {
+		        prefixSumMatrix[i][j] = matrix[i - 1][j - 1]
+		            + prefixSumMatrix[i - 1][j]
+		            + prefixSumMatrix[i][j - 1]
+		            - prefixSumMatrix[i - 1][j - 1];
+		    }
+		}
+		return prefixSumMatrix;
 }
-```
-### 결론
-* 더 안전한 방식은 바텀-업이다.
-* 톱-다운 방식은 재귀함수의 형태로 구현돼있기 때문에 재귀의 depth 가 깊어질수록 런타임에러가 발생할 수 있다. 
 
-![image](https://raw.githubusercontent.com/jei0486/algorithm-practice/master/images/study-images/23-07-23-dp-presentation.jpg)
+```
+
+*Q) 왜 matrix[i - 1][j - 1]을 해주는거죠?*
+
+A)
+
+2차원 누적합 배열에서는 원본 배열보다 한 칸 더 크게 배열을 설정하는 경우가 많습니다. 즉, 원본 배열이 n x m 크기라면 누적합 배열을 (n+1) x (m+1) 크기로 설정합니다. 이렇게 하는 이유는 누적합을 구하면서 경계 체크를 할 필요가 없게 되므로 코드를 간결하게 만들 수 있습니다.
+
+그래서 **`matrix[i-1][j-1]`**로 더해주는 것은 누적합 배열에서 **`(i, j)`** 위치의 원래 값을 가져오는 것이고, 이를 누적합 배열의 **`(i, j)`** 위치에 더해주는 것입니다. 또한 누적합 배열의 **`(i, j)`**는 원본 배열의 **`(i-1, j-1)`** 위치까지의 누적합을 가지고 있습니다.
+
+### **예시 문제 풀어보기**
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8c126f59-d783-43a7-9775-796ccf98dd27/Untitled.png)
+
+### 1. 이차원 배열의 (1,1)부터 (i,j)까지의 누적합 구하기
+
+PS[i][j] = PS[i-1][j] + PS[i][j-1] - PS[i-1][j-1] + arr[i - 1][j - 1]
+
+ex) i = 3, j = 4인 경우
+
+PS[3][4] = PS[2][4] + PS[3][3] - PS[2][3] + arr[2][3]
+
+### 2. (i,j)부터 (x,y)까지의 부분합 구하기
+
+PS[x][y] = PS[x][j-1] - PS[i-1][y] + PS[i-1][j-1]
+
+ex) i = 2, j = 2, x = 5, y = 3인 경우
+
+i = 2, j = 2, x = 5, y = 3  → PS[5][3] - PS[5][1] - PS[1][3] + PS[1][1]
+
+PS[5][3] - PS[5][1] - PS[1][3] + PS[1][1] 
+
+PS[x][y] - PS[x][j - 1] - PS[i -1][y] + PS[i -1][j -1]
+
+*정답* 
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6ff85b9c-6639-4b50-af05-969f2abc4349/Untitled.png)
+
+예시 문제)
+
+누적합 문제임을 바로 알 수 있는 문제 → https://www.acmicpc.net/problem/11660
+
+누적합 문제임을 바로 알 수 없는 문제 → https://www.acmicpc.net/problem/25682
