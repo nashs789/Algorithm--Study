@@ -15,8 +15,6 @@
       2. [Q2579  - 계단오르기 (Silver 3)](https://www.acmicpc.net/problem/2579)
       3. [Q2502  - 떡 먹는 호랑이 (Silver 1)](https://www.acmicpc.net/problem/2502)
       4. [Q12865 - 평범한 배낭 (Gold 5)](https://www.acmicpc.net/problem/12865)
-      5. 
-      6. 
 
 # ** [ 건의/공지 사항 ] **
 1. 추가 인원모집
