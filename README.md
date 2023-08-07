@@ -12,6 +12,7 @@
 - 시간: 10:00 - 13:00
   
 # **[ 👨‍👨‍👧‍👦 ‍멤버 ]**
+- 중도 이탈자: TODO
 
 |Github|[<img src="https://avatars.githubusercontent.com/nashs789" width="130px;" style="max-width: 100%;">](https://github.com/nashs789)|[<img src="https://avatars.githubusercontent.com/hhp227study" width="130px;" style="max-width: 100%;">](https://github.com/hhp227study)|[<img src="https://avatars.githubusercontent.com/jei0486" width="130px;" style="max-width: 100%;">](https://github.com/jei0486)|[<img src="https://avatars.githubusercontent.com/jaewoopk" width="130px;" style="max-width: 100%;">](https://github.com/jaewoopk)|[<img src="https://avatars.githubusercontent.com/YeonsangYoon" width="130px;" style="max-width: 100%;">](https://github.com/YeonsangYoon)|[<img src="https://avatars.githubusercontent.com/SongAhreum" width="130px;" style="max-width: 100%;">](https://github.com/SongAhreum)|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -34,8 +35,6 @@
 |[2023.07.23](https://github.com/nashs789/GuroStudySecondRound/tree/main/SecondRound(2023.07)/4%EC%A3%BC%EC%B0%A8_BFS(2023.07.23))|✅|✅|✅|✅|:octocat:|❌|
 |[2023.07.30](https://github.com/nashs789/GuroStudySecondRound/tree/main/SecondRound(2023.07)/5주차_DP(2023.07.30))|✅|✅|⚠️|✅|✅|❌|
 |[2023.08.06](https://github.com/nashs789/GuroStudySecondRound/tree/main/SecondRound(2023.07)/6%EC%A3%BC%EC%B0%A8_%EB%88%84%EC%A0%81%ED%95%A9(2023.08.06))|⚠️|⚠️|⚠️|✅|✅|❌|
-
-- 이탈자: 
 
 # **[ 🚫 규칙 ]**
 ### **📌 디렉토리 구조**
