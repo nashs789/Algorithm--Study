@@ -1,6 +1,6 @@
 # ** [ 08월 06일 (일) 기록 ] **
-- 인원: TODO명
-- 장소: TODO
+- 인원: 2명
+- 장소: 구로역 할리스
 - 시간: 10:00 - 13:00
 
 # ** [ To - DO ] **
@@ -10,12 +10,12 @@
     - 발표내용: 이분탐색
     - 8/13 TODO
 
-- 과제: TODO (TODO)
+- 과제: 그리디 알고리즘 (Greedy Algorithm)
     - URL: 
-      1. TODO
-
-# ** [ 건의/공지 사항 ] **
-1. TODO
+      1. [Q16953  - A → B (Silver 2)](https://www.acmicpc.net/problem/16953)
+      2. [Q1339  - 단어 수학 (Gold 4)](https://www.acmicpc.net/problem/1339)
+      3. [Q1449  - 수리공 항승 (Silver 3)](https://www.acmicpc.net/problem/1449)
+      4. [Q3109  - 빵집 (Gold 2)](https://www.acmicpc.net/problem/3109)
 
 # ** [ 발표 내용 ] **
 
