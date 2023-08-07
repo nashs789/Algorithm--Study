@@ -13,10 +13,10 @@
   
 # **[ 👨‍👨‍👧‍👦 ‍멤버 ]**
 
-|Github|[<img src="https://avatars.githubusercontent.com/nashs789" width="130px;" style="max-width: 100%;">](https://github.com/nashs789)|[<img src="https://avatars.githubusercontent.com/hhp227study" width="130px;" style="max-width: 100%;">](https://github.com/hhp227study)|[<img src="https://avatars.githubusercontent.com/jei0486" width="130px;" style="max-width: 100%;">](https://github.com/jei0486)|[<img src="https://avatars.githubusercontent.com/jaewoopk" width="130px;" style="max-width: 100%;">](https://github.com/jaewoopk)|
-|---|:---:|:---:|:---:|:---:|
-|이름|이인복|홍희표|박진슬|박재우|
-|주력언어|<span><img src ="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|<span><img src ="https://img.shields.io/badge/Kotlin-7F52FF.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|<span><img src ="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|<span><img src ="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|
+|Github|[<img src="https://avatars.githubusercontent.com/nashs789" width="130px;" style="max-width: 100%;">](https://github.com/nashs789)|[<img src="https://avatars.githubusercontent.com/hhp227study" width="130px;" style="max-width: 100%;">](https://github.com/hhp227study)|[<img src="https://avatars.githubusercontent.com/jei0486" width="130px;" style="max-width: 100%;">](https://github.com/jei0486)|[<img src="https://avatars.githubusercontent.com/jaewoopk" width="130px;" style="max-width: 100%;">](https://github.com/jaewoopk)|[<img src="https://avatars.githubusercontent.com/YeonsangYoon" width="130px;" style="max-width: 100%;">](https://github.com/YeonsangYoon)|[<img src="https://avatars.githubusercontent.com/SongAhreum" width="130px;" style="max-width: 100%;">](https://github.com/SongAhreum)|
+|---|:---:|:---:|:---:|:---:|:---:|:---:|
+|이름|이인복|홍희표|박진슬|박재우|윤연상|송아름|
+|주력언어|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|<span><img src="https://img.shields.io/badge/Kotlin-7F52FF.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|
 |티어| [![Solved.ac](http://mazassumnida.wtf/api/mini/generate_badge?boj=nashs789)](https://solved.ac/nashs789)
 
 # **[ 📑 ‍이력 ]**
@@ -26,14 +26,14 @@
 - ❌: 불참(사유: x)
 - :octocat:: 스터디 새 멤버
 
-|일시|이인복|홍희표|박진슬|박재우|
-|---|:---:|:---:|:---:|:---:|
-|[2023.07.02](https://github.com/nashs789/GuroStudySecondRound/tree/main/SecondRound(2023.07)/1%EC%A3%BC%EC%B0%A8_%EC%8A%A4%ED%83%9D(2023.07.02))|✅|✅|:octocat:|:octocat:|
-|[2023.07.09](https://github.com/nashs789/GuroStudySecondRound/tree/main/SecondRound(2023.07)/2%EC%A3%BC%EC%B0%A8_%ED%81%90%2C%20%EB%8D%B0%ED%81%AC(2023.07.09))|✅|✅|✅|⚠️|
-|[2023.07.16](https://github.com/nashs789/GuroStudySecondRound/tree/main/SecondRound(2023.07)/3%EC%A3%BC%EC%B0%A8_DFS%2C%20%EB%B0%B1%EB%93%9C%EB%9E%98%ED%82%B9(2023.07.16))|✅|✅|✅|✅|
-|[2023.07.23](https://github.com/nashs789/GuroStudySecondRound/tree/main/SecondRound(2023.07)/4%EC%A3%BC%EC%B0%A8_BFS(2023.07.23))|✅|✅|✅|✅|
-|[2023.07.30](https://github.com/nashs789/GuroStudySecondRound/tree/main/SecondRound(2023.07)/5주차_DP(2023.07.30))|✅|✅|⚠️|✅|
-|[2023.08.06](https://github.com/nashs789/GuroStudySecondRound/tree/main/SecondRound(2023.07)/6%EC%A3%BC%EC%B0%A8_%EB%88%84%EC%A0%81%ED%95%A9(2023.08.06))|||||
+|일시|이인복|홍희표|박진슬|박재우|윤연상|송아름|
+|---|:---:|:---:|:---:|:---:|:---:|:---:|
+|[2023.07.02](https://github.com/nashs789/GuroStudySecondRound/tree/main/SecondRound(2023.07)/1%EC%A3%BC%EC%B0%A8_%EC%8A%A4%ED%83%9D(2023.07.02))|✅|✅|:octocat:|:octocat:||:octocat:|
+|[2023.07.09](https://github.com/nashs789/GuroStudySecondRound/tree/main/SecondRound(2023.07)/2%EC%A3%BC%EC%B0%A8_%ED%81%90%2C%20%EB%8D%B0%ED%81%AC(2023.07.09))|✅|✅|✅|⚠️||✅|
+|[2023.07.16](https://github.com/nashs789/GuroStudySecondRound/tree/main/SecondRound(2023.07)/3%EC%A3%BC%EC%B0%A8_DFS%2C%20%EB%B0%B1%EB%93%9C%EB%9E%98%ED%82%B9(2023.07.16))|✅|✅|✅|✅||❌|
+|[2023.07.23](https://github.com/nashs789/GuroStudySecondRound/tree/main/SecondRound(2023.07)/4%EC%A3%BC%EC%B0%A8_BFS(2023.07.23))|✅|✅|✅|✅|:octocat:|❌|
+|[2023.07.30](https://github.com/nashs789/GuroStudySecondRound/tree/main/SecondRound(2023.07)/5주차_DP(2023.07.30))|✅|✅|⚠️|✅|✅|❌|
+|[2023.08.06](https://github.com/nashs789/GuroStudySecondRound/tree/main/SecondRound(2023.07)/6%EC%A3%BC%EC%B0%A8_%EB%88%84%EC%A0%81%ED%95%A9(2023.08.06))|⚠️|⚠️|⚠️|✅|✅|❌|
 
 
 # **[ 🚫 규칙 ]**
@@ -174,7 +174,22 @@
 
 -----------------------------------
 ### [ 6주차 ]
-- 분류: 누적합(Prefix Sum) 
+- 분류: 누적합(Prefix Sum)
+- 일자: 2023.08.06
+- 문제:
+
+|No|플랫폼|문제번호|문제명|난이도|분류|부 분류
+|-|----|-----|-----|-----|-----|----------|
+|1|백준|[21921](https://www.acmicpc.net/problem/21921)|블로그|Silver 3|누적합|슬라이딩 윈도우|
+|2|백준|[2559](https://www.acmicpc.net/problem/2559)|수열|Silver 3|누적합|투포인터,슬라이딩 윈도우|
+|3|백준|[3020](https://www.acmicpc.net/problem/3020)|개똥벌레|Gold 5|이분탐색|누적합|
+|4|백준|[25682](https://www.acmicpc.net/problem/25682)|체스판 다시 칠하기 2|Gold 5|누적합||
+
+- 심화문제(Optional):
+ 
+|No|플랫폼|문제번호|문제명|난이도|분류|부 분류
+|-|----|-----|-----|-----|-----|----------|
+|1|백준|[10986](https://www.acmicpc.net/problem/10986)|나머지 합|Gold 3|수학|누적합|
 -----------------------------------
 ### [ 7주차 ]
 - 분류: 그리디(Greedy)
