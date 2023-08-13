@@ -12,7 +12,7 @@
 - 시간: 10:00 - 13:00
   
 # **[ 👨‍👨‍👧‍👦 ‍멤버 ]**
-- 중도 이탈자: TODO
+- 중도 이탈자: 박진슬
 
 |Github|[<img src="https://avatars.githubusercontent.com/nashs789" width="130px;" style="max-width: 100%;">](https://github.com/nashs789)|[<img src="https://avatars.githubusercontent.com/hhp227study" width="130px;" style="max-width: 100%;">](https://github.com/hhp227study)|[<img src="https://avatars.githubusercontent.com/jei0486" width="130px;" style="max-width: 100%;">](https://github.com/jei0486)|[<img src="https://avatars.githubusercontent.com/jaewoopk" width="130px;" style="max-width: 100%;">](https://github.com/jaewoopk)|[<img src="https://avatars.githubusercontent.com/YeonsangYoon" width="130px;" style="max-width: 100%;">](https://github.com/YeonsangYoon)|[<img src="https://avatars.githubusercontent.com/SongAhreum" width="130px;" style="max-width: 100%;">](https://github.com/SongAhreum)|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -35,6 +35,7 @@
 |[2023.07.23](https://github.com/nashs789/GuroStudySecondRound/tree/main/SecondRound(2023.07)/4%EC%A3%BC%EC%B0%A8_BFS(2023.07.23))|✅|✅|✅|✅|:octocat:|❌|
 |[2023.07.30](https://github.com/nashs789/GuroStudySecondRound/tree/main/SecondRound(2023.07)/5주차_DP(2023.07.30))|✅|✅|⚠️|✅|✅|❌|
 |[2023.08.06](https://github.com/nashs789/GuroStudySecondRound/tree/main/SecondRound(2023.07)/6%EC%A3%BC%EC%B0%A8_%EB%88%84%EC%A0%81%ED%95%A9(2023.08.06))|⚠️|⚠️|⚠️|✅|✅|❌|
+|[2023.08.13](https://github.com/nashs789/GuroStudySecondRound/tree/main/SecondRound(2023.07)/7%EC%A3%BC%EC%B0%A8_%EA%B7%B8%EB%A6%AC%EB%94%94(2023.08.13))|❌|✅|⚠️||✅|❌|
 
 # **[ 🚫 규칙 ]**
 ### **📌 디렉토리 구조**
@@ -193,21 +194,14 @@
 -----------------------------------
 ### [ 7주차 ]
 - 분류: 그리디(Greedy)
------------------------------------
-### [ 8주차 ]
-- 분류: 이분탐색(Binary Search)
------------------------------------
-### [ 9주차 ]
-- 분류: 투 포인터(Two Pointer)
------------------------------------
-### [ 10주차 ]
-- 분류: 분할정복(Divide And Conquer) 
------------------------------------
-### [ 11주차 ]
-- 분류: 그래프와 순회(Graph And Traversal)
------------------------------------
-### [ 12주차 ]
-- 분류: 다익스트라(Dijkstra)
------------------------------------
-### [ 13주차 ]
-- 분류: 유니온파인(Union-Find)
+- 일자: 2023.08.13
+- 문제:
+
+|No|플랫폼|문제번호|문제명|난이도|분류|부 분류
+|-|----|-----|-----|-----|-----|----------|
+|1|백준|[16953](https://www.acmicpc.net/problem/16953)|A → B|Silver 2|그래프 이론,그리디 알고리즘|그래프 탐색,너비우선 탐색|
+|2|백준|[1339](https://www.acmicpc.net/problem/1339)|단어 수학|Gold 4|그리디 알고리즘||
+|3|백준|[1449](https://www.acmicpc.net/problem/1449)|수리공 항승|Silver 3|그리디 알고리즘|정렬|
+|4|백준|[3109](https://www.acmicpc.net/problem/3109)|빵집|Gold 2|그래프 이론,그리디 알고리즘|그래프 탐색,너비우선 탐색|
+
+- 심화문제(Optional): X
