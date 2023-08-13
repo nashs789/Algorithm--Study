@@ -35,7 +35,7 @@
 |[2023.07.23](https://github.com/nashs789/GuroStudySecondRound/tree/main/SecondRound(2023.07)/4%EC%A3%BC%EC%B0%A8_BFS(2023.07.23))|✅|✅|✅|✅|:octocat:|❌|
 |[2023.07.30](https://github.com/nashs789/GuroStudySecondRound/tree/main/SecondRound(2023.07)/5주차_DP(2023.07.30))|✅|✅|⚠️|✅|✅|❌|
 |[2023.08.06](https://github.com/nashs789/GuroStudySecondRound/tree/main/SecondRound(2023.07)/6%EC%A3%BC%EC%B0%A8_%EB%88%84%EC%A0%81%ED%95%A9(2023.08.06))|⚠️|⚠️|⚠️|✅|✅|❌|
-|[2023.08.13](https://github.com/nashs789/GuroStudySecondRound/tree/main/SecondRound(2023.07)/7%EC%A3%BC%EC%B0%A8_%EA%B7%B8%EB%A6%AC%EB%94%94(2023.08.13))|❌|✅|⚠️||✅|❌|
+|[2023.08.13](https://github.com/nashs789/GuroStudySecondRound/tree/main/SecondRound(2023.07)/7%EC%A3%BC%EC%B0%A8_%EA%B7%B8%EB%A6%AC%EB%94%94(2023.08.13))|❌|✅||⚠️|✅|❌|
 
 # **[ 🚫 규칙 ]**
 ### **📌 디렉토리 구조**
