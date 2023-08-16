@@ -32,8 +32,7 @@ N이 주어졌을 때, 퀸을 놓는 방법의 수를 구하는 프로그램을 
     - 양쪽 대각선 라인에 존재하지 않음
     - 결론: 8각에 다른 퀸이 존재하지 않는 경우에만 만족한다.
 
-
-    ![KakaoTalk_Photo_2023-05-18-00-30-55](https://github.com/nashs789/CodeTest/assets/59809278/800580ce-82c2-4202-917e-6bc45f85fa0d)
+ ![KakaoTalk_Photo_2023-05-18-00-30-55](https://github.com/nashs789/CodeTest/assets/59809278/800580ce-82c2-4202-917e-6bc45f85fa0d)
 
 # **[ 문제점 & 주의점 ]**
 

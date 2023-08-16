@@ -11,7 +11,6 @@ public class Q9663_NQueen {
     public static boolean[] visited1;
     public static boolean[] visited2;
     public static boolean[] visited3;
-    public static int[][] board;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
