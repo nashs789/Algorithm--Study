@@ -16,11 +16,11 @@ class Solution:
             if degree == 0:
                 queue.append(idx)
 
-        result = self.topology_solt(queue, indegree, graph)
+        result = self.topology_sort(queue, indegree, graph)
 
         return result >= n
 
-    def topology_solt(self, queue: deque, indegree: list[int], graph: list[list[int]]) -> int:
+    def topology_sort(self, queue: deque, indegree: list[int], graph: list[list[int]]) -> int:
         result = 0
 
         while queue:
