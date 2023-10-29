@@ -15,6 +15,6 @@ class Solution:
         return ans if len(s) != 1 else s
 
 s = Solution()
-result = s.longestPalindrome("bb")
+result = s.longestPalindrome("babad")
 
 print(result)
