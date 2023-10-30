@@ -6,7 +6,6 @@ class Solution:
         for i in range(Len):
             for j in range(i):
                 if nums[i] > nums[j]:
-                    print(nums[i], "    ", nums[j])
                     dp[i] = max(dp[j] + 1, dp[i])
                     
         return max(dp)
