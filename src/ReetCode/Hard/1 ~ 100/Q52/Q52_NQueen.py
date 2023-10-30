@@ -1,3 +1,12 @@
+"""
+# Author    : Lee In Bok 
+# Date      : 2023.10.29(Sun)
+# Spend Time: 미측정 (X)
+# Runtime   : 58 ms (Beats 44.52%)
+# Memory    : 16.1 MB (Beats 85.44%)
+# Algoritm  : Backtracking
+"""
+
 class Solution:
     def totalNQueens(self, n: int) -> int:
         self.ans, self.n = 0, n
