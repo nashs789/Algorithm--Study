@@ -18,26 +18,26 @@ public class Q58_LengthOfLastWord {
 
 class Solution {
     public int lengthOfLastWord(String s) {
-        int cnt = 0;
+        String[] arr = s.strip().split(" ");
 
-        for(int i = s.length() - 1; i >= 0; i--){
-            if(s.charAt(i) != ' '){
-                cnt++;
-            } else {
-                if(cnt > 0){
-                    return cnt;
-                }
-            }
-        }
-
-        return cnt;
+        return arr[arr.length - 1].length();
     }
 }
 
 // class Solution {
 //     public int lengthOfLastWord(String s) {
-//         String[] arr = s.strip().split(" ");
+//         int cnt = 0;
 
-//         return arr[arr.length - 1].length();
+//         for(int i = s.length() - 1; i >= 0; i--){
+//             if(s.charAt(i) != ' '){
+//                 cnt++;
+//             } else {
+//                 if(cnt > 0){
+//                     return cnt;
+//                 }
+//             }
+//         }
+
+//         return cnt;
 //     }
 // }
