@@ -7,8 +7,6 @@
 * Algoritm  : Array
  */
 
-package Q35;
-
 public class Q35_SearchInsertPosition {
     public static void main(String[] args){
         int result = searchInsert(new int[]{1, 3, 5, 6}, 5);
