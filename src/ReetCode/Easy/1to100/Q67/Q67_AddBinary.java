@@ -1,3 +1,12 @@
+/**
+* Author    : Lee In Bok 
+* Date      : 2023.11.04(Sat)
+* Spend Time: 47m 50s
+* Runtime   : 2 ms (Beats 55.51%)
+* Memory    : 41 MB (Beats 70.52%)
+* Algoritm  : String
+ */
+
 import java.util.ArrayList;
 import java.util.List;
 

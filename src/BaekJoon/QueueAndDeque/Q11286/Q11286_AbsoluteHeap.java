@@ -1,4 +1,13 @@
-package BaekJoon.Stack.Q11286;
+/**
+* Author    : Lee In Bok 
+* Date      : 2023.11.05(Sat)
+* Spend Time: 34m 23s
+* Runtime   : 316 ms
+* Memory    : 25280 KB
+* Algoritm  : Heap
+ */
+
+package BaekJoon.QueueAndDeque.Q11286;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,3 +1,12 @@
+"""
+# Author    : Lee In Bok 
+# Date      : 2023.11.05(Sun)
+# Spend Time: 34m 23s
+# Runtime   : 124 ms
+# Memory    : 39824 KB
+# Algoritm  : Heap
+"""
+
 import sys
 from heapq import heappop, heappush
 input = sys.stdin.readline
