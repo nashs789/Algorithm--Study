@@ -1,4 +1,13 @@
 /**
+* Author    : Lee In Bok 
+* Date      : 2023.11.14(Tue)
+* Spend Time: 17m 32s
+* Runtime   : 0 ms (Beats 100%)
+* Memory    : 40.4 MB (Beats 06.28%)
+* Algoritm  : Tree
+ */
+
+/**
  * Definition for a binary tree node.
  * public class TreeNode {
  *     int val;

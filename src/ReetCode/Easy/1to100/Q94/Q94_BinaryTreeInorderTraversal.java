@@ -4,7 +4,7 @@
 * Spend Time: 08m 09s
 * Runtime   : 0 ms (Beats 100%)
 * Memory    : 41 MB (Beats 16.4%)
-* Algoritm  : Array
+* Algoritm  : Tree
  */
 
 /**

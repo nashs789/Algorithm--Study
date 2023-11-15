@@ -1,3 +1,12 @@
+"""
+# Author    : Lee In Bok 
+# Date      : 2023.11.14(Tue)
+# Spend Time: 17m 32s
+# Runtime   : 34 ms (Beats 81.70%)
+# Memory    : 16.4 MB (Beats 20.68%)
+# Algoritm  : Tree
+"""
+
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
