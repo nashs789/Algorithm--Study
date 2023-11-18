@@ -7,7 +7,7 @@
 * Algoritm  : BigInteger
  */
 
-package BaekJoon;
+package BaekJoon.String.Q1676;
 
 import java.io.BufferedReader;
 import java.io.IOException;
