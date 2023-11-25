@@ -1,3 +1,12 @@
+"""
+# Author    : Lee In Bok 
+# Date      : 2023.11.24(Fri)
+# Spend Time: overtime 30m
+# Runtime   : 1008 ms
+# Memory    : 105516 KB
+# Algoritm  : Bubble Sort
+"""
+
 import sys
 input = sys.stdin.readline
 

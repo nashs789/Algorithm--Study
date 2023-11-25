@@ -1,3 +1,12 @@
+/**
+* Author    : Lee In Bok 
+* Date      : 2023.11.24(Fri)
+* Spend Time: overtime 30m
+* Runtime   : 1784 ms
+* Memory    : 76172 KB
+* Algoritm  : Bubble Sort
+ */
+
 package BaekJoon.Sorting.Q1377;
 
 import java.io.BufferedReader;
