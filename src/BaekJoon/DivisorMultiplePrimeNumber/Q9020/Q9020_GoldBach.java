@@ -2,8 +2,8 @@
 * Author    : Lee In Bok 
 * Date      : 2023.12.24(Sun)
 * Spend Time: 35m 50s
-* Runtime   : 17004 KB
-* Memory    : 208 ms
+* Runtime   : 208 ms
+* Memory    : 17004 KB
 * Algoritm  : Prime Number
  */
 
