@@ -29,7 +29,7 @@ public class Q2110 {
      }
 
      Arrays.sort(houses);
-     int min = Integer.MAX_VALUE;
+     int max = Integer.MAX_VALUE;
      int l = 1;
      int r = houses[N - 1];
 
@@ -47,12 +47,12 @@ public class Q2110 {
 
       if(cnt >= C){
         l = mid + 1;
-        min = mid;
+        max = mid;
       } else {
         r = mid - 1;
       }
     }
 
-    System.out.println(min); 
+    System.out.println(max); 
   }
 }

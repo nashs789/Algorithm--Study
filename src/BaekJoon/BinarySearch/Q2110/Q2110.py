@@ -15,7 +15,7 @@ houses = [int(inp()) for _ in range(N)]
 houses.sort()
 
 l, r = 1, houses[-1]
-min_dist = sys.maxsize
+max_dist = sys.maxsize
 
 while l <= r:
   mid = (l + r) // 2
@@ -27,9 +27,9 @@ while l <= r:
       cur_loc = idx
 
   if cnt >= C:
-    min_dist = mid
+    max_dist = mid
     l = mid + 1
   else:
     r = mid - 1
 
-print(min_dist)
+print(max_dist)
