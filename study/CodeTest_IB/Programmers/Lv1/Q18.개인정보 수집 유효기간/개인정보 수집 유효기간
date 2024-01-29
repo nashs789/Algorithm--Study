@@ -1,0 +1,39 @@
+import java.time.LocalDate;
+import java.util.*;
+import java.util.stream.Stream;
+
+class Solution {
+    public int[] solution(String today, String[] terms, String[] privacies) {
+        List<Integer> answer = new ArrayList<>();
+
+        Map<String, String> termMap = new HashMap<>();
+
+        int[] todayIntArr = Arrays.stream(today.split("\\.")).mapToInt(Integer::new).toArray();
+        LocalDate todayLocalDate = LocalDate.of(todayIntArr[0], todayIntArr[1], todayIntArr[2]);
+
+        setTermAndMonth(terms, termMap);
+
+        for(int idx = 0; idx < privacies.length; idx++){
+            String[] dateAndTerm = privacies[idx].split(" ");
+            String[] yearMonthDay = dateAndTerm[0].split("\\.");
+            int[] yearMonthDayIntArr = Stream.of(yearMonthDay).mapToInt(Integer::new).toArray();
+            LocalDate termDate = LocalDate.of(yearMonthDayIntArr[0], yearMonthDayIntArr[1], yearMonthDayIntArr[2]);
+
+            Boolean expired = todayLocalDate.isAfter(termDate.plusMonths(Integer.parseInt(termMap.get(dateAndTerm[1]))).plusDays(-1));
+
+            if(expired){
+                answer.add(idx + 1);
+            }
+        }
+
+        return answer.stream().mapToInt(Integer::intValue).toArray();
+    }
+
+    private static void setTermAndMonth(String[] terms, Map<String, String> termMap) {
+        for(int idx = 0; idx < terms.length; idx++){
+            String[] termAndMonth = terms[idx].split(" ");
+
+            termMap.put(termAndMonth[0], termAndMonth[1]);
+        }
+    }
+}

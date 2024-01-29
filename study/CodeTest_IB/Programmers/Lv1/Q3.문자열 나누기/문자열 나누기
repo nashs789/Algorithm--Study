@@ -1,0 +1,37 @@
+class Solution {
+    public int solution(String s) {
+        int sLength = s.length();
+
+        char first = ' ';
+        int firstCnt = 0;
+        int secondCnt = 0;
+        int result = 0;
+
+        for(int idx = 0; idx < sLength; idx++) {
+            char curLetter = s.charAt(idx);
+
+            if(first == ' '){
+                first = curLetter;
+            }
+
+            if(first == curLetter){
+                firstCnt++;
+            } else {
+                secondCnt++;
+            }
+
+            if(firstCnt == secondCnt){
+                result++;
+                firstCnt = 0;
+                secondCnt = 0;
+                first = ' ';
+            }
+        }
+
+        if(firstCnt != 0){
+            result++;
+        }
+
+        return result;
+    }
+}

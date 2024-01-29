@@ -1,0 +1,24 @@
+import java.util.HashMap;
+import java.util.Map;
+
+class Solution {
+    public int[] solution(String s) {
+        int sLength = s.length();
+
+        int[] resultArr = new int[sLength];
+        Map<Character, Integer> distanceMap = new HashMap<>();
+
+        for(int idx = 0; idx < sLength; idx++){
+            char curLetter = s.charAt(idx);
+
+            if(distanceMap.containsKey(curLetter)){
+                resultArr[idx] = idx - distanceMap.get(curLetter);
+            } else {
+                resultArr[idx] = -1;
+            }
+
+            distanceMap.put(curLetter, idx);
+        }
+        return resultArr;
+    }
+}

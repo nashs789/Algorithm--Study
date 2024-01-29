@@ -1,0 +1,49 @@
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+class Solution {
+    public String solution(String X, String Y) {
+        String answer = "";
+        int[] xCntArr = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+        int[] yCntArr = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+
+        int[] xIntArr = getStringArrayToIntegerArr(X);
+        int[] yIntArr = getStringArrayToIntegerArr(Y);
+
+        setCntArr(xIntArr, xCntArr);
+        setCntArr(yIntArr, yCntArr);
+
+        List<Integer> commonList = getCommonNumList(xCntArr, yCntArr);
+
+        answer = commonList.stream().sorted(Comparator.reverseOrder()).map(String::valueOf).collect(Collectors.joining());
+
+        return answer.equals("") ? "-1" : (answer.charAt(0) == '0' ? "0" : answer);
+    }
+
+    public static List<Integer> getCommonNumList(int[] xCntArr, int[] yCntArr) {
+        List<Integer> list = new ArrayList<>();
+
+        for(int idx = 0; idx < 10; idx++){
+            int len = xCntArr[idx] <= yCntArr[idx] ? xCntArr[idx] : yCntArr[idx];
+
+            for(int idx2 = 0; idx2 < len; idx2++){
+                list.add(idx);
+            }
+        }
+
+        return list;
+    }
+
+    public static void setCntArr(int[] intArr, int[] cntArr) {
+        for(int num : intArr){
+            cntArr[num] += 1;
+        }
+    }
+
+    public static int[] getStringArrayToIntegerArr(String strArr){
+        return Stream.of(strArr.split("")).mapToInt(Integer::parseInt).toArray();
+    }
+}

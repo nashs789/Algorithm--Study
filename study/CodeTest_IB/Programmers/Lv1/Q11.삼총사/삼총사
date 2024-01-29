@@ -1,0 +1,16 @@
+class Solution {
+    public int solution(int[] number) {
+        int answer = 0;
+
+        for(int idx = 0; idx < number.length - 2; idx++){
+            for(int idx2 = idx + 1; idx2 < number.length - 1; idx2++){
+                for(int idx3 = idx2 + 1; idx3 < number.length; idx3++){
+                    if(number[idx] + number[idx2] + number[idx3] == 0){
+                        answer++;
+                    }
+                }
+            }
+        }
+        return answer;
+    }
+}

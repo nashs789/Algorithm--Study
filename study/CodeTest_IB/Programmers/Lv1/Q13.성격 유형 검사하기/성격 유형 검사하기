@@ -1,0 +1,52 @@
+import java.util.HashMap;
+import java.util.Map;
+
+class Solution {
+    public String solution(String[] survey, int[] choices) {
+        return getKakaoMbti(setKakaoMbti(survey, choices));
+    }
+
+    private static Map<String, Integer> setKakaoMbti(String[] survey, int[] choices){
+        // 매우 비동의(1) | 비동의(2) | 약간 비동의(3) | 모르겠음(4) | 약간 동의(5) | 동의(6) |매우 동의(7)
+        Map<String, Integer> resultMap = new HashMap<>();
+
+        for(int idx = 0; idx < choices.length; idx++){
+            int score = 0;
+            String kindOfSurvey = "";
+
+            if(choices[idx] == 1 || choices[idx] == 2 || choices[idx] == 3){
+                score = 4 - choices[idx];
+                kindOfSurvey = survey[idx].substring(0, 1);
+
+                resultMap.put(kindOfSurvey, resultMap.get(kindOfSurvey) == null ? score : resultMap.get(kindOfSurvey) + score);
+            }
+
+            if(choices[idx] == 5 || choices[idx] == 6 || choices[idx] == 7){
+                score = choices[idx] - 4;
+                kindOfSurvey = survey[idx].substring(1, 2);
+
+                resultMap.put(kindOfSurvey, resultMap.get(kindOfSurvey) == null ? score : resultMap.get(kindOfSurvey) + score);
+            }
+        }
+
+        return resultMap;
+    }
+
+    private static String getKakaoMbti(Map<String, Integer> map){
+        String result = "";
+        String[] mbtiArr = {"A", "C", "F", "J", "M", "N", "R", "T"};
+
+        for(int idx = 0; idx < mbtiArr.length; idx++){
+            if(map.get(mbtiArr[idx]) == null){
+                map.put(mbtiArr[idx], 0);
+            }
+        }
+
+        result += map.get("R") == map.get("T") ? "R" : (map.get("R") > map.get("T")) ? "R" : "T";
+        result += map.get("C") == map.get("F") ? "C" : (map.get("C") > map.get("F")) ? "C" : "F";
+        result += map.get("J") == map.get("M") ? "J" : (map.get("J") > map.get("M")) ? "J" : "M";
+        result += map.get("A") == map.get("N") ? "A" : (map.get("A") > map.get("N")) ? "A" : "N";
+
+        return result;
+    }
+}

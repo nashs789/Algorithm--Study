@@ -1,0 +1,27 @@
+import java.util.HashSet;
+import java.util.Set;
+class Solution {
+    public int solution(int left, int right) {
+        Set<Integer> divisorSet = new HashSet<>();
+        int answer = 0;
+
+        for(int idx = left; idx <= right; idx++){
+            int sqrt = (int)Math.sqrt(idx);
+
+            for(int idx2 = 1; idx2 <= sqrt; idx2++){
+                if(idx % idx2 == 0){
+                    divisorSet.add(idx2);
+                    divisorSet.add(idx / idx2);
+                }
+            }
+
+            if(divisorSet.size() % 2 == 0){
+                answer += idx;
+            } else {
+                answer -= idx;
+            }
+            divisorSet.clear();
+        }
+        return answer;
+    }
+}

@@ -1,0 +1,28 @@
+class Solution {
+    public int[] solution(int[] lottos, int[] win_nums) {
+        int[] answer = {7, 7};
+
+        int hitCount = 0;
+        int chance = 0;
+
+        for(int idx1 = 0; idx1 < lottos.length; idx1++){
+            if(lottos[idx1] == 0){
+                chance++;
+                continue;
+            }
+
+            for(int idx2 = 0; idx2 < win_nums.length; idx2++){
+                if(lottos[idx1] == win_nums[idx2]){
+                    hitCount++;
+                }
+            }
+        }
+
+        int best = hitCount + chance;
+
+        answer[0] -= best == 0 ? 1 : best;
+        answer[1] -= hitCount == 0 ? 1 : hitCount;
+
+        return answer;
+    }
+}
