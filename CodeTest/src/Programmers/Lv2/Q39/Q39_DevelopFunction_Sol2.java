@@ -1,0 +1,42 @@
+package Programmers.Lv2.Q39;
+
+import java.util.*;
+
+public class Q39_DevelopFunction_Sol2 {
+    public static void main(String[] args) {
+        int[] progresses = {93, 30, 55};
+        // {93, 30, 55}
+        // {95, 90, 99, 99, 80, 99}
+        int[] speeds = {1, 30, 5};
+        // {1, 30, 5}
+        // {1, 1, 1, 1, 1, 1}
+        Queue<Integer> queue = new LinkedList<>();
+        Map<Integer, Integer> map = new LinkedHashMap<>();
+        int day = 1;    // 소요 날짜
+        int seq = 0;    // 인덱스 번호
+
+        for(int num : progresses){
+            queue.add(num);
+        }
+
+        while(!queue.isEmpty()){
+            int curPro = queue.peek() + (speeds[seq] * day);
+            
+            if(curPro >= 100){
+                map.put(day, map.getOrDefault(day, 0) + 1);
+                queue.poll();
+                seq++;
+                continue;
+            }
+            
+            day++;
+        }
+
+        List<Integer> answer = new ArrayList<>();
+        Iterator<Integer> it = map.keySet().iterator();
+
+        while(it.hasNext()){
+            answer.add(map.get(it.next()));
+        }
+    }
+}

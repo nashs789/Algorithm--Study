@@ -1,0 +1,28 @@
+/**
+ * [ 문제 설명 ]
+ * 자연수 n을 뒤집어 각 자리 숫자를 원소로 가지는 배열 형태로 리턴해주세요.
+ * 예를들어 n이 12345이면 [5,4,3,2,1]을 리턴합니다.
+ *
+ * [ 제한 조건 ]
+ * n은 10,000,000,000이하인 자연수입니다.
+ *
+ * [ 입출력 예 ]
+ * n	    return
+ * 12345	[5,4,3,2,1]
+ */
+
+package Programmers.Lv1.Q51;
+
+public class Q51_ReverseNaturalNumber {
+    public static void main(String[] args) {
+        long n = 123414;
+
+        String[] strArr = (Long.toString(n)).split("");
+        int[] answer = new int[strArr.length];
+        int answerIdx = 0;
+
+        for(int idx = strArr.length - 1;  idx >= 0; idx--){
+            answer[answerIdx++] = Integer.parseInt(strArr[idx]);
+        }
+    }
+}
