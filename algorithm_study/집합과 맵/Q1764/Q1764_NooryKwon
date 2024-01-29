@@ -1,0 +1,42 @@
+// 71116KB, 71116ms
+// array의 contains = O(n)이므로 N, M의 최대값이 50만으로 시간초과 발생하여, map타입으로 변경했더니 성공함
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) throws IOException {
+		Scanner sc = new Scanner(System.in);
+		StringBuilder stringBuilder = new StringBuilder();
+
+		int noListenNames = sc.nextInt();
+		int noMeetNames = sc.nextInt();
+
+		Map<String, Integer> mapNoListenNames = new HashMap<String, Integer>();
+		List<String> notKnowNames = new ArrayList<String>();
+
+		for (int i=0; i<noListenNames; i++) {
+			String name = sc.next();
+			mapNoListenNames.put(name, i);
+		}
+		
+		for (int i = 0; i<noMeetNames; i++) {
+			String name = sc.next();
+			if (mapNoListenNames.containsKey(name)) {
+				notKnowNames.add(name);
+			}
+		}
+		
+		notKnowNames.sort(null);
+		
+		System.out.println(notKnowNames.size());
+		for (String name : notKnowNames) {
+			stringBuilder.append(name+"\n");
+		}
+		System.out.println(stringBuilder);
+	}
+}
